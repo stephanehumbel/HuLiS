@@ -89,16 +89,16 @@
 <div id="menu2">
 <ul style="display:inline-flex">
 <li><a href="https://www.java.com/" target="_blank"><b><u>Prerequisite</u>&nbsp;:</b>&nbsp;Install <b><i>Java JRE for Desktop applications</i></b></a></li>
-<li><a class="downloadLink" href="#">&nbsp;<b>Download  HuLiS <span class="version"></span></b>&nbsp; (Java)</a></li>
+<li><a class="downloadLink" href="href="archives/hulis_v3_4_0.jar"">&nbsp;<b>Download  HuLiS <span class="version"></span></b>&nbsp; (Java)</a></li>
 <li><a href="http://m.hulis.free.fr/" target="_new"><b>Use the Mobile Version 1.0 (javascript)</b></a> </li> 
 <li><a href="huckel_teaching_materials.shtml" target="_new"><b>Various Teaching Ressources</b></a></li> 
 </ul></div></td></tr>
 <tr align="center" valign="middle"><td align="center">
 <div id="menu2">
   <ul>
-    <li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_3_en.pdf" target="_new"><b>Manual<br><img src="./images/en.png" height=20 alt="en"></b></a></li>
-    <li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel<br><img src="./images/fr.png" height=20   alt="fr"></b></a></li>
-    <li><a href="http://www.hulis.free.fr/huckel_theory_delocalization/index.shtml" target="_new"><b>How HuLiS<br> Works</b>?</a></li>
+    <li><a href="download/HuLiS_Manuel_3_3_en.pdf" target="_new"><b>Manual<br><img src="./images/en.png" height=20 alt="en"></b></a></li>
+    <li><a href="download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel<br><img src="./images/fr.png" height=20   alt="fr"></b></a></li>
+    <li><a href="huckel_theory_delocalization/index.shtml" target="_new"><b>How HuLiS<br> Works</b>?</a></li>
     <li><a href="http://www.hulis.free.fr/3Dmol/index.shtml" target="_new"><b>Try 3Dmol from Pittsburg U?</a></li>
   </ul> 
 </div>
