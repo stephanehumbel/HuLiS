@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head> 
+    <title>Huckel Theory, Mesomerism</title><link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="Keywords" content="Huckel, H&uuml;ckel, Lewis, theoretical chemistry, chimie th&eacute;orique, chimie theorique, chemistry, chimie, configuration,interaction de configuration, hamiltonien effectif,Valence Bond, configuration interaction, CI, IC ">   
+    <meta name="ROBOTS" content="ALL">
+    <meta name="DESCRIPTION" content="How to use HuLiS as either a Huckel program (for molecular orbitals studies) or to evaluate the mesomerism in typical organic (planar) molecules.">
+    <meta name="AUTHOR" content=" A contribution from CNRS & Aix Marseille University, Department of Chemistry, Nicolas Goudard, Yannick Carissan, Denis Hagebaum-Reignier & St&eacute;phane Humbel">
+    <meta name="REVISED" content="march 2014">
+    <meta name="GENERATOR" content="Mozilla/4.61 (Macintosh; I; PPC) [Netscape]"> 
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">  
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  </head>  
+  <body text="#000000" bgcolor="#FFFFFF"  link="#27368B" vlink="#CD191F"   background="images/bground_lite.gif">  
+   
+<!-- bgcolor="#50BCE7" couleur de l'Olympique de Marseille selon son site -->   
+  <center>  
+      <table border="0" cellspacing="1" cellpadding="1" width="822"  bgcolor="#666666" >
+        <tr>
+          <td align="center"><!-- Outer frame -->
+            <table border="0" cellspacing="0" cellpadding="0" width="820"  bgcolor="#FFFFFF" >
+              <tr>
+                <td align="center"><!-- Outer frame --> 
+                  <table border="0" cellspacing="0" cellpadding="5"  bgcolor="#FFFFFF"  width="800">   
+<!-- on fixe les 5 colonnes  --> 
+<!-- <tr bgcolor="#FFFFFF" ><td></td><td></td><td></td></tr>   -->
+<tr bgcolor="#FFFFFF" align="center" valign="top"> 
+                       <td colspan="1" >
+
+<img src="images/logoAixMarsUniv.png"  height="56" border="0"><img src="images/rien.gif" height="16"  >
+</td>
+                       <td><img src="images/rien.gif" height="16"  >
+<remarque>Campus St. J&eacute;r&ocirc;me<br>
+                        Av. Escadrille Normandie-Niemen
+                        <br>13397 Marseille Cedex 20 - France
+</remarque></td> 
+                       <td colspan="1" valign="middle">
+
+<img src="images/logo_cnrs.jpg" height="56">
+</td>
+                    </tr>  
+                     <tr bgcolor="#EEEEEE" valign=Bottom> 
+                      
+                        <td colspan="2" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="http://www.hulis.free.fr">HuLiS</a><br> Teaching materials for Simple H&uuml;ckel Theory</h1>
+
+<small>
+<a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a>
+
+
+  <br><br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;
+</remarque></td> <td  bgcolor="#DDDDDD" colspan="1" rowspan=1 align="center">
+   <!--#include virtual="download.txt" -->   </td> </tr>    
+<tr><td colspan="3" bgcolor="#DDDDDD" align="center">
+<h1><!--#include virtual="message.txt" --></h1>
+</td>
+ </tr>          
+   <tr  bgcolor="#EEEEEE"> 
+  <td colspan="3"><p align="justify">
+<hr>
+<table border=0> <tr><td width=300>
+<h2>Manual</h2> 
+
+<li> The  <a href="http://www.hulis.free.fr/huckel_theory_delocalization/index.shtml" target="_totop"><b>online tutorial in english <img src="./images/en.png"  height=20 alt="en"> </b></a></td><td></td></tr>
+<tr><td><li> The manual is either in english or french.
+<ul><li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_2_en.pdf" target="_new"><b>Manual 3.2 (pdf) <img src="./images/en.png" height=20 alt="fr"></b></a></li> 
+<li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel 3.2 (pdf)  <img src="./images/fr.png" height=20 alt="fr"></b></a></li> 
+</ul>
+<li> <a href="http://article.sapub.org/10.5923.j.jlce.20160402.01.html" target="_new"><b>Tutorial on fulvene by us<img src="./images/en.png" width="19" alt="fr"></b></a></li>
+
+
+
+
+</td><td align="center"><i><a href="http://academictree.org/chemistry/tree.php?pid=71045">Benoit Bra&iuml;da</a> (<a href="http://www.lct.jussieu.fr/">Jussieu</a>) and Paul Fleurat-Lessard <a href="http://www.icmub.com/fr/membres/fleurat-lessard-paul.html">Dijon</a> - ex-ENS Lyon,
+<br> are acknowledged for their suggestions for both the manual and  HuLiS features.</i></td></tr></table> 
+<p>
+ <table border=0> <tr><td width=600>
+<h2>Teaching materials</h2>Teaching materials shall be shared. We appreciate  updates from  colleagues
+
+
+<ul>
+  <li> We are storing Point Group symetry character table on github: <a href="https://github.com/stephanehumbel/Character-Table-in-latex"> LaTeX edited Character Tables</a>. Don't hesitate to use and contribute.
+  <li><img src="images/YT.png" width="15"alt="."> <a href="https://chemistry.gatech.edu/people/michael-evans">Michael Evans'</a> youtube explanation on using HuLiS for HOMO-LUMO gap.<a href="https://www.youtube.com/watch?v=gpuN4Cc3ffA"> Molecular Orbitals of Delocalized Pi Systems </a> </li>
+
+  <li> <img src="images/pdf.png" width="15"alt="."> <a href="https://www.researchgate.net/profile/Benoit_Braida">B. Bra&iuml;da</a>  from <a href="http://www.lct.jussieu.fr/">L. C. T.</a>, Univ. Pierre & Marie Curie, <a href="download/602_CT_1314.pdf"><b>Master1 Spectros. & Chimie Th&eacute;or. (602)</b></a> (in french) See Benoit in the <a href="http://academictree.org/chemistry/peopleinfo.php?pid=71045">Chemistry Tree</a>.
+<li> <img src="images/pdf.png" width="15"alt="."> B. Bra&iuml;da  from <a href="http://www.lct.jussieu.fr/">L. C. T.</a>, Univ. Pierre & Marie Curie, <a href="download/301_CT_1314.pdf"><b>Licence 3 Chimie (301)</b></a> (in french)
+<li><img src="images/html.png" width="15"alt="."> <a href="https://people.mst.edu/faculty/glaserr"> R. Glaser</a> from Missouri Univ  had interesting pages on Computational Chemistry and Organic photochemistry courses. See Rainer in the <a href="http://academictree.org/chemistry/peopleinfo.php?pid=76484">Chemistry Tree</a>.
+
+<li><img src="images/pdf.png" width="15"alt="."> <a href="http://academictree.org/chemistry/tree.php?pid=72164">S. Humbel</a> from Aix-Marseille Univ. : <a href="download/Simple_Huckel_CH404.pdf">Simple Huckel and Huckel-Lewis : <b>CH404</b></a> (in french) - with some work on Coulson formulae. See Stephane in the <a href="http://academictree.org/chemistry/peopleinfo.php?pid=72164">Chemistry Tree</a>.
+
+<li><img src="images/pdf.png" width="15"alt="."> <a href="http://www.lcp.u-psud.fr/spip.php?page=fiche_identite&nom=lauvergnat">Dr David Lauvergnat</a>,
+Laboratoire de Chimie Physique (LCP) de l«Universit&eacute& Paris-Sud <a href="download/Orsay_master1.pdf"><b>Master 1</b></a>
+
+<p><br><p>
+</ul><ul><div align="center">Others ..</div>
+<li> <a href="http://icr-amu.cnrs.fr/tctnew/severine-queyroy/">Dr. Severine Queyroy</a> notes that Huckel parameters for C#N group (cyano or nitrile) can be obtained from 
+<a href="http://www.modgraph.co.uk/Downloads/Chemical%20shifts%20of%20nitriles.pdf"> Abraham R.J.</a> or at <a href="http://www.modgraph.co.uk/Downloads/SCS15.pdf"><i>Magn. Reson. Chem.</i>  2000 <B>38</B> 570-579</a> or <a href="download/SCS15.pdf">here</a> 
+: Values are hr = -0.12 and 0.19 for C(sp) and N(sp) and krs = 1.05 for 
+(Csp2-Csp) and 1.20 for (Csp-Nsp) </li>
+<li> Dr. Frederic Le Quere and Pr Isabelle Navizet<a href="https://msme.univ-gustave-eiffel.fr/presentation/equipe-ct"> Laboratoire Modelisation et Simulation Multi Echelle</a> MSME UMR 8208 CNRS Universite Paris-Est
+Youtube tutorials (in french): <a href="https://www.youtube.com/watch?v=LtAJ9hlVQgw">Youtube Exo3</a> & <a href="https://www.youtube.com/watch?v=PKZqr73jbsM">Youtube Exo4</a>. See also the <a href="http://alpha.univ-mlv.fr/MODELISATION-MASTER/">alpha server</a>.</li>
+
+
+<li><a href="http://www.icmub.com/fr/membres/fleurat-lessard-paul.html">Dr Paul Fleurat-Lessard</a>,
+ICMUB- Dijon</li>
+<li> <a href="http://comp.chem.nottingham.ac.uk/members/bulheller.html">Dr. Benjamin Bulheller</a> from Prof. J. D. Hirst's group also used HuLiS.</li>
+</ul>
+<b>Related teaching material</b><br>
+<ul><li> A nice H&uuml;ckel determinant solver can be found  <a href="http://www.stolaf.edu/depts/chemistry/courses/toolkits/247/js/huckel/">here</a>.</li>
+<li>  Bob's 
+<a href="https://www.stolaf.edu/depts/chemistry/courses/toolkits/"> 
+Physical Chemistry Toolkit
+</a> from St Olaf college might give interesting ressources.</li>
+
+<li> There was very nice teaching materials from <a href="https://www.researchgate.net/profile/Burak-Esat-4"> Dr Burak Esat</a> on basic physical organic chemistry and  advanced physical organic chemistry when he was in Istanbul. But the pages vanished. See Burak in the <a href="http://academictree.org/chemistry/tree.php?pid=73834">chemistry tree</a>.</li>
+<li> Online Molecular orbitals for 3D systems : <a href="http://www.lct.jussieu.fr/pagesperso/orbimol/" target="_totop"><b>OrbiMol</b></a> (html)</li>
+<li> <a href="./H2O_diagram_MO.shtml" target="_totop"><b>H2O Molecular diagram</b></a></li>
+<li><a href="wwwmarly99">Semi-Empirical methods explanation</a>,
+S. Humbel 1999 (URCA).</li>
+<li> <a href="./Licences/">Licence chimie AMU</a></li> 
+<li> <a href="./MChimie/">Master chimie AMU 1st semestre</a></li> 
+<li> <a href="./MChimie//M1S2.shtml">Master chimie AMU 2nd semestre</a> </li>
+<li> <a href="./MDakar/">Sessions avec Dakar UCAD</a> </li>
+</ul>
+</td>
+
+<td align="center" valign="top"><img src="images/huckel_teaching.png" width="192" align="center"></td></tr>
+
+</table>
+<remarque></remarque>
+
+
+
+
+</td>
+                      </tr>
+                                
+                      <tr valign=Bottom>
+                      <tr align="right" bgcolor="#FFFFFF">
+                        <td> </td>
+                        <td align="left">
+<!--  Champ de recherche Google --> 
+<form method=GET action="http://www.google.fr/search">
+<a href="http://www.google.fr"><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="absmiddle"></a> <input type=text name=q size=14 maxlength=255 value=""> <input type=hidden name=hl value=fr><!--  <input type=submit name=btnG value="Search Google"> -->
+</form><!-- Google -->
+                        </td>
+                        <td colspan="1" align="right">2014&nbsp; 
+
+
+<!--  http://caspam.org give anti spam info --!>
+
+   
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+  </body>
+</html>

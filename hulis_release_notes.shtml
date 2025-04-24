@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head> 
+<script type="text/javascript">
+if (document.images) {
+   imgPreload = new Image();
+   imgPreload.src = "/images/screen.png";
+}
+</script>
+
+    <title>Huckel - Lewis implementation</title><link rel="stylesheet" type="text/css" href="./style.css">
+
+<meta name="description" content="Free java program for Huckel + Mesomerism. Java related informations" />
+<meta name="keywords" content="java" />
+<meta name="robots" content="ALL" />
+<meta name="AUTHOR" content=" A contribution from CNRS & Aix Marseille University, Department of Chemistry, Nicolas Goudard, Yannick Carissan, Denis Hagebaum-Reignier & St&eacute;phane Humbel">
+    <meta name="REVISED" content="10/01/2013">
+    <meta name="GENERATOR" content="Mozilla/4.61 (Macintosh; I; PPC) [Netscape]"> 
+ <meta property="article:published_time" content="2013-01-20" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">  
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  </head>  
+  <body text="#000000" bgcolor="#FFFFFF"  link="#27368B" vlink="#CD191F"   background="images/bground_lite.gif">  
+   
+<!-- bgcolor="#50BCE7" couleur de l'Olympique de Marseille selon son site -->   
+<div align="center"> 
+      <table border="0" cellspacing="1" cellpadding="1" width="820"  bgcolor="#666666" >
+        <tr>
+          <td align="center"><!-- Outer frame -->
+            <table border="0" cellspacing="0" cellpadding="0" width="820"  bgcolor="#FFFFFF" >
+
+              <tr>
+                <td align="center"><!-- Outer frame --> 
+                  <table border="0" cellspacing="0" cellpadding="5"  bgcolor="#FFFFFF"  width="700">   
+<!-- on fixe les 5 colonnes  --> 
+<!-- <tr bgcolor="#FFFFFF" ><td></td><td></td><td></td></tr>   -->
+<tr bgcolor="#FFFFFF" align="center" valign="top"> 
+                       <td colspan="1" >
+
+<img src="images/logoAixMarsUniv.png"  height="56" border="0"><img src="images/rien.gif" height="16"  >
+</td>
+
+
+                       <td><img src="images/rien.gif" height="16"  >
+<remarque>Campus St. J&eacute;r&ocirc;me<br>
+                        Av. Escadrille Normandie-Niemen
+                        <br>13397 Marseille Cedex 20 - France
+</remarque></td> 
+                       <td colspan="1" valign="middle">
+
+<img src="images/logo_cnrs.jpg" height="56">
+</td>
+                    </tr>  
+                     <tr bgcolor="#EEEEEE" valign=Bottom> 
+                      
+                        <td colspan="3" bgcolor="#DDDDDD" align="center" ><h1><a href="http://www.hulis.free.fr"><img src="images/HuLis-InterU.gif" height="45" align="middle" border="0" alt="HuLiS"></a>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="http://www.hulis.free.fr">HuLiS</a></h1> <h4>Release notes</h4>
+
+<small><a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="http://ism2.univ-amu.fr/permanents/HAGEBAUM-REIGNIER.php" target="new">Denis Hagebaum-Reignier</a> AND <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a> </td> 
+                      </tr>                    
+            
+<tr><td colspan="3" bgcolor="#CCCCCC" align="center">
+<h1><!--#include virtual="message.txt" --></h1>
+</td>
+ </tr>          
+  
+ <tr  bgcolor="#EEEEEE"> 
+                        <td colspan="3"><p align="justify">
+
+<hr>
+
+
+<table > <tr bgcolor="#DDDDDD"><td width="590">
+To use HuLiS, <strong>the minimum version 1.7 of JAVA must be installed on your computer</strong>. You can check your JAVA version typing "java -version" in a command prompt window. You can downlad the latest version of JAVA <a href="http://www.java.com/" target="new">here</a>.</td><td align="center"><a href="http://www.java.com/" target="new"><img src="images/html.png" width="39"  border="0"></a></td></tr>
+<tr><td width="590"><div align="center"><hr width="140" size=1>
+</div>
+<strong>Release Notes</strong> (HuLiS versions).</td><td align="center"><p>
+</td></tr>
+<tr><td>  
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3.7 (27th January 2021)<br></span>
+The tutorial menu points to the HuLiS YouTube channel.
+A bug has been fixed to make HuLiS compatible again with both JDK and standard JVM.
+</p>
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3.6 (07th December 2021)<br></span>
+In the molecule display panel, the too large space between the epsilon symbol and the energy value of the selected molecular orbital has been removed.
+</p>
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3.5 (25th October 2021)<br></span>
+Bug fixed : For some versions of Java, HuLiS does not open because the major version number is incorrectly parsed before starting the application.  
+</p>
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3.4 (18th April 2019)<br></span>
+The  "Allow biradicals" option is disabled by default (File menu / Preferences).
+Bug fixed : Mono radicals are always self-generated
+</p>
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3.3 (January 2016)<br></span>
+Now, the minimal version is never checked.
+</p>
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3.2 (January 2016)<br></span>
+In the 3.3.1 version, an error occured at startup if no network connection (failure in checking the required minimal version through the network)
+</p>
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3.1 (July 2015)<br></span>
+Source code reorganization to compile with Maven in the goal to make a HML5 project
+</p>
+
+
+<br>
+<p align="left">
+<span class="Style2">Version 3.3 (May 2015)<br></span>
+The user licence has been added.<br>
+Users preferences are kept in memory.
+</p>
+
+
+
+<p align="left">
+<span class="Style2">Version 3.2 (February 2015)<br></span>
+In previous versions, the trust factor (<font face="times" size="4">&#964; </font>) for HL-P  was defined as the norm of the projected (HL-P) wave function while that for HL-CI was defined as the overlap between the normalized HL-CI wave function function and the Huckel wave function. Since version 3.2 the HL-P trust factor (<font face="times" size="4">&#964; </font>) is the overlap between 
+the normalized HL-P wave function and the Huckel wave function. <font face="times" size="4">&#964; </font> has thus now a similar definition for both HL-CI and HL-P : 
+<font face="times" size="4">&#964; </font>=&#60;&#936;<sub>HL</sub>&#124;&#936;<sub>tot</sub>&#62;
+</p>
+
+<p align="left">
+<span class="Style2">Version 3.1.2b (July 2014)<br></span>
+The preferences windows is more user-friendly.
+<b><span style="color: #889911;"></span></b></p>
+
+<p align="left">
+<span class="Style2">Version 3.1.2a (June 2014)<br></span>
+A  bug introduced in 3.1.1 (where the structures are sorted) is corrected. <!-- In the previous version 3.1.1, if you generated Lewis structures, then you selected some structure with the slider, the overlap matrix was not according to the slider.
+ -->The preferences windows is more user-friendly (this is still on-going).
+<b><span style="color: #889911;"></span></b></p>
+
+<p align="left">
+<span class="Style2">Version 3.1.1 (May 2014)<br></span>
+When automatic generation, the structures are sorted according to &#60;&#936;<sub>tot</sub>&#124;&#936;<sub>i</sub>&#62;
+<b><span style="color: #889911;"></span></b>.</p>
+
+<p align="left">
+<span class="Style2">Version 3.1 (May 2014)<br></span>
+The background threads have been improved.<br>
+In the preference window, you can choose the maximum number of charges separation and it is possible to couple during Lewis structures generation.<br>
+With the downloable version, you can export the selected molecule in a SVG image format (scalable vector graphics format). This function uses the <a href="http://xmlgraphics.apache.org/batik/">Apache Batik library</a><br>
+The open-file function has been improved : it should be faster.<br>
+The Lewis structure generation selects only the structures that have the higher overlap.<br>
+The alignment in the window of mesomery results has been fixed and other small display problems too.
+</p>
+
+<p align="left">
+<span class="Style2">Version 3.0 (May 2013)<br></span>
+The source code and the project have been refactored.<br>
+The <em>Tutorial</em> menu has been improved (avalaible in the downloable version).
+</p>
+
+<p align="left">
+<span class="Style2">Version 2.9 (May 2013)<br></span>
+The applet version opens by clicking on a button that solve compatibility problems with Mac OS 10.6+<br>
+You can optimize the geometry by clicking on the button <em>Opt.</em> in the Huckel toolbar.<br>
+You can center the molecule by clicking on the button <em>Center</em> in the Huckel toolbar.
+<br>
+When you wants to reorder the atoms, you can begin to number the atoms then clicking again on the <em>Numbering</em> button to finish autmatically.<br>
+You can create fictive atoms in <em>change mode</em> buy choosing the <em>Xx</em> atom symbol in the <em>Change atom</em> dialog box : Then you can change the symbol, the number of neighbours and the number of Pi electrons.
+<br>
+The <em>Generate</em> to great lewis structures is always visible, now.
+<br>
+The application should be more user-friendly because it generates Lewis structures and it computes HLCI/HLP background threads without freeze the GUI. Moreover, the erase operations are quicker than the previous version.
+<br>
+You can open / save XYZ (.xyz extension file) and Gaussian 03 format (.com) in the <em>File</em> menu.
+<br>
+You can display the NBO for Gaussian String in the results frame for the mesomery buy checking the checkboxes at the bottom of this frame.
+<br>
+In the downloable version, you can create a molecule by pasting text in format : coordinates xyz, XYZ file format, Gamess coordinates, Gaussian 03 coordinates with atomic number. Moreover, you can create a mesomery by pasting text in format : NBO for Gaussian 03, or just the NRTSTR part file if the molecule exists. 
+<br>
+When you open a 3D geometry (by "Paste" menu item or <em>Open</em> menu item) it is transformed in 2D. So a CH3 methyl is represented by a fictive CH3 atom. 
+<br>
+The <em>Preferences</em> menu item has been improved in <em>File</em> menu : You can choose the number of digits for energies and orbital results, you can increase or decrease orbitals representation size, symbol or circles representation for the atoms.
+<br>
+We have added a <em>Event log</em> item in the <em>Help</em> menu that you can send us to help to debug in case of problems.
+</p>
+             
+<p align="left">
+<span class="Style2">Version 2.8 (January 2012)<br></span>
+A <em>Preferences</em> menu item has been added in <em>File</em> menu. 
+<p align="left"><span class="Style2">Version 2.7 (july 2011)<br></span>
+The size of the lines between two huckel atoms in the panel of the delocalized sructure is proportional to the bond order between these atoms. </p>
+<p align="left"><span class="Style2">Version 2.6 (july 2011)<br>
+</span>Refactoring some packages to prepare the future version.<br>
+  Correct some bugs when the webpage is reloaded <br>
+  Multiple instances can run in separate JVM (does not work under Safari brower or for JVM versions lower than 1.6.10) </p>
+<p align="left"><span class="Style2"></span><span class="Style2">Version 2.5 (april 2011)</span><br> 
+HLCI tau is calculated. </p>
+<p align="left"><span class="Style2">Version 2.4 (june 2010)</span><br>
+  Italian language menu item has been added (translated by <a href="http://www.ism2.univ-cezanne.fr/permanents/NAVA.php">Dr. Paola Nava</a>). </p>
+<p align="left"><span class="Style2">Version 2.3 (march 2010)</span><br>
+  The interface is included in the home page to be more user-friendly.<br>
+  A checkbox was added in the Huckel toolbar to display charges and bond orders.<br>
+  The menu bar has been improved :<br>
+  - a display menu item has been added <br>
+  - a menu item with languages and flags has been added. <br>
+  <br>
+  A standalone runnable version is downloadable. </p>
+<p align="left"><span class="Style2">Version 2.2 (october 2009)</span><br>
+  HL-CI et HL-P methods are independant. <br>
+  The test cases and the test method have been improved and some bugs have been fixed.</p>
+<p align="left"><span class="Style2">Version 2.1 (may 2009)</span><br>
+  A tutorial menu has been added. <br>
+Undo / Redo menu items have been added. </p>
+<p align="left"><span class="Style2">Version 2.0 (april 2009)</span><br>
+Source code has been refactored.
+<br>
+  Arabian language menu item has been added (translated by Pr. Ali Rahmouni). <br>
+  Error handling has been improved with   generating error report for unexpected errors. <br>
+  Read / write multiple file formats. </p>
+<p align="left"><span class="Style2">Version 1.4 (december 2008)</span><br>
+  A &quot;Mode&quot; menu item has been added in the menu bar<br>
+  HLP method has been added</p>
+<p align="left"><span class="Style2">Version 1.3 (november 2008)</span><br>
+Hydrogen atoms have been included <br>
+&quot;Expert&quot; menu item has been added in the file menu <br>
+  File/options menu has  changed </p>
+<p align="left"><span class="Style2">Version 1.2 (june 2008)</span></td></tr> 
+</table>
+<br>
+<div align="center"><hr width="140" size=1>
+</div><p>
+
+<p><remarque>Feel free to send remarks and suggestions to the contact adress. 
+ </remarque>
+
+</td>
+</tr>
+      
+<tr valign=Bottom align="right" bgcolor="#FFFFFF">
+<td></td>
+                        <td align="left" colspan="2">
+<!--  Champ de recherche Google --> 
+<form method=GET action="http://www.google.com/search">
+<a href="http://www.google.com.ncr" target="new" ><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="absmiddle"></a> <input type=text name=q size=14 maxlength=255 value=""> <input type=hidden name=hl value=fr><!--  <input type=submit name=btnG value="Search Google"> -->
+</form><!-- Google -->
+                        </td>
+                        <td colspan="1" align="right">2014&nbsp; 
+
+<!--  http://caspam.org give anti spam info --!>
+
+   
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head> 
+    <title>Huckel Theory, Mesomerism</title><link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="Keywords" content="Huckel, Lewis, theoretical chemistry, chemistry, effective hamiltonian,Valence Bond, configuration">   
+    <meta name="ROBOTS" content="ALL">
+    <meta name="DESCRIPTION" content="Discussion on electronic delocalization. Synopsis of the HuLiS java program : Huckel and resonance between Lewis structures. The trust factor is illustrated for benzene and butadiene.">
+    <meta name="AUTHOR" content=" A contribution from CNRS & Aix-Marseille University, Department of Chemistry, Nicolas Goudard, Yannick Carissan, Denis Hagebaum-Reignier & St&eacute;phane Humbel">
+     <meta name="REVISED" content="08/04/2015">
+    <meta name="GENERATOR" content="Mozilla/4.61 (Macintosh; I; PPC) [Netscape]"> 
+ <meta property="article:published_time" content="2013-01-20" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">  
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
+  </head>  
+  <body text="#000000" bgcolor="#FFFFFF"  link="#27368B" vlink="#CD191F"   background="../images/bground_lite.gif">  
+  <center>  
+      <table border="0" cellspacing="1" cellpadding="1" width="690"  bgcolor="#FFFFFF" >
+         <tr>
+          <td align="center"><!-- Outer frame --> <p><br><p>
+            <table border="0" cellspacing="1" cellpadding="1" width="790"  bgcolor="#FFFFFF" >
+              <tr>
+                <td align="center"><!-- Outer frame --> 
+<table border="0" cellspacing="1" cellpadding="5"  bgcolor="#FFFFFF"  width="720">   
+ <tr bgcolor="#FFFFFF" align="center" valign="top"> 
+ <td width=56 colspan="1" >
+<a href="http://www.univ-amu.fr/"><img src="../images/logoAixMarsUniv.png"  height="56" border="0">
+</a></td>
+<td>
+<remarque>Campus St. J&eacute;r&ocirc;me<br>
+                        Av. Escadrille Normandie-Niemen
+                        <br>13397 Marseille Cedex 20 - France
+</remarque></td> 
+<td colspan="1" valign="middle" >
+<a href="http://www.cnrs.fr/"><img src="../images/logo_cnrs.jpg" height="56">
+</a></td>
+</tr> </table><table cellspacing="0" cellpadding="1"  width="720">
+<tr bgcolor="#EEEEEE" valign=Bottom>  
+<td colspan="2" bgcolor="#DDDDDD" align="center" ><h1>Delocalization, Mesomerism and Simple H&uuml;ckel Theory: <br>bases of a free Java Applet   </h1>
+ 
+<small><a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a> </small>
+<br> <br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;
+</remarque>
+</td><td bgcolor="#DDDDDD"><h8><!--#include virtual="../download.txt" --></h8></td>
+ </tr>                 
+<tr><td colspan="3" bgcolor="#DDDDDD" align="center">
+<!--#include virtual="../message.txt" -->
+</td>
+ </tr>                    
+ <tr  bgcolor="#EEEEEE"> 
+<td colspan="3"><p align="justify">
+<hr>
+
+<ol type="I">
+<h1><li>Abstract</h1>
+<h1><li>Introduction</h1> 
+<ol type="1"><li><a href="#delocatom">Delocalization between atoms OM-CLAO and Simple H&uuml;ckel</a>  &Phi;=c<sub>a</sub>&chi;<sub>a</sub> + c<sub>b</sub>&chi;<sub>b</sub>   (&Psi;<sup>d</sup>,E<sup>d</sup>)
+<li><a href="#delocstates">Delocalization between states : Mesomerism</a> &Psi;<sup>m</sup>=c<sub>I</sub>&Psi;<sub>I</sub> + c<sub>II</sub>&Psi;<sub>II</sub>, (&Psi;<sup>m</sup>,E<sup>m</sup>)</h2>
+</ol>
+<h1><li>HuLiS, a Java applet</h1><img src="images/Scheme_Balance.gif" height="120" align="right" border="0" alt="Humbel">
+<ol type="1"><li><a href="#hlci">The H&uuml;ckel-Lewis CI approach</a>
+<ol type="a">
+<li>The scheme 
+<li>Weights
+</ol>
+<li><a href="#hlp">The H&uuml;ckel-Lewis Projected approach</a>
+<ol type="a">
+<li> The scheme
+<li> Overlap between determinants
+</ol>
+<li><a href="#student">Student's work in Organic Chemistry course</a>
+<ol type="a">
+<li>A first look at the interface
+<li>Example : the acrolein molecule
+<ul><li>Simple H&uuml;ckel calculations <li>H&uuml;ckel CI calculations
+</ul>
+</ol>
+</ol>
+<h1><li>Conclusion</h1>
+</ol>
+<hr>
+
+
+<ol type="I">
+<h1><li>Abstract</h1>
+H&uuml;ckel-Lewis is a new scheme, designed to obtain the weights of Lewis contributing structures from adapted H&uuml;ckel calculations. It has been implemented as &#8220;HuLiS&#8221;, a free Java 1.5 applet, available from <a href="http://www.hulis.free.fr" target="new">http://www.hulis.free.fr</a>. The recent html5 version is available from <a href="http://m.hulis.free.fr/" target="new">http://m.hulis.free.fr/hulis.html</a> for smartphones. HuLiS is based on two of our recent publications on the subject of mesomerism <a href="#reference">[1,2]</a>. The basics of the H&uuml;ckel-Lewis approach, and of electronic delocalization in general, are shown here as a parallel between <u>atomic orbital interaction</u> [&Phi;=c<sub>a</sub>&chi;<sub>a</sub> + c<sub>b</sub>&chi;<sub>b</sub> ] and contributing <u>structures interaction</u>[&Psi;=c<sub>I</sub>&Psi;<sub>I</sub> + c<sub>II</sub>&Psi;<sub>II</sub> ]. The results obtained with the H&uuml;ckel-Lewis method compare with that of an ab initio approach.<a href="#reference">[3]</a>
+<p>
+
+<h1><li>Introduction</h1> 
+Electronic delocalization has mainly two aspects: Bonds and Conjugation. The chemical bond is an electron pair sharing between two atoms. It is an electronic delocalization between two atoms. Conjugation is an electronic (<font face="Times New Roman, Times">&pi;</font>) delocalization between bonds. Both concepts are taught to students along chemistry courses. <p>
+We shall here make a parallel between the two types of electronic delocalizations. We present and apply a modified version of the numerical approach of the first (atomic) delocalization (Simple H&uuml;ckel theory) to the second (Lewis). The fundamentals of this new H&uuml;ckel-Lewis approach has been published recently by our group.<a href="#reference">[1]</a> We shall remind here these fundamentals on the simple case of a two-structure mesomerism.<p> Huckel theory gives access to delocalization energy. It is shown here that weights of the Lewis structures can be computed within the Huckel model. A parallel is done here between charges and weights.
+<ol type="1"><h2><li><a name="delocatom">Delocalization between two atoms OM-CLAO and H&uuml;ckel <br>  [&Phi;=c<sub>a</sub>p<sub>a</sub> + c<sub>b</sub>p<sub>b</sub>   (&Psi;<sup>d</sup>,E<sup>d</sup>) ]</a> 
+</h2>
+The electronic delocalization between two atoms is taught within the simple qualitative approach of the Molecular Orbitals by Linear Combinaison of Atomic Orbitals (MO-LCAO). Scheme 1a shows how two overlapping atomic orbitals interact and generate  <font face="Times New Roman, Times">&pi;</font> bonding /  <font face="Times New Roman, Times">&pi;</font>* anti-bonding orbitals. Those can be populated with an appropriate number of electrons, so bond order and other charge delocalization quantities can be qualitatively discussed, even for unsymmetrical systems.<p> 
+ <img src="./images/Scheme1.gif" width="350" border="0"><br>
+Scheme 1 : (a) Orbital qualitative interaction :  <font face="Times New Roman, Times">&pi;</font> and  <font face="Times New Roman, Times">&pi;</font>* orbitals. (b) Quantum empirical resolution (Simple H&uuml;ckel):  <font face="Times New Roman, Times">&alpha;</font> and  <font face="Times New Roman, Times">&beta;</font> are negative energetic quantities. The molecular orbitals  <font face="Times New Roman, Times">&pi;</font> and  <font face="Times New Roman, Times">&pi;</font>* have an energy of  <font face="Times New Roman, Times">&alpha;</font>+ <font face="Times New Roman, Times">&beta;</font> and  <font face="Times New Roman, Times">&alpha;</font>- <font face="Times New Roman, Times">&beta;</font>, respectively. <p>
+Complementary to this qualitative approach, the well-known Simple H&uuml;ckel quantum empirical method is widely taught for a better understanding of bonding in  <font face="Times New Roman, Times">&pi;</font> delocalized systems, between two or several AO's (Scheme 1b). The scheme works well for  <font face="Times New Roman, Times">&pi;</font> systems because the interaction is fairly constant there, so it can be parameterized quite easily. Moreover, the physical/mathematical technique used there can be exported to any two interacting systems.<p>
+Before doing so, we shall first remind that the diagonal terms of the Hamiltonian matrix ( <font face="Times New Roman, Times"> <font face="Times New Roman, Times">&alpha;</font></font> ) can be read as the energy of the isolated AO's (those are Carbon p electrons for instance). Similarly, the off-diagonal terms (  <font face="Times New Roman, Times">&beta;</font> ) represents the interaction between the AO's. Setting  <font face="Times New Roman, Times">&beta;</font> to zero would isolate one AO's from the other. It would have numerically cut the  <font face="Times New Roman, Times">&pi;</font> bond. However, &sigma; electrons cannot be affected there because Simple H&uuml;ckel theory lays on an initial definition of the &sigma; skeleton.  
+<p>Second, we shall remind that Simple H&uuml;ckel theory reports all the interactions to the Hamiltonian matrix, and leaves the S overlap matrix as the identity matrix. This subtle interplay between the two matrices justifies the use of orthogonal AO's throughout the H&uuml;ckel scheme. This convenient approximation is done, and works well, because we implicitly report to the H matrix all the overlap tasks, via the (negative)  <font face="Times New Roman, Times">&beta;</font> parameter (Scheme 2). <p>
+ <img src="./images/Scheme2.gif" width="250" border="0"><br>
+Scheme 2 : Secular determinant in Simple H&uuml;ckel Theory, the off diagonal terms in simple H&uuml;ckel Theory.<p>
+Yet the Simple H&uuml;ckel scheme gives many information for reactivity, as well as quite a few structural interesting data such as bond indices, partial atomic charges, etc, all those data come from the electronic delocalization that occurs throughout the molecule. They are taught at the undergrad level or so. <p>
+
+<h2><li><a name="delocstates">Delocalization between states :Mesomerism. &Psi;<sup>m</sup>=c<sub>I</sub>&Psi;<sub>I</sub> + c<sub>II</sub>&Psi;<sub>II</sub>, (&Psi;<sup>m</sup>,E<sup>m</sup>)</a></h2>
+
+Mesomerism (or Resonance) is also taught (1st year). At this time it is essentially a graphical concept with appropriate arrows that delocalized the bonds at different locations of a molecule.
+We can get some hint about this electronic delocalization with this simple and efficient graphical tool. In usual  <font face="Times New Roman, Times">&pi;</font> systems, such as the formamide for instance, delocalization is shown by the resonance between "contributing Lewis structures" (scheme 3). Those can be called localized configuration in the sense that the electrons are localized at some parts of the molecule. They can be localized either on only one atom (lone pairs) or localized between only two atoms (bonding pairs). Numerically the localization is done by setting to zero the appropriate off-diagonal terms of the Hamiltonian matrix that describes the delocalized system.<p>
+ <img src="./images/Scheme3.gif" width="250" border="0"><br>
+Scheme 3: Resonance in formamide<p>
+Some contributing structures may have some relevance to describe a chemical system: they actually contribute to delocalize the electrons of the system. Some are not important (they don't contribute much). We usually say that a structure without charge separation can dominate in a mesomeric description of a system. However, we do not quantitatively describe the mesomerism, neither in terms of weight of a contribution (as percentages), nor in terms of stabilization energies. We rather teach rules for sorting the contributing Lewis structures by order of importance, say by weights. <p>
+Expressed in a way that reminds <i>Asimov's Three Laws of Robotics</i>, they can be summarized as:
+<ul><li><i>Rule  #1 : In any case, the more the octet rule is fulfilled, the better <a href="#reference">[4]</a>.</i>
+<li><i>Rule  #2 : The less charge separation, the better, except where it would conflict with rule #1.</i>
+<li><i>Rule  #3 : The best structure is consistent with the electronegativity of the atoms (e.g. a negative charge is best on the most electronegative atom), except where it would conflict with rule #1 or #2.</i>
+</ul>
+Following the rules, one can unambiguously claim that <b>I</b> in formamide is more important, say it weights more, than <b>II</b>, because of the Second Rule. <p>
+There did not exist any simple numerical method to know how much weight a given structure among others. We built an approach that answers the question and we propose a free Java applet.
+</ol>
+<h1><li>HuLiS, a Java applet</h1>
+The Java applet is called <b>HuLiS</b>, as an acronym for <b>Hu</b>ckel <b>L</b>ew<b>iS</b>. It is freeware, and can be launch from <a href="http://www.hulis.free.fr" target="new">http://www.hulis.free.fr</a> (Figure 1). The user must have installed a Java Virtual Machine (JVM) on his computer to run the byte code. The version of JVM must be greatest or equal to Java 1.5 because the program uses recent classes of Java standard libraries. <p>
+ <a href="http://www.hulis.free.fr" target="new"><img src="./images/Figure1.png" width="550" border="0"></a><br>Figure 1: HuLiS Web site : <a href="http://www.hulis.free.fr" target="new">http://www.hulis.free.fr</a>. <p>
+
+<ol type="1"><h2><li><a name="hlci">The H&uuml;ckel-Lewis approach</a></h2>
+
+This scheme slightly modifies the H&uuml;ckel theory : we need it to apply to Lewis structures rather than to atomic  <font face="Times New Roman, Times">&pi;</font> orbitals. It is a simple scheme that computes the contributions (say the weights) of the contributing structures. It is detailed in the J. Chem. Educ. paper,<a href="#reference">[1]</a> but we shall remind here a few concepts.
+<ol type="a">
+<h3><li>The scheme </h3>
+
+First focus on the final objects :<br>
+OM-CLAO and H&uuml;ckel: 	&Phi;<sub></sub>=&pi;<sub></sub>=c<sub>1</sub>p<sub>1</sub> + c<sub>2</sub>p<sub>2</sub> 	=> &Psi;<sup>d</sup><hspace="662"> (1)<br>
+Mesomerism: 	 &Psi;<sup>m</sup>=c<sub>I</sub>&Psi;<sub>I</sub> + c<sub>II</sub>&Psi;<sub>II</sub>	(2)<p>
+The first equation expresses the Molecular Orbital as a linear combination of (local) atomic orbitals. From the molecular orbitals {&Phi;'s} we can define a fundamental (delocalized) electronic configuration, &Psi;<sup>d</sup>. The second equation reads the resonating state as a linear combination of local contributing (resonant) structures. The similarity with the OM-CLAO is evident, and one shall just report to contributing structures what is normally done in H&uuml;ckel with AO's. <p>
+Because contributing structures are electronic configurations, and because in quantum chemistry we call this type of approach a Configuration Interaction (CI), we named this scheme H&uuml;ckel-Lewis Configuration Interaction (HL-CI).
+<p>
+ <img src="./images/Scheme4.gif" width="350" border="0"><br>
+Scheme 4 : The HL-CI matrices<p>
+
+We need to put in the HL-CI Hamiltonian Matrix i) the energies of each configuration (diagonal terms), and ii) their interacting terms (off-diagonal). By analogy to H&uuml;ckel Theory, these terms are all negative. The overlap matrix of the scheme is set to the identity matrix, as it is the case in H&uuml;ckel.<p>
+<ol><li> The energy of a configuration is read as the sum of the electron's energies when they are set in each localized orbitals (as lone pairs or  <font face="Times New Roman, Times">&pi;</font> bonds). Those quantities are found from localized H&uuml;ckel Hamiltonian matrix (setting &beta;<sub>ij</sub> to zero for atoms that are single bonded in the Lewis structure).
+<li> The interacting term is not known from scratch, but can be chosen in such a way that the mesomerism corresponds to the delocalized state, that is to say &Psi;<sup>d</sup>, E<sup>d</sup> corresponds to &Psi;<sup>m</sup>, E<sup>m</sup>. 
+</ol>
+As detailed in a previous paper,<a href="#reference">[1]</a> it can be noted that once the Hamiltonian matrix is known, we can directly incorporate the energy E<sup>m</sup> to the secular equations, and get the coefficient C<sub>I</sub> and C<sub>II</sub>.
+
+ 
+<h3><li>Weights</h3>
+
+The weight of a structure is the square of its coefficient in the wave function. This definition, consistent with the normalization of the state &Psi;<sup>m</sup>: C<sub>I</sub><sup>2</sup> + C<sub>II</sub><sup>2</sup>=1, is only valid in the orthogonal basis (and corresponds to the standard orbital normalization in simple H&uuml;ckel with an AO's basis set). 
+</ol>
+<h2><li><a name="hlp">The H&uuml;ckel-Lewis Projected approach</a></h2>
+In the following we present the scheme for a 2-structure mesomerism. It extends naturally to n-structure mesomerism, see <a href="#reference">[5]</a>
+<ol type="a">
+<h3><li>The scheme</h3>
+Contrary to the HL-CI approach that uses energies, in the HLP approach we consider overlaps between multielectronic wave functions, written as  Slater determinants of spin orbitals, delocalized (&Phi;<sub>i</sub>), or localized  (&phi;<sub>i</sub>).
+Wave functions to use are :
+<ul><li>	&Psi;<sup>d</sup>=|&Phi;<sub>1</sub>&Phi;<sub>2</sub>...&Phi;<sub>n</sub>| <hspace="200"> (for the delocalized wave function)
+ <li>	&Psi;<sup>m</sup>=c<sub><b><b>I</b></b></sub>&Psi;<sub><b>I</b></sub> + c<sub><b>II</b></sub>&Psi;<sub><b>II</b></sub>  (for the mesomerism wave function)
+<br>with &Psi;<sub><b>I</b></sub>=|&phi;<sub><b>I</b>1</sub>&phi;<sub><b>I</b>2</sub>...&phi;<sub><b>I</b>n</sub>| 
+</ul> 
+<p>
+We target the equality (never perfectly reached) |&Psi;<sup>d</sup>>=|&Psi;<sup>m</sup>>, and multiply it on the left by the bra of the resonating functions < &psi;<sub><b>I</b></sub>|, < &psi;<sub><b>II</b></sub>|, etc.
+<br>
+<table cellpadding=8 border="0">
+<tr><td valign=bottom>
+The system of equations to solve is
+<br>
+<&psi;<sub><b>I</b></sub>|&Psi;<sup>d</sup>>=<&psi;<sub><b>I</b></sub>|&Psi;<sup>m</sup>>
+<br><&psi;<sub><b>II</b></sub>|&Psi;<sup>d</sup>>=<&psi;<sub><b>II</b></sub>|&Psi;<sup>m</sup>>
+</td>
+<td> <img src="../images/rien.gif" height="56"  > </td>
+<td>
+Hence,
+
+<br><&psi;<sub><b>I</b></sub>|&Psi;<sup>d</sup>>=<&psi;<sub><b>I</b></sub>|c<sub><b><b>I</b></b></sub>&Psi;<sub><b>I</b></sub> + c<sub><b>II</b></sub>&Psi;<sub><b>II</b></sub>>
+
+<br><&psi;<sub><b>II</b></sub>|&Psi;<sup>d</sup>>=<&psi;<sub><b>II</b></sub>|c<sub><b><b>I</b></b></sub>&Psi;<sub><b>I</b></sub> + c<sub><b>II</b></sub>&Psi;<sub><b>II</b></sub>>
+</td></tr>
+<tr><td colspan=2>
+It comes,
+<br><&psi;<sub><b>I</b></sub>|&Psi;<sup>d</sup>>=c<sub><b>I</b></b></sub><&psi;<sub><b>I</b></sub>|</sub>&Psi;<sub><b>I</b></sub>> + c<sub><b>II</b></sub><&psi;<sub><b>I</b></sub>|&Psi;<sub><b>II</b></sub>>
+
+<br><&psi;<sub><b>II</b></sub>|&Psi;<sup>d</sup>>=c<sub><b>I</b></b></sub><&psi;<sub><b>II</b></sub>|</sub>&Psi;<sub><b>I</b></sub>> + c<sub><b>II</b></sub><&psi;<sub><b>II</b></sub>|&Psi;<sub><b>II</b></sub>>
+</td></tr></table> Which gives  c<sub><b>I</b></sub>, c<sub><b>II</b></sub>.<p>
+This system of equations can be set (and solved) if we know the overlaps <&psi;<sub><b>i</b></sub>|&Psi;<sup>d</sup>> and <&psi;<sub><b>i</b></sub>|&Psi;<sub><b>j</b></sub>>.
+<br> Because |&Psi;<sup>d</sup>>&#8800;|&Psi;<sup>m</sup>> (a strict equality is not obtained), |&Psi;<sup>m</sup>> is not normalized. Hence c<sub><b>I</b></sub>, c<sub><b>II</b></sub> are that of the unnormalized |&Psi;<sup>m</sup>>. <br>One shall note that before normalization,  <&psi;<sup>m</sup>|&Psi;<sup>m</sup>>=<&psi;<sup>m</sup>|&Psi;<sup>d</sup>>
+
+<h3><li>Overlap between determinants</h3>
+Overlaps between 2 determinants are computed using the orthonormality of the atomic orbitals in the H&uuml;ckel framework (&lt;p<sub>i</sub>|p<sub>j</sub>&gt;=&delta;<sub>ij</sub>). 
+<p>
+Let's consider a 2-electron system in closed shell.
+The normalization of the determinants (1/<span style="white-space: nowrap;">&radic;<over>N!</over>
+</span>) gives a normalisation of 1/<span style="white-space: nowrap;">&radic;<over>2</over>
+<p>
+The overlap <b>S</b>= <b>&lt;</b>|&Phi;<sub>1</sub><over>&Phi;</over><sub>1</sub>|<b> |</b> |&phi;<sub>1</sub><over>&phi;</over><sub>1</sub>| <b>&gt;</b>
+<br><b>S</b>=1/2 [<b>&lt;</b>&Phi;<sub>1</sub>(1)<over>&Phi;</over><sub>1</sub>(2)&minus; <over>&Phi;</over><sub>1</sub>(1)&Phi;<sub>1</sub>(2)<b>|</b>&phi;<sub>1</sub>(1)<over>&phi;</over><sub>1</sub>(2)&minus;<over>&phi;</over><sub>1</sub>(1)&phi;<sub>1</sub>(2)<b>&gt;</b>]
+
+<p> We shall now remember that overlaps are one particule integrals, and consider the spin orthonormality (that is <&alpha;(i)|&beta;(i)>=0).
+<p> It comes
+<br> <b>S</b>=1/2 [&lt;&Phi;<sub>1</sub>(1)|&phi;<sub>1</sub>(1)&gt;&lt;<over>&Phi;</over><sub>1</sub>(2)|<over>&phi;</over><sub>1</sub>(2)&gt;+&lt;<over>&Phi;</over><sub>1</sub>(1)|<over>&phi;</over><sub>1</sub>(1)&gt;&lt;&Phi;<sub>1</sub>(2)|&phi;<sub>1</sub>(2)&gt;]
+
+<p>Here, <b>S</b>= &lt;&Phi;<sub>1</sub>|&phi;<sub>1</sub>&gt;<sup>2</sup>
+
+<p><span style="font-size: 80%;"><b>Example</b></span>: Consider for the delocalized orbitals &Phi;<sub>1</sub>=0.54p<sub>1</sub>+0.84p<sub>2</sub>  (which represents the bonding orbital of formaldehyde if the atoms are numbered  C= atom1 and O= atom 2),
+<br>and for the localized one &phi;<sub>1</sub>=p<sub>2</sub> (which would be doubly occupied in the major ionic structure of formaldehyde ).
+<br> <b>S</b>=	&lt;&Phi;<sub>1</sub>|&phi;<sub>1</sub>&gt;<sup>2</sup> =<0.54p<sub>1</sub>+0.84p<sub>2</sub>|p<sub>2</sub>><sup>2</sup>
+=(0.54&lt;p<sub>1</sub>|p<sub>2</sub>&gt;+0.84&lt;p<sub>2</sub>|p<sub>2</sub>&gt;)<sup>2</sup>
+<br><b>S</b>=	0.84<sup>2</sup>
+<h3><li>Weights</h3>
+
+Since we now consider the overlap between structures, the weight the I<sup>th</sup> structure is computed following the Coulson-Chirgwin definition: w<sub>I</sub>=c<sub>I</sub> &#8721;<sub><sub><sub>J=1</sub></sub></sub>c<sub>J</sub> S<sub>IJ</sub>, where the sum runs over all the mesomerism structures.
+
+<h3><li>Trust factor : &tau;</h3>
+This is the overlap between the delocalized wave function and the localized one.  &tau;=&lt;&Psi;<sup>d</sup>|&Psi;<sup>m</sup>&gt;
+<br>It  gives the similarity between the two wave functions. If &tau;=1, the mesomerism wave function is exactly equal to the delocalized wave function. This situation is the almost never reached target.
+<br>  The computation of &tau; is dedicated to HLP. However, when both HL-CI and HLP are selected, &tau; is additionally computed for the HL-CI wave function.
+</ol>
+<h2><li><a name="student">Student's work in Organic Chemistry course</a></h2>
+In this lab you will learn to use the HuLiS Java applet. By following these instructions you will get familiar with the applet and the HL-CI method.
+Along this document the following notation is used, <button>Button</button> is used for buttons and <code>Panel</code> for panels.
+
+<ol type="a">
+<h3><li>A first look at the interface</h3>
+
+The HuLiS applet is divided into three different panels : <code>H&uuml;ckel</code>, <code>Graphical</code> and <code>HL-CI</code> (Figure 2).<p>
+ <img src="./images/Figure2.gif" width="350" border="0"><br>
+Figure 2 : The HuLiS applet : the three panels. <p>
+<ul><li>	The <code>H&uuml;ckel</code> panel.
+On the left of the applet, buttons are related to the molecule as considered with simple H&uuml;ckel.
+<ul type="circle">	
+<li><button>Build</button> : draw atoms and bonds on the left part of the <code>graphical<c/ode> panel with the mouse
+<li><button>Change</button> : <ul><li>modify the atom type (in the H&uuml;ckel sense i.e. the value of  <font face="Times New Roman, Times">&alpha;</font>) 
+<li>modify the interaction between atoms (i.e. the value of  <font face="Times New Roman, Times">&beta;</font>)</ul>
+<li><button>Del. Atom</button> : delete an atom
+<li><button>-/+ </button>: increase/decrease the number of  <font face="Times New Roman, Times">&pi;</font> electrons in the complete system
+<li><button>Move</button> : move the whole molecule or just one atom
+<li><button>Rotate</button> : rotate the whole molecule or just one atom
+<li><button>Order atoms</button> : complete reordering of the atoms of the molecule
+<li><button>Results</button> : opens a window with H&uuml;ckel calculation details
+<li><button>Erase all</button> : erase everything, the applet is back to its initial state
+<li><button>Quit</button> : quit the applet
+</ul>
+<li>The <code>HL-CI</code> panel
+On the right of the applet, buttons are related with the HL-CI method.
+<ul type="circle">	
+<li><button>Create</button> : add a Lewis structure in this new HL-CI description of the molecule 
+<li><button>Electrons</button> : <ul><li>Add an electron on an atom (up to 2)
+<li>modify the bond type (single/double)</ul>
+<li><button>Results</button> : opens a window with the HL-CI calculation details
+<li><button>Erase 1</button> : erase the Lewis structure in the active tab
+<li><button>Erase mesomerism</button> : erase all the Lewis structures
+</ul>
+<li>	The central <code>Graphical</code> panel
+It is divided into 2 parts. On the left part (<code>Draw</code>) it is possible to draw and modify the molecule or the active Lewis structure. On the right part (<code>MOs</code>) appears the molecular  <font face="Times New Roman, Times">&pi;</font> orbitals spectrum. A click on an energy level in <code>MOs</code> draws the corresponding orbital in <code>Draw</code>.
+</ul> 
+<h3><li>Example : the acrolein molecule</h3>
+
+<ul><li><b>Standard H&uuml;ckel calculations:</b>
+As we have seen, the drawing of the molecule is done with the <button>Build</button> button. For the H&uuml;ckel calculation, the tab used is entitled &phi;<sub>tot</sub>. Click on the button and draw the butadiene molecule. To place an atom just click on the drawing panel, to place a bond between two atoms draw a line between them. Now the applet should look like Figure 3.<p>
+ <img src="./images/Figure3.gif" width="350" border="0"><br>
+Figure 3 : The applet after drawing butadiene.<p>
+Up to now only carbon atoms were drawn. Since we aim at studying acrolein, we change the sp2 atom 4 (or 1) into a sp2  (one &pi; electron) oxygen. To do so, click on <button>Change</button> and on the atom you want to change. A window appears, with all the possible atom types (Figure 4).<p>
+ <img src="./images/Figure4.gif" width="200" border="0"><br>
+Figure 4 : The atom types window<p>
+Click on <button>=O</button> and on <button>OK</button> to get a monovalent sp2 Oxygen atom. After this step, the atom should have changed color indicating the new atom type.
+You might noticed that during the drawing of the molecule, as well as when changing the atom type, the molecular orbitals panel dynamically adapts to the changes. Indeed, the applet does a H&uuml;ckel calculation after each action on the interface, thus any number given by the applet is always consistent with the molecule drawn. Let us look at the molecular orbitals of acrolein at the H&uuml;ckel level.
+To do so, click on the energy level in <code>MOs</code>. The corresponding (delocalized) Molecular Orbital (MO) appears for each selected energy level.<p>
+
+ <img src="./images/Figure5.png"width="350" border="0"><br>
+Figure 5 : The second occupied molecular orbitals of acrolein. Since calculations are done with H&uuml;ckel theory, molecular orbitals are delocalized over the whole molecule. MO Coefficients appear (yellow box) when the mouse stays over the orbital.<p>
+<li><b>H&uuml;ckel CI calculations:</b>
+Now, we want to express the H&uuml;ckel electronic structure of acrolein into Lewis contributing structures. HuLiS can handle as many contributing structures as the user would possibly imagine. However, chemically interesting results are obtained with a small number of structure.
+<ul type="disc"><li><b>Two-structure calculation</b>:
+
+To enter in the H&uuml;ckel Lewis CI part of the work, the <code>HL-CI</code> buttons will be used. In order to add a new Lewis structure, click on <button>Create</button>. A new tab is created with the skeleton, without any &pi;  electrons. This tab is entitled &psi;<sub>1</sub> and is active. 
+ <br><img src="./images/Figure6a.png" width="450" border="0"><br>
+For acrolein, four  <font face="Times New Roman, Times">&pi;</font> electrons must be placed either on atoms or as bonds. 
+<ul>
+<li>Click on <button>Electrons &#x2022;</button> and make the covalent structure by selecting  the first and the last bonds. They change into double bonds. 
+</ul>
+In order to do any meaningful calculation, one must have at least two Lewis structures. Proceed as previously to create the ionic structure, tab &psi;<sub>2</sub>. The second most relevant structure for acrolein has the middle bond as a double bond and an electron pair on the oxygen. As before, click on <button>Electrons &#x2022;</button> and select the middle bond, which becomes double, and click twice on the oxygen to put two electrons on it. The atomic charges are indicated.<p>
+
+When the fourth electron is added, the weight of the active structure is displayed  beneath <button>Create</button>. In the two-structure case of acrolein one gets 78.7% for &psi;<sub>1</sub> and 21.3% for &psi;<sub>2</sub> (Figure 6). Thus, in a two-structure description, the H&uuml;ckel solution can be seen as a normalized linear combinaison such as <b>&psi;<sub>H&uuml;ckel</sub> = 0.89 &psi;<sub>1</sub> + 0.46 &psi;<sub>2</sub></b> (see <button>Results</button> of the Lewis part).<p>
+
+ <a href="./images/Figure6b.png" target="new"><img src="./images/Figure6b.png" width="300" border="0"></a>   <a href="./images/Figure6c.png" target="new"><img src="./images/Figure6c.png" width="300" border="0"></a><br>
+Figure 6 : A two-structure study of acrolein : w<sub>1</sub>=78.7% vs w<sub>2</sub>=21.3%<p>
+<li><b>Three-structure calculation</b>:
+ To go further and play with the description of acrolein, we can include a third ionic Lewis structure in which the end-carbon carries the negative charge. This structure does not account for electronegativity and shall have a small contribution. To check so, click <button>Create</button> : the &psi;<sub>3</sub> tab appears. Draw the appropriate bond and lone pair. We get the weights of each structure : 77.5/17/5.5.  The smallest value is obtained for the last structure (5.5%), which is consistent with the resonance rules. 
+An ab initio NRT calculation give a similar result : 84/11/5 at the B3LYP/6-31G(d) level.<a href="#reference">[2,3,4]</a>
+
+</ul> 
+</ul>
+</ol>
+
+</ol>
+<h1><li>Conclusion</h1>
+<p>
+Through the HL-CI chapter, the concepts of mesomerism can be putted into equations and related to the H&uuml;ckel lesson. The approach resituates the mesomerism in the theoretical chemistry field. We are currently defining pertinent classroom exercices that can be added in the H&uuml;ckel lesson. These exercices will be proposed on the web site in due time.
+The java code can be used to illustrate the rules that define what is a major structure, what is a minor one.<p>
+In the lab example we have seen how to use the HuLiS applet to decompose the H&uuml;ckel description of the  <font face="Times New Roman, Times">&pi;</font> system of  acrolein. 
+This simple scheme creates an additional link between theory and usual organic chemistry concepts that are Lewis structures, resonance and even aromaticity.
+<p>
+The current version of <b>HuLiS</b> introduces a <b>trust parameter</b> (stabilized in  Dec. 2014). This parameter indicates how much of the delocalized state is incorporated in a given resonance pattern. Aromaticity is of a special interest here : the two kekule structures of benzene can be shown to poorly describe the delocalized structure of benzene (the trust parameter is as small as 60% - see table 1 below). Adding the Dewar structures (3 covalents and 6 ionics) increases the trust parameter to 72%. A better value (94%) is reached with as many as 35 structures. This large number is to be attributed to the aromatic nature of benzene - this is not a simple mesomerism.  <p>
+The application of the trust parameter in the butadiene resonance is shown in Table 2. A single structure is already "trustable" by about 80%.  
+<br><p>
+The H&uuml;ckel interface is versatile so virtually any atom can be parameterized at will. 
+Nitrile groups for instance can be parameterized  following Heilbronner et al. <a href="#reference">[6]</a>: <ul><li>
+<font face="times"> &alpha;</font><sub>N</sub>=<font face="times"> &alpha;+&beta;</font> 
+<li><font face="times"> &beta;</font><sub>N</sub>=<font face="times">1.2&beta;</font> 
+<li><font face="times"> &beta;</font><sub>C-CN</sub>=<font face="times">&beta;/&radic;2
+</font> 
+</ul>
+<p>
+<b>Table 1: Benzene resonance.</b><br>
+<img src="aromaticity.png" width="417" height="185" border="0">
+<p>
+<b>Table 2: Butadiene resonance.</b><br>
+<img src="butadiene-resonance.png" width="440" height="202" border="0"></td> 
+</tr>
+<tr  bgcolor="#EEEEEE"> 
+</ol>
+<td> <h1>References</h1><a id="reference"></a><hr> <reference>[1] <a href="http://pubs.acs.org/doi/abs/10.1021/ed084p1056">Humbel, S. <i>J. Chem. Educ.</i> <b>2007</b>, <i>84</i>, 1056-1061.</a>[ Getting the Weights of Lewis Structures out of H&uuml;ckel Theory. H&uuml;ckel-Lewis Configuration Interaction (HL-CI) ] <a href="http://pubs.acs.org/doi/pdf/10.1021/ed084p1277">don't forget the correction due to printing mistake in the table. </a><br>[2] <a href="http://www.sciencedirect.com/science/article/pii/S0166128007003284">Hagebaum-Reignier, D.; Girardi, R.; Carissan, Y.; Humbel, S. <i>J. Mol. Struct. (THEOCHEM)</i> <b>2007</b>, <i>817</i>, 99-109.</a>[ H&uuml;ckel Theory for Lewis Structures: H&uuml;ckel-Lewis Configuration Interaction (HL-CI) ]<br>[3] Glendening, E.D. ; Weinhold, F. <i>J. Comp. Chem.</i> <b>1998</b>, <i>19</i>, 593-609. See also the two papers after this one.<br>
+[4] The predominance of the octet rule will be valid all over this paper that deals only with situations where the octet rule is obeyed. For specific comments on the subject see for instance (a) Suidan, L.; Badenhoop, J.K.; Glendening, E.D.; Weinhold, F. <i>J. Chem. Educ.</i> <b>1995</b>, <i>72</i>, 583-586; (b) Weinhold, F. <i>J. Chem. Educ.</i> 1999, <i>76</i>, 1141-1146; (c) (d) Weinhold, F. <i>J. Chem. Educ.</i> <b>2005</b>, <i>82</i>, 526-527 and the reply from Purser, G.H. <i>J. Chem. Educ.</i> <b>2005</b>, <i>82</i>, 528-529; (e) Purser, G.H. <i>J. Chem. Educ.</i> <b>1999</b>, <i>76</i>, 1013-1018. (f) Purser, G.H. <i>J. Chem. Educ.</i> <b>2001</b>, <i>78</i>, 981-983. <br>
+[5] <a href="http://pubs.acs.org/doi/abs/10.1021/jp803813e">Carissan, Y. ; Hagebaum-Reignier, D. ; Goudard, N.; Humbel, S.  <i>J. Chem. Phys. A</i>  <b>2008</b>, <i>118</i>, 13256&#8211;13262.</a> [H&uuml;ckel-Lewis-Projection Method: A "Weights Watcher" for Resonant Structures ] <br>
+[6] <a href="http://onlinelibrary.wiley.com/doi/10.1002/anie.198703601/epdf">Heilbronner, E.; Yang, Z. Z.  <i>Angew. Chem. Int. Ed. Engl. </i><b>1987</b>, <i>26</i>, 360-362.</a> [The Influence of Substituents on Double-Bond Localization, e.g. in s-Indacene] </reference></td>
+                        <td> 
+                        </td>
+                        <td colspan="1" align="right">&nbsp;    
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

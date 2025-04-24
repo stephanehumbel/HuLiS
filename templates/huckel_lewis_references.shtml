@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head> 
+<script type="text/javascript">
+if (document.images) {
+   imgPreload = new Image();
+   imgPreload.src = "/images/screen.png";
+}
+</script>
+
+    <title>Huckel - Lewis implementation</title><link rel="stylesheet" type="text/css" href="./style.css">
+
+<meta name="description" content="Free java program for Huckel + Mesomerism. Java related informations" />
+<meta name="keywords" content="java" />
+<meta name="robots" content="ALL" />
+<meta name="AUTHOR" content=" A contribution from CNRS & Aix Marseille University, Department of Chemistry, Nicolas Goudard, Yannick Carissan, Denis Hagebaum-Reignier & St&eacute;phane Humbel">
+    <meta name="REVISED" content="10/01/2013">
+    <meta name="GENERATOR" content="Mozilla/4.61 (Macintosh; I; PPC) [Netscape]"> 
+ <meta property="article:published_time" content="2013-01-20" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">  
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  </head>  
+  <body text="#000000" bgcolor="#FFFFFF"  link="#27368B" vlink="#CD191F"   background="images/bground_lite.gif">  
+   
+<!-- bgcolor="#50BCE7" couleur de l'Olympique de Marseille selon son site -->   
+<div align="center"> 
+      <table border="0" cellspacing="1" cellpadding="1" width="820"  bgcolor="#666666" >
+        <tr>
+          <td align="center"><!-- Outer frame -->
+            <table border="0" cellspacing="0" cellpadding="0" width="820"  bgcolor="#FFFFFF" >
+              <tr>
+                <td align="center"><!-- Outer frame --> 
+                  <table border="0" cellspacing="0" cellpadding="5"  bgcolor="#FFFFFF"  width="700">   
+<!-- on fixe  5 colonnes  --> 
+<tr bgcolor="#FFFFFF" >
+<td width="175">&nbsp;</td>
+<td width="175">&nbsp;</td>
+<td width="175">&nbsp;</td>
+<td width="175">&nbsp;</td></tr>  
+<tr bgcolor="#FFFFFF" align="center" valign="top"> 
+                       <td colspan="1" ><img src="images/rien.gif" height="16"  >
+</td>
+                       <td colspan="2" align="center"></td> 
+                       <td colspan="1" valign="middle">
+
+
+</td>
+                    </tr>  
+                     <tr bgcolor="#DDDDDD" valign=Bottom> 
+                      
+                        <td colspan="4" bgcolor="#DDDDDD" align="left" ><div align="center"><h1><a href="http://www.hulis.free.fr" target="_parent">Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory <img src=images/screen.png width="50" alt="HuLiS" align="right"></a></h1> </div>
+<h2> References</h2></p>
+<div align="left">
+This contribution is based on the following publications. Thanks for citing them:<br>
+</p>
+  <li><small>Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel <i> <a href="http://pubs.acs.org/doi/abs/10.1021/jp803813e" target="new" >H&uuml;ckel-Lewis-Projection Method: A &ldquo;Weights Watcher&rdquo; for Mesomeric Structures</a>: </i>J. Phys. Chem. A. <strong>2008</strong>, 112 (50), 13256&ndash;13262</small>
+   <li> <small>D. Hagebaum-Reignier, R. Girardi, Y. Carissan and S. Humbel  <a href="http://dx.doi.org/10.1016/j.theochem.2007.04.026" target="new">H&uuml;ckel theory for Lewis structures</a><i> J. Mol. Struct. (THEOCHEM)</i> <b>2007</b>, <i>817</i> 99-109</small>  
+  <li><small>St&eacute;phane Humbel <i>  <a href="http://jchemed.chem.wisc.edu/Journal/Issues/2007/Jun/abs1056.html" target="new">Getting the Weights of Lewis Structures out of H&uuml;ckel Theory</a>: H&uuml;ckel&#8211;Lewis Configuration Interaction (HL-CI) J. Chem. Educ.</i> <b>2007</b> <i>84</i> , 1056-1061</small>
+</div><hr width="140" size=1>
+</div><p>
+
+<p><remarque>Feel free to send remarks and suggestions to the contact adress. 
+ </remarque>
+
+</td>
+</tr>
+                                
+<tr valign=Bottom align="right" bgcolor="#FFFFFF">
+<td></td>
+                        <td align="left" colspan="2">
+<!--  Champ de recherche Google --> 
+<form method=GET action="http://www.google.com/search">
+<a href="http://www.google.com.ncr" target="new" ><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="absmiddle"></a> <input type=text name=q size=14 maxlength=255 value=""> <input type=hidden name=hl value=fr><!--  <input type=submit name=btnG value="Search Google"> -->
+</form><!-- Google -->
+                        </td>
+                        <td colspan="1" align="right">2013&nbsp; 
+   
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
