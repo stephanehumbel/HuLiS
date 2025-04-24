@@ -1,0 +1,112 @@
+
+<!--p { color: black;text-align: justify; }
+p.blanc{color: black;text-align: justify; line-height:100%;padding: 10px;font-size:small; background-color:white}
+
+p.gris{color: black;text-align: justify; line-height:160%;padding: 12px; background-color:"#EEEEEE"}
+br.gris{color: black;text-align: justify; line-height:160%;padding: 5px; background-color:"#EEEEEE"}
+p.bleu{color: black;font-weight: bold;font-size:larger;text-align: center; line-height:120%; padding: 12px; background-color:"#99CCFF"  }
+br.bleu{color: black;font-weight: bold;font-size:larger;text-align: center; line-height:120%; padding: 1px; background-color:"#99CCFF"  }
+
+A:hover {  color: #000000; background: #FFFFDD; text-decoration: underline overline }
+
+p.adresse{color: black;text-align: center; line-height:120%;padding: 10px;font-size:small; background-color: white}
+-->
+<!--Mieux!-->
+body {background: white url(images/bground_lite.gif);margin:1cm;}
+
+BODY, P, TD, UL, LI { 	font-size: 11px; 
+	font-family: verdana, helvetica, geneva, sans-serif ; }
+CENTER { 	font-size: 11px; 
+	font-family: verdana, helvetica, geneva, sans-serif ; }
+
+
+DT { 	font-size: 11px;  font-weight: bold;
+	font-family: verdana, geneva , sans-serif ; }
+
+DD { 	font-size: 11px; 
+	font-family: verdana, geneva , sans-serif ; }
+	
+B.heavy {  font-size: 18px;  }
+
+B.tabletitle, H2, H3 { font-size: 14px;  font-weight: bold ;   }
+
+H1 {   font-size: 13px ;  font-weight: bold ;   }
+H4 {   font-size: 13px ;  font-weight: bold ;   }
+H5 {   font-size: 13px ;  font-weight: bold ;   }
+H6 {   font-size: 11px ;  font-weight: bold ;   }
+LI { margin-top: 6px; }
+
+remarque {font-size: 9px;  color: #444444; padding-left: 0pt; padding-right: 0pt;}
+
+.small { font-size: 10px;  }
+
+.smallGeneva { font-family:  geneva, verdana, sans-serif; font-size: 10px;  }
+     .indented
+        {
+        padding-left: 10pt;
+        padding-right: 10pt;text-align:justify
+        }
+
+
+A:link {color: #000000; text-decoration: underline; }
+A:visited { color: #000000; }
+A:hover {  color: #000000; background: #FFFFDD; text-decoration: none }
+A:active { color: #FFFFFF;  background: #003399; }
+
+.title {  	font-size: 18px;  font-weight: bold; 
+			font-family:  arial, helvetica, sans-serif;
+		}
+		
+<!-- Menu --><!-- COULEURs #66CCFF (bleu) AA00AA  #FFCC66 orange -->
+
+#menu1 {height:20px; display:block; padding:0; margin: 0;  border:0px solid; border-radius:0px;}
+#menu1 > ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+#menu1 > li {
+ float:left; /*pour IE*/
+ border-left:0px solid #66CCFF;
+ list-style:inside none
+ }
+#menu1 > ul > li > a {
+ display:block;
+ float:left;   
+ width:135px;
+ line-height:20px; /*hauteur de l'image de fond*/
+ background:#66CCFF url(images/rien.gif) repeat-x;
+ color:#black;
+ text-decoration:none;
+ text-align:center;
+ }
+#menu1 > ul > li > a:hover {
+ background:#FFCC66 url(images/rien.gif) repeat-x;
+ color:black;
+ }  
+<!-- Menu2 -->
+#menu2 {height:20px; display:block; padding:0; margin: 0;  border:0px solid; border-radius:0px;}
+#menu2 > ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+#menu2 > li {
+ float:left; /*pour IE*/
+ border-left:0px solid #FFCC66;
+ list-style:inside none
+ }
+#menu2 > ul > li > a {
+ display:block;
+ float:left;   
+ width:135px;
+ line-height:20px; /*hauteur de l'image de fond*/
+ background:#FFCC66 url(images/rien.gif) repeat-x;
+ color:#black;
+ text-decoration:none;
+ text-align:center;
+ }
+#menu2 > ul > li > a:hover {
+ background:#66CCFF url(images/rien.gif) repeat-x;
+ color:black;
+}
