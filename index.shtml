@@ -65,7 +65,7 @@
 <td colspan="1" rowspan=1 align="center">
 <h8>
 <table border="0" cellspacing="1" cellpadding="10"  ><tr>
-<td align="center"> <a href="http://www.hulis.free.fr"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
+<td align="center"> <a href="https://stephanehumbel.github.io/HuLiS/index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
 <td align="center"><a href="https://www.java.com/" target="_blank"><img src="images/java-icon.png"  height="35" border="0" alt="Java"><br>1- Install<br>Java JRE</a></td>
 <td align="center" nowrap><a class="downloadLink" href="archives/hulis_v3_4_0.jar"><img src="images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
  </tr>     
@@ -127,7 +127,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <p>
 </p></td>
 </tr>
-<tr><td align="center" background="http://www.hulis.free.fr/images/bground_lite.gif"> <br><span style="color: #ab2211;"><b><i>Colleages are invited to <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">contact us</a> and share expertises and practices.<br><p><br></i></b></span><p>
+<tr><td align="center" background="images/bground_lite.gif"> <br><span style="color: #ab2211;"><b><i>Colleages are invited to <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">contact us</a> and share expertises and practices.<br><p><br></i></b></span><p>
   <table><tr><td><!-- SH FEB 2017 <img src="http://www.valbo.org/sites/default/files/ctools/ValCardV2.png" width="200"></td><td><span style="color: #155555;font-size: 1em;"><b> In june 2018, we organized the <a href="http://www.valbo.org" target="new"> VALBO Conference + School</a> as a satellite of the <a href="https://icqc16.sciencesconf.org/" target="new">ICQC</a>.  </span> <span style="color: #FF1133;font-size: 1em"></td><td><img src="http://www.valbo.org/sites/default/files/ctools/ValboCard_TUTO.png" width="200"</td>--->
 
  <!-- </span> -->
