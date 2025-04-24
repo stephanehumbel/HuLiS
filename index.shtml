@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+<meta charset="utf-8">
+<meta name="description" content="Free java calculator for (Huckel) + [Mesomerism]. (Molecular Orbitals, charges, energy) + [Lewis structures drawn or generated, weights]. " />
+<meta name="keywords" content="Chemistry, Huckel, Mesomerism, Delocalization, Energy, Orbitals, Java, free, butadiene, acrolein, benzene, resonance, Lewis, structures, bond, order, drawings" />
+<meta name="robots" content="ALL" />
+<meta name="AUTHOR" content=" A contribution from CNRS, Aix Marseille University, Department of Chemistry, Nicolas Goudard, Yannick Carissan, Denis Hagebaum-Reignier, St&eacute;phane Humbel">
+<meta name="REVISED" content="20/03/2022">
+<meta name="GENERATOR" content="Mozilla/4.61 (Macintosh; I; PPC) [Netscape]"> 
+<meta property="article:published_time" content="2013-02-20" />
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+
+<title>Huckel Theory and HuLiS: a calculator that also describes mesomerism.</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" type="text/css" href="css/hulis.css">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">  
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+<style type="text/css">
+      * {
+        margin: 0;
+        }
+      html {
+        padding: 20px;
+        font: 12px/20px Arial, sans-serif;
+        }
+      div {
+        padding: 5px
+        opacity: 0.7;
+        }
+      </style>
+</head>  
+<body text="#000000" bgcolor="#FFFFFF"  link="#27368B" vlink="#CD191F"   background="images/bground_lite.gif">  
+   
+<!-- bgcolor="#50BCE7" couleur de l'Olympique de Marseille selon son site -->   
+<div align="center"> 
+<table border="0" cellspacing="1" cellpadding="1" width="822"  bgcolor="#666666" >
+        <tr>
+          <td align="center"><!-- Outer frame -->
+            <table border="1" cellspacing="0" cellpadding="0" width="820"  bgcolor="#FFFFFF" >
+              <tr>
+                <td align="center"><!-- Outer frame --> 
+<table border="0" cellspacing="0" cellpadding="5"  bgcolor="#FFFFFF"  width="760">   
+<!-- on fixe  5 colonnes  --> 
+<tr bgcolor="#FFFFFF" >
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+</tr>  
+<tr bgcolor="#FFFFFF" align="center" valign="top"> 
+<td colspan="1" ><img src="images/logoAixMarsUniv.png"  height="56" border="0" alt="AixMarUniv" ><img src="images/rien.gif" alt=" . "  height="16"  ></td>
+<td colspan="2" align="center">
+<remarque>Campus St. J&eacute;r&ocirc;me<br>Av. Escadrille Normandie-Niemen<br>13397 Marseille Cedex 20 - France
+</remarque></td> 
+<td colspan="1" valign="middle">
+<img src="images/logo_cnrs.jpg" alt=" . " height="56">
+</td></tr>
+<tr bgcolor="#DDDDDD" valign="middle">
+<td colspan="3" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory</h1><small><a href="https://ism2.univ-amu.fr/fr/annuaire/goudard-nicolas" target="new">Nicolas Goudard</a>, <a href="https://ism2.univ-amu.fr/en/directory/carissan-yannick" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="https://ism2.univ-amu.fr/en/directory/humbel-stephane" target="new">St&eacute;phane Humbel</a> </small><br> <br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;<br></remarque>
+<!-- <center><div style="line-height:8px ;width=30%;border:3px dotted red;padding:20px;background-color:yellow;font-weight: bolder;font-size: small; ">A <a href="http://www.hulis.free.fr/phdoffer.html" target=new />PhD offer</a> is available in our group. See our <a href="https://ism2.univ-amu.fr/en-gb/offres-emploi/ctom"  target=new>CTOM group web page</a>.</div></center> 
+-->
+</td>
+<td colspan="1" rowspan=1 align="center">
+<h8>
+<table border="0" cellspacing="1" cellpadding="10"  ><tr>
+<td align="center"> <a href="http://www.hulis.free.fr"><img src="http://www.hulis.free.fr/images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="http://www.hulis.free.fr/images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
+<td align="center"><a href="https://www.java.com/" target="_blank"><img src="http://www.hulis.free.fr/images/java-icon.png"  height="35" border="0" alt="Java"><br>1- Install<br>Java JRE</a></td>
+<td align="center" nowrap><a class="downloadLink" href="#"><img src="http://www.hulis.free.fr/images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
+ </tr>     
+ </table>   
+</h8>
+</td></tr>                    
+<tr><td colspan="2" bgcolor="#66CCFF">
+<h3>Huckel: build + solve the secular determinant.</h3>Obtain molecular orbitals, energy levels, charges density with the simple H&uuml;ckel method.</td>
+<td bgcolor="#FFCC66" colspan="2">
+<h3>Lewis : Resonance   & aromaticity </h3>Weights of resonance structures are obtained from either energies differences (HL-CI) or overlaps (HL-P)</td></tr>
+<tr><td colspan="4" bgcolor="#FFFFFF" align="center">
+<h8><!--#include virtual="message.txt" --></h8>
+</td>
+</tr>
+ <tr align="center" valign="middle"> 
+ <td align="center" colspan="4"><p align="center">
+  <h2>
+  H&uuml;ckel Calculator <span style="color: #BBBBBB;">Version : <span class="version"></span> </span><span style="font-size:10px;">(<a href="hulis_release_notes.shtml" target="_new">Release notes</a>)</span></h2>   
+<table width="440" border="0" cellspacing="2" cellpadding="0">
+<tr align="center" valign="middle"><td align="center">
+<div id="menu2">
+<ul style="display:inline-flex">
+<li><a href="https://www.java.com/" target="_blank"><b><u>Prerequisite</u>&nbsp;:</b>&nbsp;Install <b><i>Java JRE for Desktop applications</i></b></a></li>
+<li><a class="downloadLink" href="#">&nbsp;<b>Download  HuLiS <span class="version"></span></b>&nbsp; (Java)</a></li>
+<li><a href="http://m.hulis.free.fr/" target="_new"><b>Use the Mobile Version 1.0 (javascript)</b></a> </li> 
+<li><a href="huckel_teaching_materials.shtml" target="_new"><b>Various Teaching Ressources</b></a></li> 
+</ul></div></td></tr>
+<tr align="center" valign="middle"><td align="center">
+<div id="menu2">
+  <ul>
+    <li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_3_en.pdf" target="_new"><b>Manual<br><img src="./images/en.png" height=20 alt="en"></b></a></li>
+    <li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel<br><img src="./images/fr.png" height=20   alt="fr"></b></a></li>
+    <li><a href="http://www.hulis.free.fr/huckel_theory_delocalization/index.shtml" target="_new"><b>How HuLiS<br> Works</b>?</a></li>
+    <li><a href="http://www.hulis.free.fr/3Dmol/index.shtml" target="_new"><b>Try 3Dmol from Pittsburg U?</a></li>
+  </ul> 
+</div>
+</td>
+</tr>
+<tr align="center" valign="middle"><td align="center">
+<div id="menu2">
+<ul>
+ <li> <a href="https://www.youtube.com/watch?v=gpuN4Cc3ffA">YTube on HuLiS<br>(english)</a></li> 
+<li><a href="https://www.youtube.com/watch?v=LtAJ9hlVQgw">YTube on HuLiS<br>(in french)</a></li>   <li><a href="HuLiS_library.zip"><b><i>Molec. Library</i><br> (for Java version)</b></a></li> 
+<li><a href="./download/PHD_CTOM.shtml" target="_new"><b>Job Offer</b></a></li> 
+</ul>
+</div>
+</td></tr>
+<tr>
+<td  align="center"> 
+<noscript>
+A browser with JavaScript enabled is required for this page to operate properly.
+</noscript>
+<!-- SH FEB 2017 --> <a class="downloadLink" href="#">
+<!-- SH FEB 2017 --> <img src=images/screen.png width="350" alt="Donwload Java HuLiS" title="Download Java HuLiS" border="1" id="" alt=" ..">
+<!-- SH FEB 2017 --> </a>
+<!-- SH FEB 2017   <button type="button" style="cursor:pointer;" id="btLoadApplet"><img src=images/screen.png width="250" alt="HuLiS" title="Start HuLiS" border="1" id="scrrr" alt=" .."></button> -->
+<br>
+<!-- SH FEB 2017   <div id="appletplace" style='height:0; width:0; display="none"'></div> -->
+<p>
+</p></td>
+</tr>
+<tr><td align="center" background="http://www.hulis.free.fr/images/bground_lite.gif"> <br><span style="color: #ab2211;"><b><i>Colleages are invited to <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">contact us</a> and share expertises and practices.<br><p><br></i></b></span><p>
+  <table><tr><td><!-- SH FEB 2017 <img src="http://www.valbo.org/sites/default/files/ctools/ValCardV2.png" width="200"></td><td><span style="color: #155555;font-size: 1em;"><b> In june 2018, we organized the <a href="http://www.valbo.org" target="new"> VALBO Conference + School</a> as a satellite of the <a href="https://icqc16.sciencesconf.org/" target="new">ICQC</a>.  </span> <span style="color: #FF1133;font-size: 1em"></td><td><img src="http://www.valbo.org/sites/default/files/ctools/ValboCard_TUTO.png" width="200"</td>--->
+
+ <!-- </span> -->
+ <!-- <a href="http://www.capes.gov.br/cooperacao-internacional/franca/cofecub" title="COFECUB"><img src="./images/bresil.png" width=40 align="center" alt=" ... "></a><br> <span style="color: #11AA33;"> -->
+
+ </td>
+ </tr> 
+ </table> 
+</center>
+ </td></tr> 
+<tr><td>
+<div align="left" style="z-index:2; position:relative; top:-20px; left:-80px; width:390px; height:205px; border:solid 1px black; background-color:#66CCFF;color:#000000";margin-left:40px ;opacity: 0.7;> 
+<h5> <b>Build a molecule ("H&uuml;ckel" tools, blue left area)
+ </b></h5> 
+<ul>
+<li>HuLiS is like any other simple H&uuml;ckel programs with quite a few additionnal features  as :
+  <ul>
+  <li>- Developped chemical formulae drawing,</li>
+  <li>- Relevant <font face="Times New Roman, Times">&pi;</font> orbitals drawing,</li>
+  <li>- Adjustable numbering of the atoms, </li>
+  <li>- Adjustable parameters for each bond & atom.*</li>
+  </ul>
+</li>
+<li>Orbitals are drawn by clicks on the energetic levels.</li>
+<li>The results button gives access formatted results.</li> 
+</ul>
+<p>*<remarque> These can be useful for reparametrization (new atoms, M&ouml;ebius).</remarque>
+</p>
+</div>
+
+<div align="left" style="z-index:1; position:relative; top:-222px; left:+320px; width:400px; height:205px; border:solid 1px black; background-color:#FFCC66;color:#000000";margin-left:40px ;opacity: 0.7;> 
+<h6><b>Build resonance structures  ("Lewis" tools, orange area).</b>
+</h6>
+<ul>
+<li>HuLiS contains an automatic Lewis structures' generator, in a single click (no more than a +/- charge).</li>
+<li>In the expert mode the user can create specific singlet spin coupling.</li>
+<li>HuLiS will give the weight of each of your structures.</li>
+<li>You can use the slider on the right to select the N lowest structures. </li>
+<li>The standalone version, reads/writes gaussian.com files (including NBO-NRT strings).</li></ul>
+</div>
+
+<div align="left" style="z-index:5; position:relative; top:-240px; left:-150px; width:390px; height:390px; border:solid 4px grey; background-color:#FFFF66;color:#000000";opacity: 0.2;> 
+<p>&nbsp;</p>
+<h6>The program is based on these following references. </h6>
+Thanks for citing them:<br>
+<ul>
+  <li><a href="http://pubs.acs.org/doi/abs/10.1021/jp803813e" target="new" >H&uuml;ckel-Lewis-Projection Method: A &ldquo;Weights Watcher&rdquo; for Mesomeric Structures</a>: <small>Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel <i>J. Phys. Chem. A.</i> <strong>2008</strong>, 112, 13256&ndash;13262</small></li>
+    <li> Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, “HuLiS Program: Lewis embedded in Hückel Theory,” can be found at <a href="http://www.hulis.free.fr">http://www.hulis.free.fr</a>, <strong>2008</strong>.
+    <li>  <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, "Weight Watchers électronique : calculez votre poids de formes résonantes” </a>(in french) the editor version can be found on HAL.<p>
+ </ul>
+<p><br><p>
+<ul><b>ACS format:</b><br>
+<li>  Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>J. Phys. Chem. A.</i> <strong>2008</strong>, <i>112 (50)</i>, 13256–13262. <br>
+<li>   Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. HuLiS Program: Lewis embedded in Hückel Theory http://www.hulis.free.fr. <br>
+<li>   <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>L’Actualité Chimique</i> <strong>2016</strong>, <i>406</i>, 36-40.</a> <br>
+ </ul>
+<!-- SH FEB 2017   L’Actualité Chimique, Société chimique de France, 2016, L’actualité chimique, 406, pp.36-40.
+<p>&nbsp;</p>
+Other publications
+  <ul> <li><a href="http://dx.doi.org/10.1016/j.theochem.2007.04.026" target="new">H&uuml;ckel theory for Lewis structures</a> <small>D. Hagebaum-Reignier, R. Girardi, Y. Carissan, S. Humbel  <i> J. Mol. Struct. (THEOCHEM)</i> <b>2007</b>, <i>817</i>, 99-109</small>  </li>
+  <li><a href="http://jchemed.chem.wisc.edu/Journal/Issues/2007/Jun/abs1056.html" target="new">Getting the Weights of Lewis Structures out of H&uuml;ckel Theory: H&uuml;ckel&#8211;Lewis Configuration Interaction</a> <small>S. Humbel <i>  J. Chem. Educ.</i> <b>2007</b>, <i>84</i> , 1056-1061</small></li>
+</ul> 
+-->
+</div>
+<div align="left" style="z-index:4; position:relative; top:-590px; left:250px; width:504px; height:1250px; border:solid 3px grey; color:#EEEEEE;opacity: 0.9;background-color:#555555;background-image: url('http://www.hulis.free.fr/images/bground_lite2.gif');"> 
+<p>&nbsp;</p><h7><B>They cite HuLiS :  (let us know by sending to 
+<a href="mailto:&#115;&#116;%65&#112;ha%6e%65&#46;%68&#117;m&#98;el [[a u%6e%69&#118;&#45;a&#109;&#117;%2ef&#114;?Subject=HuLiS%20Citation%20update%20;%20Replace%20the%20[[a%20by%20@%20in%20the%20adresse"> Stephane</a> an email if your work does not appear correctly here) </B></h7>
+<ul>	
+<li> <b>Coupled cluster theory on modern heterogeneous supercomputers <a href=https://www.frontiersin.org/articles/10.3389/fchem.2023.1154526/full>Front. Chem., 14 June 2023</a> by <a href="https://scholar.google.com/citations?user=xg9fK3kAAAAJ">Dmytro Bykov</a></b>  et al 
+with <a href=https://scholar.google.com/citations?user=HYsXM2QAAAAJ>J. Olsen</a></li>
+   <li> <b>Understanding the Electronic Structure of Magnetic Trinuclear Complexes ...
+     <a href=https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/chem.202302256>
+ CEJ (2023) e202302256</a> by   <a href=https://orcid.org/0000-0002-9311-3463>T. Mallah</a> and <a href=https://www.lcpq.ups-tlse.fr/spip.php?rubrique420> N. Guihéry</a></b></li> 
+  <li> A reliable and efficient resonance theory based on analysis of DFT wave functions
+     <a href=https://doi.org/10.1039/D0CP06207C >
+ PCCP (2021) 3 2331-2348</a> by   <a href=https://orcid.org/0000-0003-2540-2199>Y. Wang</a></li> 
+   <li> Hückel Molecular Orbital Analysis for Stability and Instability of Stacked Aromatic and Stacked Antiaromatic Systems
+     <a href=https://pubs.acs.org/doi/epdf/10.1021/acs.joc.3c01167 >
+ J. Org. Chem. (2023)</a> by   <a href=https://www.researchgate.net/profile/Yuta-Tsuji>Y. Tsuji, K. Okazawa, K. Yoshizawa</a></li> 
+ <li> Aromaticity of Aza Aromatic Molecules: Prediction from H&uuml;ckel theory with Modified Parameters
+     <a href="https://www.researchgate.net/publication/367506148_AROMATICITY_OF_AZA_AROMATIC_MOLECULES_PREDICTION_FROM_HUCKEL_THEORY_WITH_MODIFIED_PARAMETERS#fullTextFileContent" >
+Quim. Nova, Vol. 46, No. ??, ??-10</a> by   <a href=https://www.researchgate.net/profile/Inge-Sutjahja>I. Sutjahja</a></li>
+   <li> Customising excitation properties of PAH by rational positional heteroatom doping: the peri-xanthenoxanthene (PXX) case
+    ( <a href=https://pubs.rsc.org/en/content/articlelanding/2022/sc/d2sc01038k >
+Chem. Sci., 2022,13, 6335-6347 </a>) by   <a href=https://www.researchgate.net/profile/Davide-Bonifazi>D. Bonifazi</a></li>
+  <li> Analysis of Biphenylene and Benzo{3,4}cyclobuta{1,2-c} thiophene Molecular Orbital Structure using the Hückel Method
+    ( <a href=https://revistadechimie.ro/pdf/17%20YUNITA%203%2021.pdf >Rev. Chim., 72(3), 2021, 198-209</a>) by   <a href=https://www.researchgate.net/profile/Yunita_Anggraini5>Y. Anggraini</a></li>
+<li> Thiazolo[5,4‐ f ]quinoxalines, Oxazolo[5,4‐ f ]quinoxalines and Pyrazino[ b,e ]isatins: Synthesis from 6‐Aminoquinoxalines and Properties ( <a href=https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/ejoc.202100362> Eur. J. Org. Chem. 2021, 2021, 2756 </a> )
+by prof <a href=http://orcid.org/0000-0003-3693-8861>F. Mongin </a> et al,  Université de Rennes 1: Rennes, Bretagne, France</li>
+<li> From Infection Clusters to Metal Clusters: Significance of the Lowest Occupied Molecular Orbital (LOMO) ( <a href=https://pubs.acs.org/doi/abs/10.1021/acsomega.0c04913> ACS Omega 2021, 6, 2, 1339–1351 
+</a> )
+by prof <a href=http://orcid.org/0000-0003-4224-4532>Y. Tsuji </a> et al,  Institute for Materials Chemistry and Engineering and IRCCS, Kyushu University, Nishi-ku, Fukuoka 819-0395, Japan</li>
+<li> Understanding Single-Molecule Parallel Circuits on the Basis of Frontier Orbital Theory ( <a href=https://pubs.acs.org/doi/10.1021/acs.jpcc.9b08595> J. Phys. Chem. C 2020, 124, 5, 3322–3331 </a>)
+by  prof <a href=http://orcid.org/0000-0002-6279-9722> K. Yoshizawa</a> et al Institute for Materials Chemistry and Engineering and IRCCS, Kyushu University, Nishi-ku, Fukuoka 819-0395, Japan</li>
+<li>  "Resonance Theory Reboot "  (<a href="https://pubs.acs.org/doi/10.1021/jacs.8b12336">ACS JACS</a> <b>2019</b>)by <a href="https://www.indstate.edu/cas/chem_phys/eric-d-glendening">Eric D. Glendening </a>, <a href="https://www2.chem.wisc.edu/users/landis">Clark R. Landis</a> and <a href="https://www2.chem.wisc.edu/users/Weinhold">Frank Weinhold </a> (Indiana State University and University of Wisconsin - Madison)</li>   
+<li>  "Pyridine vs N-Hydrogenated Pyridine Moieties ... "  (<a href="https://pubs.acs.org/doi/10.1021/acsomega.8b01759">ACS Omega</a> <b>2018</b>)by <a href="https://www.researchgate.net/profile/Chih_Kai_Lin">Dr Chih-Kai Lin  </a> et al (National Taiwan University)</li> 
+    <li>  "... chromophores: a bottom-up Hückel picture of the excited states of photoactive proteins"  (<a href="http://pubs.rsc.org/en/content/articlehtml/2017/cp/c7cp05766k">CPPC</a> <b>2017</b>) by <a href="http://www.verlet.net//">Prof. J. Verlet</a> et al (Durham University)</li> 
+  <li>  Transition-Metal-Free CO-Releasing BODIPY Derivatives ...  (J. Am. Chem. Soc. <b>2016</b>, 138, 126) by <a href="http://photochem.sci.muni.cz/">Prof. P. Kl&aacute;n</a> et al (Masaryk University)</li>
+<li> Thermodynamic properties of alkyl 1H-indole carboxylate derivatives ..." (J. Chem. Thermodyn. <b>2016</b>, 97, 70) by <a href="https://www.researchgate.net/profile/M_Ribeiro_da_Silva">Prof. Maria D.M.C. Ribeiro da Silva</a> et al. (University of Porto)</li>
+  <li>  several papers like this one, "Unpaired Electrons, Spin Polarization, and Bond Orders in Radicals ..."  (Int. J. Quant. Chem. <b>2014</b>, 114, 696) by <a href="https://www.researchgate.net/profile/Padeleimon_Karafiloglou">Prof. P. Karafiloglou</a> et al (Thessaloniki University)</li>
+ <li> Carbo-aromaticity.. (Chem. Soc. Rev. <b>2015</b>, 44, 6535) and in  ... the ultimate aromatization process"  (Tetrahedron <b>2014</b>, 70, 4957)  by <a href="https://www.lcc-toulouse.fr/auteur184.html">Prof. R. Chauvin</a> et al (Toulouse University)</li>
+<li>  Correlation between Fourier series expansion and Huckel orbital theory (J. Math. Chem. Soc. <b>2013</b>, 51, 503)  by <a href="https://www.researchgate.net/profile/Ying_Liu308">Prof. Ying Liu</a> et al (Shenyang Normal University)</li>
+<li> ...</li>
+</ul>
+</div>
+</td>
+</tr>                                
+</table> </span></td></tr></table></p></td></tr></table></td></tr></table></td></tr></table></div>
+      
+<div id="formulaireContainer"></div>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="js/jquery.fileDownload.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/index-min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74823432-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<p></p>  
+<center>    
+<table border="4">
+<tr><td bgcolor=#000000><!-- Google -->
+<H1><a Href=http://laurehumbel.fr>Livre<br></a></H1></td><TD><a href="http://www.softpedia.com/progClean/HuLiS-Clean-218955.html"><img border="0" width=50  alt="HuLiS is Clean" src="http://www.softpedia.com/base_img/softpedia_clean_award_f.gif"/></a></TD>
+<td>
+<form method=GET action="http://www.google.com/search">
+<a href="http://www.google.com" target="new" ><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="absmiddle"></a> <input type=text name=q size=14 maxlength=255 value=""> <input type=hidden name=hl value=fr>
+<!--  <input type=submit name=btnG value="Search Google"> -->
+</form></TD>
+<td bgcolor=black><!-- Google -->
+<!-- 	<a href="http://zh.wikipedia.org/wiki/&#x57C3;&#x91CC;&#x5E0C;&#x00B7;&#x4F11;&#x514B;&#x5C14;&#x0020;" target="wiki">&#x4f11;&#x514B;&#x5C14;</a>  -  
+<a href="http://zh.wikipedia.org/wiki/&#x8DEF;&#x6613;&#x58EB;&#x7D50;&#x69CB;&#x0020;" target="wiki">&#x8DEF;&#x6613;&#x58EB;&#x7D50;&#x69CB;&#x0020;</a>    - 
+</TD>
+<td> <a href="http://zh.wikipedia.org/wiki/&#x82B3;&#x9999;&#x6027;" target="wiki">&#x82B3;&#x9999;&#x6027;</a> 
+2016&nbsp; 
+<h1>&#x514D;&#x8CBB;&#x8EDF;&#x9AD4;&#x0020;</h1>
+-->
+<a Href=http://laurehumbel.fr>Laure<br> Humbel</a></td></tr>
+</table>
+</center> </body>
+</html>
+
+
