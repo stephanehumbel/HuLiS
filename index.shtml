@@ -67,7 +67,7 @@
 <table border="0" cellspacing="1" cellpadding="10"  ><tr>
 <td align="center"> <a href="http://www.hulis.free.fr"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
 <td align="center"><a href="https://www.java.com/" target="_blank"><img src="images/java-icon.png"  height="35" border="0" alt="Java"><br>1- Install<br>Java JRE</a></td>
-<td align="center" nowrap><a class="downloadLink" href="#"><img src="images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
+<td align="center" nowrap><a class="downloadLink" href="archives/hulis_v3_4_0.jar"><img src="images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
  </tr>     
  </table>   
 </h8>
