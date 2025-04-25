@@ -89,9 +89,9 @@
 <div id="menu2">
 <ul style="display:inline-flex">
 <li><a href="https://www.java.com/" target="_blank"><b><u>Prerequisite</u>&nbsp;:</b>&nbsp;Install <b><i>Java JRE for Desktop applications</i></b></a></li>
-<li><a href="href="archives/hulis_v3_4_0.jar"">&nbsp;<b>Download  HuLiS <span class="version"></span></b>&nbsp; (Java)</a></li>
+<li><a href="archives/hulis_v3_4_0.jar">&nbsp;<b>Download  HuLiS <br>3.4.0<br></b>&nbsp; (Java)</a></li>
 <li><a href="http://m.hulis.free.fr/" target="_new"><b>Use the Mobile Version 1.0 (javascript)</b></a> </li> 
-<li><a href="huckel_teaching_materials.shtml" target="_new"><b>Various Teaching Ressources</b></a></li> 
+<li><a href="huckel_teaching_materials.shtml" target="_new"><b>Various Teaching Ressources</b><br> -- </a></li> 
 </ul></div></td></tr>
 <tr align="center" valign="middle"><td align="center">
 <div id="menu2">
@@ -109,7 +109,7 @@
 <ul>
  <li> <a href="https://www.youtube.com/watch?v=gpuN4Cc3ffA">YTube on HuLiS<br>(english)</a></li> 
 <li><a href="https://www.youtube.com/watch?v=LtAJ9hlVQgw">YTube on HuLiS<br>(in french)</a></li>   <li><a href="HuLiS_library.zip"><b><i>Molec. Library</i><br> (for Java version)</b></a></li> 
-<li><a href="./download/PHD_CTOM.shtml" target="_new"><b>Job Offer</b></a></li> 
+<li><a href="./download/PHD_CTOM.shtml" target="_new"><b>Job Offer</b><br> -- </a></li> 
 </ul>
 </div>
 </td></tr>
@@ -118,7 +118,7 @@
 <noscript>
 A browser with JavaScript enabled is required for this page to operate properly.
 </noscript>
-<!-- SH FEB 2017 --> <a class="downloadLink" href="#">
+<!-- SH FEB 2017 --> <a class="downloadLink" href="archives/hulis_v3_4_0.jar">
 <!-- SH FEB 2017 --> <img src=images/screen.png width="350" alt="Donwload Java HuLiS" title="Download Java HuLiS" border="1" id="" alt=" ..">
 <!-- SH FEB 2017 --> </a>
 <!-- SH FEB 2017   <button type="button" style="cursor:pointer;" id="btLoadApplet"><img src=images/screen.png width="250" alt="HuLiS" title="Start HuLiS" border="1" id="scrrr" alt=" .."></button> -->
