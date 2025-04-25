@@ -59,7 +59,7 @@
 </td></tr>
 <tr bgcolor="#DDDDDD" valign="middle">
 <td colspan="3" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory</h1><small><a href="https://ism2.univ-amu.fr/fr/annuaire/goudard-nicolas" target="new">Nicolas Goudard</a>, <a href="https://ism2.univ-amu.fr/en/directory/carissan-yannick" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="https://ism2.univ-amu.fr/en/directory/humbel-stephane" target="new">St&eacute;phane Humbel</a> </small><br> <br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;<br></remarque>
-<!-- <center><div style="line-height:8px ;width=30%;border:3px dotted red;padding:20px;background-color:yellow;font-weight: bolder;font-size: small; ">A <a href="http://www.hulis.free.fr/phdoffer.html" target=new />PhD offer</a> is available in our group. See our <a href="https://ism2.univ-amu.fr/en-gb/offres-emploi/ctom"  target=new>CTOM group web page</a>.</div></center> 
+<!-- <center><div style="line-height:8px ;width=30%;border:3px dotted red;padding:20px;background-color:yellow;font-weight: bolder;font-size: small; ">A <a href="phdoffer.html" target=new />PhD offer</a> is available in our group. See our <a href="https://ism2.univ-amu.fr/en-gb/offres-emploi/ctom"  target=new>CTOM group web page</a>.</div></center> 
 -->
 </td>
 <td colspan="1" rowspan=1 align="center">
@@ -127,7 +127,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <p>
 </p></td>
 </tr>
-<tr><td align="center" background="images/bground_lite.gif"> <br><span style="color: #ab2211;"><b><i>Colleages are invited to <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">contact us</a> and share expertises and practices.<br><p><br></i></b></span><p>
+<tr><td align="center" background="images/bground_lite.gif"> <br><span style="color: #ab2211;"><b><i>Colleages are invited to <a href="https://ism2.univ-amu.fr/en/directory/humbel-stephane" target="new">contact us</a> and share expertises and practices.<br><p><br></i></b></span><p>
   <table><tr><td><!-- SH FEB 2017 <img src="http://www.valbo.org/sites/default/files/ctools/ValCardV2.png" width="200"></td><td><span style="color: #155555;font-size: 1em;"><b> In june 2018, we organized the <a href="http://www.valbo.org" target="new"> VALBO Conference + School</a> as a satellite of the <a href="https://icqc16.sciencesconf.org/" target="new">ICQC</a>.  </span> <span style="color: #FF1133;font-size: 1em"></td><td><img src="http://www.valbo.org/sites/default/files/ctools/ValboCard_TUTO.png" width="200"</td>--->
 
  <!-- </span> -->
@@ -175,7 +175,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
 Thanks for citing them:<br>
 <ul>
   <li><a href="http://pubs.acs.org/doi/abs/10.1021/jp803813e" target="new" >H&uuml;ckel-Lewis-Projection Method: A &ldquo;Weights Watcher&rdquo; for Mesomeric Structures</a>: <small>Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel <i>J. Phys. Chem. A.</i> <strong>2008</strong>, 112, 13256&ndash;13262</small></li>
-    <li> Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, “HuLiS Program: Lewis embedded in Hückel Theory,” can be found at <a href="https://stephanehumbel.github.io/HuLiS/index.shtml">https://stephanehumbel.github.io/HuLiS/index.shtml</a>, <strong>2008</strong>.
+    <li> Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, “HuLiS Program: Lewis embedded in Hückel Theory,” can be found at <a href="https://ctom-ism2.github.io/HuLiS/">https://ctom-ism2.github.io/HuLiS/</a>, <strong>2008</strong>.
     <li>  <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, "Weight Watchers électronique : calculez votre poids de formes résonantes” </a>(in french) the editor version can be found on HAL.<p>
  </ul>
 <p><br><p>
@@ -192,7 +192,7 @@ Other publications
 </ul> 
 -->
 </div>
-<div align="left" style="z-index:4; position:relative; top:-590px; left:250px; width:504px; height:1250px; border:solid 3px grey; color:#EEEEEE;opacity: 0.9;background-color:#555555;background-image: url('http://www.hulis.free.fr/images/bground_lite2.gif');"> 
+<div align="left" style="z-index:4; position:relative; top:-590px; left:250px; width:504px; height:1250px; border:solid 3px grey; color:#EEEEEE;opacity: 0.1;background-color:#555555;background-image: url('bground_lite.gif');"> 
 <p>&nbsp;</p><h7><B>They cite HuLiS :  (let us know by sending to 
 <a href="mailto:&#115;&#116;%65&#112;ha%6e%65&#46;%68&#117;m&#98;el [[a u%6e%69&#118;&#45;a&#109;&#117;%2ef&#114;?Subject=HuLiS%20Citation%20update%20;%20Replace%20the%20[[a%20by%20@%20in%20the%20adresse"> Stephane</a> an email if your work does not appear correctly here) </B></h7>
 <ul>	
