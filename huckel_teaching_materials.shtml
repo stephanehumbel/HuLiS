@@ -43,7 +43,7 @@
                     </tr>  
                      <tr bgcolor="#EEEEEE" valign=Bottom> 
                       
-                        <td colspan="2" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="https://ctom-ism2.github.io/HuLiS">HuLiS</a><br> Teaching materials for Simple H&uuml;ckel Theory</h1>
+                        <td colspan="2" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="index.shtml">HuLiS</a><br> Teaching materials for Simple H&uuml;ckel Theory</h1>
 
 <small>
 <a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a>
@@ -62,10 +62,10 @@
 <table border=0> <tr><td width=300>
 <h2>Manual</h2> 
 
-<li> The  <a href="https://ctom-ism2.github.io/HuLiS/huckel_theory_delocalization/index.shtml" target="_totop"><b>online tutorial in english <img src="./images/en.png"  height=20 alt="en"> </b></a></td><td></td></tr>
+<li> The  <a href="huckel_theory_delocalization/index.shtml" target="_totop"><b>online tutorial in english <img src="./images/en.png"  height=20 alt="en"> </b></a></td><td></td></tr>
 <tr><td><li> The manual is either in english or french.
-<ul><li><a href="https://ctom-ism2.github.io/HuLiS/HuLiS_Manuel_3_2_en.pdf" target="_new"><b>Manual 3.2 (pdf) <img src="./images/en.png" height=20 alt="fr"></b></a></li> 
-<li><a href="https://ctom-ism2.github.io/HuLiS/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel 3.2 (pdf)  <img src="./images/fr.png" height=20 alt="fr"></b></a></li> 
+<ul><li><a href="./download/HuLiS_Manuel_3_2_en.pdf" target="_new"><b>Manual 3.2 (pdf) <img src="./images/en.png" height=20 alt="fr"></b></a></li> 
+<li><a href="download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel 3.2 (pdf)  <img src="./images/fr.png" height=20 alt="fr"></b></a></li> 
 </ul>
 <li> <a href="http://article.sapub.org/10.5923.j.jlce.20160402.01.html" target="_new"><b>Tutorial on fulvene by us<img src="./images/en.png" width="19" alt="fr"></b></a></li>
 

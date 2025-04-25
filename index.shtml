@@ -65,7 +65,7 @@
 <td colspan="1" rowspan=1 align="center">
 <h8>
 <table border="0" cellspacing="1" cellpadding="10"  ><tr>
-<td align="center"> <a href="https://ctom-ism2.github.io/HuLiS/index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
+<td align="center"> <a href="index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
 <td align="center"><a href="https://www.java.com/" target="_blank"><img src="images/java-icon.png"  height="35" border="0" alt="Java"><br>1- Install<br>Java JRE</a></td>
 <td align="center" nowrap><a class="downloadLink" href="archives/hulis_v3_4_0.jar"><img src="images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
  </tr>     
@@ -192,7 +192,7 @@ Other publications
 </ul> 
 -->
 </div>
-<div align="left" style="z-index:4; position:relative; top:-590px; left:250px; width:504px; height:1250px; border:solid 3px grey; color:#EEEEEE;opacity: 0.3;background-color:#555555;background-image: url('bground_lite.gif');"> 
+<div align="left" style="z-index:4; position:relative; top:-590px; left:250px; width:504px; height:1250px; border:solid 3px grey; color:#EEEEEE;opacity: 0.76;background-color:#555555;background-image: url('bground_lite.gif');"> 
 <p>&nbsp;</p><h7><B>They cite HuLiS :  (let us know by sending to 
 <a href="mailto:&#115;&#116;%65&#112;ha%6e%65&#46;%68&#117;m&#98;el [[a u%6e%69&#118;&#45;a&#109;&#117;%2ef&#114;?Subject=HuLiS%20Citation%20update%20;%20Replace%20the%20[[a%20by%20@%20in%20the%20adresse"> Stephane</a> an email if your work does not appear correctly here) </B></h7>
 <ul>	
