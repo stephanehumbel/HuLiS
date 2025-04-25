@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>M1 Chimie Marseille</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+    <!--#include file="include/home.shtml"-->	<div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	    </div>
+	<div id="main-body">	
+		<div id="header">
+			<img src="images/lab_mod.png" width="420" alt="header" />
+		</div>
+		<div id="content">
+			<!--Replace the text below with your own copy-->
+			<h1>Introduction</h1>
+			<p>Ce site contient les sujets et l'aide de base pour les TP de l'UE de Laboratoire de mod&eacute;lisation</p>
+			<p>Le <a href="https://amubox.univ-amu.fr/s/wJsxYBbCSYr42L6">Fascicule de TD (de concepts)</a><sup>(1)</sup>  a été distribué en cours. </p>
+	<!--		Les <a href="http://www.hulis.free.fr/MChimie/pdf/DiBerardoFiona_LabMod2020.pdf">notes de cours de F. Diberardo</a> correspondent au cours de 2023 pour les cours 2345 (le 1er cours est nouveau, même si la partie Surface d'énergie potentielle est la même). -->
+			<h2>Navigation</h2>
+			<p>On navigue ici avec la barre lat&eacute;rale à droite) pour les rappels de syntaxe, de concepts de thermodynamique et d'outils spécifiques. La barre de menu (en haut) donne les sujets de chaque TP.</p>
+			<p><span style="font-size: smaller;"> Sauf situation exceptionnelle la note de TP sera pour moitié la note du dernier TP (TP 10, fait en autonomie) et de {la moyenne des 3 compte-rendus de TP de chacun des trois thèmes (isodesmiques : 2,3, Modélisation: 4,5,7 Energie: 8,9) notés/20 et modulée par des notes de participation, des exercices a rendre et/ou  des QCM. 
+
+			<bR> Le   compte rendu du TP1 ne comptera pas dans la moyenne. 
+			Le TP7 donnera sa note  à l'UE "Mise en Situation".<br></span> </p>
+			<p><span style="font-size: smaller;font-style: italic; color: #A45533;">Des QCM portant sur des concepts vus  aux cours ou aux TP précédents, soit ayant un lien avec la préparation du TP du jour seront fait régulièrement.</span>
+			</p>
+		</div>
+
+	</div>
+	<div class="clearfix"></div><p><br></p>
+	 <span style="color:#999977; font-size: x-small;"> Cette page est hébergée par <a href="http://www.hulis.free.fr">HuLiS</a>.
+	 	<br> <sup>(1)</sup> Le TD a un  <a href="http://www.hulis.free.fr/MChimie/pdf/TDSUPP_LaboModel.pdf">supplement</a> pour mémoire.)</span></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+%nprocshared=2
+%mem=6GB
+%chk=pyrazine-s0.chk
+#P Geom=AllCheck Freq=(ReadFC,FC,SaveNM,ReadFCHT) NoSymm
+
+
+pyrazine-s1.chk
+
+
+

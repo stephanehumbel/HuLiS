@@ -1,0 +1,9 @@
+<ul id="ssidebar">
+	<li class="title">Outils</li>
+	<li><a href="chemcompute.shtml">ChemCompute</a></li>
+	<li><a href="optimiser.shtml">GAMESS/Optimiser</a></li>
+	<li><a href="contraintes.shtml">GAMESS/Contrainte</a></li>
+	<li><a href="hessien.shtml">GAMESS/Hessien-vibration</a></li>
+	<li><a href="thermo.shtml">GAMESS/Thermo</a></li>
+	<li><a href="compte_rendus.shtml"><b><span style="font-style: bold;color: orangered;"> Compte rendus</span></b></a></li>
+</ul> 

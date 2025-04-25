@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>MChimie : ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>	
+<div id="wrap">
+		<!--#include file="include/home.shtml"--><div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	         </div>
+	<div id="main-body">
+		<div id="header"><center>
+			<img src="http://www.tcm.phy.cam.ac.uk/~mds21/thesis/img323.gif" height="100" alt="http://www.tcm.phy.cam.ac.uk/"  style="border-color:#F1F1E1;" border="2" credit="from http://www.tcm.phy.cam.ac.uk/"/><img src="./images/h2o_123.png" height="100"  style="border-color:#F1F1E1;" border="2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Dihedral_angle.svg/1920px-Dihedral_angle.svg.png" height="100" alt="http://www.tcm.phy.cam.ac.uk/"  style="border-color:#F1F1E1;" border="2"></center>
+	 </div>
+	</div>
+<div class="clearfix"><p></p>
+			<h1>Optimisation de géométrie avec  contrainte(s) </h1>
+			<p>Quand on impose une (des) contraintes, on doit retirer la symétrie, donc travailler en C<sub>1</sub>. La géométrie de départ ne doit pas être TROP éloignée de la contrainte.</p>
+			<p>Avec GAMESS vous devez définir dans un groupe $CONTRL le nombre de contraintes d'optimisation (NZVAR=1) et dans un groupe $ZMAT définir la  coordonnée bloquée:  iFzmat(1)=<b>2</b>,nA,nB,nC (<b>1</b> pour une distance, <b>2</b> pour un angle, <b>3</b> pour un dièdre). <span style="color: #aa2212">La valeur voulue est précisée avec Fvalue(1)=110.0.</span> <br> Les options DLC et AUTO sont liées à la génération automatique de coordonnées. A noter qu'on peut devoir rajouter des coordonnées "à la main" , par exemple lorsqu'on a 2 molécules en approche. Le plus simple est la commande NONVDW(1)= nA,nB pour préciser que les atomes numéros nA et nB sont en approche. <span style="color: #11AA33">Un exemple est donné en fin de cette page pour mettre 2 contraintes dans une optimisation.</span></p><p> Comme c'est une optimisation on garde la commande RUNTYP=OPTIMIZE ainsi que le groupe des Points Stationnaires ($STAPT), en évitant les calculs de hessien (du genre <i><small>IHREP=20 HESS=CALC HSSEND=.TRUE.</small></i>). Dans certains cas rares, on peut vouloir demander un (couteux) calcul de hessien à la fin : <i><small>$STATPT  HSSEND=.TRUE.  $END.</small></i></p> 
+						<ul>
+<li>&nbsp;$CONTRL  NZVAR =1  $END</li>
+<li>&nbsp;$ZMAT DLC=.TRUE. AUTO=.TRUE. <br> &nbsp; iFzmat(1)=2,2,1,3 
+	<span style="color: #aa2212">&nbsp; Fvalue(1)=110.0</span>  nonvdw(1)=2,3                    
+<br>  &nbsp;$END  </li>
+</li></ul>
+<p>On peut aussi devoir ajouter à la main des coordonnées complémentaires pour tout maitriser (eXtra):<br> iXzmat(1)=<b>1</b>,nA,nB, <b>2</b>,nA,nB,nC. </p>
+<p><b>Attention</b>, Gamess exige d'avoir un espace avant chaque $ ( $ZMAT  $END).
+ </p>
+
+<hr width="50%">
+
+	<h2>Exemples</h2>
+		<h3>1 contrainte</h3><p>Optimisation contrainte de H<sub>2</sub>O en contraignant l'angle H-O-H à 110°. A voir sur chemcompute dans le job public Job_id= 300168</p>
+	<p>On doit définir la distance 2,3 comme non Van der Waals pour avoir suffisamment de coordonnées.</p>
+	
+<hr width="50%">
+!&nbsp;Fichier d'exemple de contrainte job_300168<br>
+&nbsp;$CONTRL<br> 
+&nbsp; SCFTYP=RHF MAXIT=200 RUNTYP=OPTIMIZE<br> 
+&nbsp; MULT=1 ICHARG=0<br> 
+&nbsp;$END</b><br> 
+&nbsp;$SYSTEM TIMLIM=2879 MWORDS=250 MEMDDI=258  $END<br> 
+&nbsp;$STATPT OPTTOL=0.0005 NSTEP=999 $END<br> 
+&nbsp;$BASIS  GBASIS=N31 NGAUSS=6
+         NDFUNC=1   NPFUNC=0  $END<br> 
+&nbsp;$SCF    DIRSCF=.T. $END<br> 
+&nbsp;$GUESS  GUESS=HUCKEL  $END<br> 
+&nbsp;$DATA<br>
+<br> 
+&nbsp;  C1 <br>
+&nbsp;  &nbsp;  O     8.0     0.00000    -0.00000     0.06678 <br>
+&nbsp;  &nbsp;  H     1.0     1.05616    -0.00000    -0.42041 <br>
+&nbsp;  &nbsp;  H     1.0    -0.76403     0.00000    -0.52996 <br>
+ $END <br><b>
+&nbsp;! Customizations after this line are persisted when using Do More Calculations<BR>
+&nbsp;$CONTRL<br> 
+&nbsp; <b>NZVAR=1</b><br> 
+&nbsp;$END<br> 
+&nbsp;$ZMAT <br> &nbsp;DLC=.true. auto=.true.<br>  
+&nbsp; ifzmat(1)=2,2,1,3 <span style="color: #aa2212">fvalue(1)=110.0</span><br> &nbsp; nonvdw(1)=2,3<br>
+&nbsp;$END</b><br> 
+
+<hr width="50%">
+<span style="color:#11AA33"> 
+<h3>2 contraintes, chacune sur 1 diedre</h3>
+&nbsp;! Customizations after this line are persisted when using Do More Calculations<BR>
+&nbsp;$CONTRL<br> 
+&nbsp; NZVAR=2<br> 
+&nbsp;$END<br> 
+&nbsp;$ZMAT DLC=.true. auto=.true.<br>  
+<span style="color: #222222">  &nbsp; ifzmat(1)=3,5,1,2,7, 3,3,1,2,8  </span> &nbsp; &nbsp; 
+<span style="color: #aa2212">  &nbsp; fvalue(1)=0.0, 15.0</span> <br>
+&nbsp; nonvdw(1)=5,7, 3,8   <br>&nbsp;</span>
+<span style="color:#11AA33">&nbsp;$END</b></span><br> 
+<p></p>
+<small><i>Note: nonvdw(1) permet au programme de reconstruire une série de coordonnées basées sur les 2 atomes indiqués. Cela permet à GAMESS de gérer l'approche de 2 molécules, prennant en compte que leur orientation respectives dans l'espace. Dans des cas exceptionnels, on peut aussi vouloir définir des coordonnées spécifiquement IXZMAT(1)=1,2,3, 2,3,2,1, 2,1,3,2</i></small>
+<hr width="50%">
+</div>
+
+
+</body>
+</html>

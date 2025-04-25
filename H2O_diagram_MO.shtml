@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head> 
+<title>Huckel Theory and HuLiS: about ¹ electrons in HŸckel.</title><link rel="stylesheet" type="text/css" href="./style.css">
+<meta name="description" content="Free java calculator for (Huckel) + [Mesomerism]. (Molecular Orbitals, charges, energy) + [Lewis structures drawn or generated, weights]. " />
+<meta name="keywords" content="Chemistry, Huckel, Mesomerism, Delocalization, Energy, Orbitals, Java, free, butadiene, acrolein, benzene, resonance, Lewis, structures, bond, order, drawings" />
+<meta name="robots" content="ALL" />
+<meta name="AUTHOR" content=" A contribution from CNRS & Aix Marseille University, Department of Chemistry, Nicolas Goudard, Yannick Carissan, Denis Hagebaum-Reignier & St&eacute;phane Humbel">
+<meta name="REVISED" content="20/03/2013">
+<meta name="GENERATOR" content="Mozilla/4.61 (Macintosh; I; PPC) [Netscape]"> 
+<meta property="article:published_time" content="2013-02-20" />
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">  
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>  
+<body text="#000000" bgcolor="#FFFFFF"  link="#27368B" vlink="#CD191F"   background="images/bground_lite.gif">  
+   
+<!-- bgcolor="#50BCE7" couleur de l'Olympique de Marseille selon son site -->   
+<div align="center"> 
+<table border="0" cellspacing="1" cellpadding="1" width="822"  bgcolor="#666666" >
+        <tr>
+          <td align="center"><!-- Outer frame -->
+            <table border="0" cellspacing="0" cellpadding="0" width="820"  bgcolor="#FFFFFF" >
+              <tr>
+                <td align="center"><!-- Outer frame --> 
+<table border="0" cellspacing="0" cellpadding="5"  bgcolor="#FFFFFF"  width="760">   
+<!-- on fixe  5 colonnes  --> 
+<tr bgcolor="#FFFFFF" >
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+<td width="175" ><img src="images/rien.gif" height="1" alt=" . " ></td>
+</tr><tr bgcolor="#FFFFFF" align="center" valign="top"> <td colspan="4" align="center">  <hr></td></tr>
+<tr bgcolor="#FFFFFF" align="center" valign="top"> 
+<td colspan="1" ><img src="images/logoAixMarsUniv.png"  height="56" border="0" alt="AixMarUniv" ><img src="images/rien.gif" alt=" . "  height="16"  ></td>
+<td colspan="2" align="center">
+<remarque>Campus St. J&eacute;r&ocirc;me<br>Av. Escadrille Normandie-Niemen<br>13397 Marseille Cedex 20 - France
+</remarque></td> 
+<td colspan="1" valign="middle">
+<img src="images/logo_cnrs.jpg" alt=" . " height="56">
+</td></tr><tr bgcolor="#FFFFFF" align="center" valign="top"> <td colspan="4" align="center">  <hr></td></tr>
+<tr bgcolor="#FFFFFF" valign="middle">
+<td colspan="3" bgcolor="#FFFFFF" align="center" >
+ <a href="./images/H2O_Molecular_Orbital_Diagram.png"><img src="images/H2O_Molecular_Orbital_Diagram.png"  height="435" border="0" alt="H2O Molecular orbital Diagram"><br></a></td>
+
+
+
+<td bgcolor="#FFFFFF"  valign="top" align="center" ><small><a href="./index.shtml"><img src="images/HuLis-InterU.gif" height="45" border="0" alt="HuLiS"><br> return to HuLiS main page.</a></small><h1><hr><span style="color: #FF0000;">The 1b<sub>1</sub> orbital<br> corresponds to a &pi; (pi) orbital.</span><br> </h1> It can conjugate with a standard &pi; (pi) system. <hr><a href="./images/H2O_Molecular_Orbital_Diagram.cdx"><br>download the ChemDraw file<br> </a> <hr>
+<br> For more drawings on molecular orbitals, see also  <a href="http://www.lct.jussieu.fr/pagesperso/orbimol/">orbimol</a> </td>
+      </tr></table>
+</td>
+</tr>    <tr bgcolor="#FFFFFF" align="center" valign="top"> <td colspan="4" align="center">  <hr></td></tr>               
+</table>
+</td>
+        </tr>
+      </table>
+  </body>
+</html>

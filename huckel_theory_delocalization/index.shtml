@@ -42,7 +42,7 @@
 <small><a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a> </small>
 <br> <br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;
 </remarque>
-</td><td bgcolor="#DDDDDD"><h8><!--#include virtual="../download.txt" --></h8></td>
+</td><td align="center" bgcolor="#DDDDDD"> <a href="../index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="../images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td><td bgcolor="#DDDDDD"><h8><!--#include virtual="../download.txt" --></h8></td>
  </tr>                 
 <tr><td colspan="3" bgcolor="#DDDDDD" align="center">
 <!--#include virtual="../message.txt" -->

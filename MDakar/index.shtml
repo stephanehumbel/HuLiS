@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Modelisation. Dakar/Marseille</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+    <!--#include file="include/main.shtml"-->	<div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	    </div>
+	<div id="main-body">	
+		<div id="header">
+			<img src="images/logo_UCAD.png" height="120" alt="header" /><img src="images/logo_AMU.png" height="0" width="100" alt="header" /><img src="images/logo_AMU.png" height="100" alt="header" />
+		</div>
+		<div id="content">
+			<!--Replace the text below with your own copy-->
+			<h1>Introduction</h1>
+			<p>Ce site contient les sujets et l'aide de base pour la mod&eacute;lisation à l'occasion des interventions de S. Humbel lors de son séjour en mai 2024 à Dakar. (en cela on prolonge le materiel du séjour de mai 2023 qui reste accessible).</p>
+
+			<h2>Inscription à <a href="https://chemcompute.org"> https://chemcompute.org/</a></h2>
+			<p> <a href="https://chemcompute.org"> https://chemcompute.org/</a> est un site de calcul gratuit et accessible à tous sans inscription. Cependant il est préférable de s'inscrire avec son email universitaire. En effet, la politique de ChemCompute est de donner + de moyens aux universitaires déclarés. Nous avons pré-déclaré les adresses email de UCAD et de AMU. Il est bon que les utilisateurs se loggent <a href="https://chemcompute.org/app/oidc/authenticate/"> à cette adresse quelques jours-ou semaines- avant les sessions</a> (pour être certain que ca marche).<span style="color:#444444; font-size: small;"><sup>(a)</sup></span><span style="color:#444444; font-size: small;"><sup>(b)</sup></span> </p>
+			<h2>Utilisation de cette page</h2>
+			<p>On navigue avec la barre lat&eacute;rale (droite) pour les rappels de syntaxe et d'outils spécifiques de gamess. La barre de menu (haut) permet de retourner au sujet .</p>
+
+<span style="color:#444444; font-size: small;"><sup>(a)</sup> Les emails de UCAD et AMU peuvent donc avoir 32 processeurs au lieu de 1 seul.<br><sup>(b)</sup> Dans le cas improbable où on dépasse la limite de 5000h de calculs, un simple mail au gestionnaire de ChemCompute permet d'avoir significativement plus de temps de calculs.</span>
+	<div class="clearfix"></div><p><br></p>
+	 <span style="color:#999977; font-size: x-small;"> Cette page est hébergée par <a href="http://www.hulis.free.fr">HuLiS</a>.</span></div>
+</body>
+</html>

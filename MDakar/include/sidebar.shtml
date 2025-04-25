@@ -1,0 +1,11 @@
+<ul id="ssidebar">
+	<li class="title">Outils</li>
+	<li><a href="chemcompute.shtml"><b>ChemCompute</b></a></li>
+	<li><a href="optimiser.shtml"><b>GAMESS/Optimiser</b></a></li>
+	<li><a href="thermo.shtml"><b>GAMESS/Thermo</b></a></li>
+	<li><a href="contraintes.shtml">GAMESS/Contrainte</a></li>
+	<li><a href="hessien.shtml">GAMESS/Hessien-vibration</a></li>
+    <li>______ </li>
+    <li><span style="font-style: bold;color: orangered;">Pour les master MSPP</span></b></li>
+	<li><a href="compte_rendus.shtml"><b><span style="font-style: bold;color: orangered;"> Compte rendus</span></b></a></li>
+</ul> 

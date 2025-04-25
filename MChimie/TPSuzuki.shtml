@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>MChimie : ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+        <!--#include file="include/home.shtml"--> <div id="sidebar"><!--#include file="include/sidebar.shtml"--></div><center><p></p><p></p><a href="pdf/TPSuzuki.pdf"></a></center>
+        <h1> TP2</h1> <p>Vous faites le travail intitulé "<b>Exploration of Suzuki-Miyaura coupling reaction mechanism</b>"
+        qui se trouve dans l'onglet <b>Organic Chemistry</b> des <a href="https://chemcompute.org/gamess/" target="Chemcompute">"GAMESS Experiments (..)" </a> (que nous avons déjà partiellement utilisé). </p>
+
+<h1> Préparation </h1>
+ <h2> Réaction générique</h2><img src="images/suzuki_C.png" width="500">
+
+ <h2> Cycle catalytique générique</h2>
+ <img src="images/suzuki.png" width="500">
+
+  <h2> Lecture du Prelab </h2>
+         <a href="https://chemcompute.org/app/media/user_99/suzuki_background_91yFFLC.pdf" target="Chemcompute">Ce fichier contient le "prelab"</a> Dont est extrait la figure précedente.<br><p></p>
+
+<h1> DEROULEMENT </h1>
+        <p>Les Etapes 1-9 seront suivies l'une après l'autre.  A noter que l'étape (8) demande un peu de temps de calcul, et peut être "lancée" avant les autres etapes. L'étape (9) demande aussi un peu plus de temps de calcul. Dès que vous savez quel est le composé A, "lancez" l'optimisation.</p>
+        <ul>
+        <li> (8) Vous devez optimiser la géométrie du <a href="https://webbook.nist.gov/cgi/cbook.cgi?Name=biphenyl&Units=SI" target="NIST">biphényl</a>. Relaxez la symétrie (décocher la case de symétrie et évitez les angles diedre de 90.0 ou 0.0 °) pour éviter de contraindre l'angle dièdre de rotation des phenyls.
+            <!---    ainsi que le <a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=643-58-3#" target="NIST">2-Methylbiphenyl</a>,<br> pour connaitre --->
+        Commentez l'angle (dièdre) entre les deux phényls .</li>
+        <li> (9) pour la dernière étape, vous devrez aussi relaxer la symétrie dans le calcul du composé A.  La réaction dont l'image manque est la suivante : <br>
+
+         <img src="images/suzuki_A.png" width="500"><br> <small><ol><li> Based on what you've learned of Suzuki Coupling, what is the product of the reaction above?</li><li>Predict the geometry of the product (Compound A). Will it be planar or twisted?</li><li> If you are logged in using an educational account you can calculate the geometry of the product. (It requires a faster computer than is allocated to guest users) </li></ol></small></li>
+</div>
+
+<div class="clearfix"><p></p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<titleMini Workshop: Modélisation en Chimie et ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+        <!--#include file="include/main.shtml"--> <div id="sidebar"><!--#include file="include/sidebar.shtml"--></div><p >La barre de menu à droite donne des résumés de parties de cours que nous pourrons discuter. Les onglets en <b>gras</b> (ChemCompute  Optimiser Thermo) sont utiles à tous les niveaux.  En revanche nous pourrons éviter de discuter celui sur les contraintes ainsi que celui sur le Hessien. <br>Ce dernier sert à simuler des spectre IR. Il pourrait faire l'objet d'une session à part entière.</p><p></p><center><p>Le livret des exercices est téléchargeable ci-dessous. Normalement son contenu s'affiche aussi plus bas.<br><a href="pdf/TP_Chimie.pdf"><img src="images/pdf.png" width="30">telecharger</a></p></center>
+        Nous avons prévu de faire 2 TP cette semaine. 
+
+        Le troisième TP qui est donné dans le manuel peut permettre de prolonger les concepts en allant vers des effets π. Si on a le temps et l'envie.
+        
+</div>
+
+<div class="clearfix"><p><hr width=60%></p>
+        <embed src="pdf/TP_Chimie.pdf" width="100%" height="800px">		
+</div>
+<hr width=60%>
+</body>
+</html>

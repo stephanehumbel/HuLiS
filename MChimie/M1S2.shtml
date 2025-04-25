@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>M1 Chimie Marseille Semestre 2 ACS</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+    <!--#include file="include/homeS2.shtml"-->	
+    <div id="sidebar">
+		<!--   <!--#include file="include/sidebaR.shtml"--> -->
+		<img src="../../Ellipsoid/Ellipsoid.png" width="220" alt="header" /> 
+		<A href="https://webbook.nist.gov/chemistry/ ">NIST</A>
+		<br> Documents pour TP1 (diffusion)
+		<ul>
+	<!-- <li> <A href="./TP_DOSY.pdf"> Texte du TP</a> -->
+	<li> <A href="http://www.hulis.free.fr/download//VielCaldarelli_CC2008-2013.pdf">article de Viel et Caldarelli - Chem. Comm . 2008</a>
+	<li> <A href="http://www.hulis.free.fr/download/Thureau_CPC_2005.pdf">article de Thureau - CPC 2005</a>
+	<li> <A href="http://www.hulis.free.fr/download//jresv42n6p573_A1b.pdf">article Sur la viscosite de l'eau (1949)</a>
+	<li> <A href="http://www.hulis.free.fr/download/je049918m.pdf">article Sur la viscosite de l'eau (2004)</a>
+</ul>
+		<br> Documents pour TP2 (C2H4Cl2)
+		<ul>
+	<!-- <li> <A href="./TP_DOSY.pdf"> Texte du TP</a> -->
+	<li> <A href="http://www.hulis.free.fr/download//mizushima_1975.pdf">article de Mizushima - Can. J. Phys 1975</a>
+	<li> <A href="http://www.hulis.free.fr/download/Stolov_1995.pdf">article de Stolov  - Spectrochimica Acta Part A 1995</a>
+</ul>
+
+	    </div>
+	<div id="main-body">	
+		<div id="header">
+			
+		</div>
+		<div id="content">
+			<!--Replace the text below with your own copy-->
+
+			<h2>Introduction</h2>
+Les TP de semestre 2 se font sur une machine Linux, accessible uniquement depuis des IP "amies". <br>Connexion au serveur : ssh -X formation@147.94.185.151 <br> le mot de passe sera donné en TP. <br>On trouvera de nombreuses données dans le NIST : <a href="https://webbook.nist.gov/chemistry/" target=new>https://webbook.nist.gov/chemistry/</a>
+<P>
+Recommendations : Cr&eacute;ez votre r&eacute;pertoire personnel au bon endroit (dans M1S1/202x). Exemple cd M1S1/2023; mkdir MES_INITIALES, et allez-y (cd  MES_INITIALES). 
+<h2>Quelques commandes Linux (ls, pwd)  nécessaires  </h2>
+<ul>
+<li><b>mkdir</b> repertoire (make directory) cr&eacute;e un sous-r&eacute;pertoire dans le r&eacute;pertoire courant
+<li><b>cd</b> repertoire (change directory) permet d'aller dans le r&eacute;pertoire-fils
+<li><b>cd ..</b> permet d'aller dans le r&eacute;pertoire-p&egrave;re
+<li><b>pwd</b> (print working directory) affiche la localisation compl&egrave;te du r&eacute;pertoire courant
+<li><b>ls</b> (listing) affiche le nom des fichiers et sous-r&eacute;pertoire du r&eacute;pertoire courant
+<li><b>more</b> fichier affiche le contenu du fichier sur la console
+<li><b>rm</b> fichier efface le fichier
+<li> <b>mv</b> fichier1 fichier2 (move) change le nom de fichier1 en fichier2
+<li> <b>cp</b> fichier1 fichier2 (copy) copie fichier1 sous le nom fichier2
+<li> <b>nedit</b> fichier &eacute;dite le contenu du fichier dans une fenetre, permet de le modifier
+<li> <b>grep chaine file</b> renvoie les lignes du fichier  "file" dans lesquelles "chaine" apparait
+<li> <b>which commande</b>  renvoie la localisation de la commande
+<li> <b>man commande </b> le manuel de la commande
+</ul>
+Quelques logiciels et commandes maisons permettent de se simplifier la vie 
+<ul>
+<li><b>agui</b> visualiseur/builder (commercial)</li>
+<li><b>gnuplot</b> traceur de courbes (exemple  pour un fichier 2 colonnes (2cols.data) gnuplot, puis dans gnuplot>  taper plot '2cols.data' w lp lw 5     (lp pour linespoints lw pour linewidth)</li>
+<li>Commandes maison accessibles par la commande ''<b>. outils''</b>  (ne pas oublier le point ''.'')</li>
+<ul>
+<li><b>qq</b>  montre nos jobs et leur repertoire (squeue -U $USER,$1 --format %.7i%.30j%.3t%.8C%.55Z)</li>
+<li><b>MXYZ</b> fait un raccourci de l'optimisation (maison, gaussian)</li>
+<li><b>xopt</b> fait un raccourci de l'optimisation (maison, gaussian)</li>
+<li><b>somm</b> fait un sommaire des resultats d'un calcul (maison, gaussian)</li>
+<li><b>ellipsoid</b> calcule les 3 axes de l'ellipsoid qui inscrit la derniere geométrie d'un fichier .log (gaussian)</li>
+</ul>
+</ul>
+<h2>Fascicule : <a href="pdf/Fascicule_TP_Modelisation.pdf"> download the pdf</a></h2>Les fichiers d'exemple apparaissent en dessous du fascicule.
+ <!-- <li> <a href="http://www.hulis.free.fr/download/TP_DOSY.html">documents pour le TP1 diffusion DOSY</a> -->
+</div>
+     <embed src="pdf/Fascicule_TP_Modelisation.pdf" width="100%" height="1100px">	
+pyrazine-s1.com<p>
+	<embed src="pdf/CH800/data/pyrazines1.com.TXT" width="100%" >
+<p>
+pyrazine.com (two blanck lines between the route cards and the chk name, + 2 blanck lines again)<p>
+	<embed src="pdf/CH800/data/pyrazine.com.TXT" width="100%" >
+	</div>
+	<div class="clearfix"></div><p><br></p>
+	 <span style="color:#999977; font-size: x-small;"> Cette page est hébergée par <a href="http://www.hulis.free.fr">HuLiS</a>.</span></div>
+</body>
+</html>

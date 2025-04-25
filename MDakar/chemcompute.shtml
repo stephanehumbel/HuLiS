@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>MDakar: ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+		<!--#include file="include/main.shtml"-->       <div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	    </div>
+	<div id="main-body">
+ 
+
+		<div id="header"><center>
+			<img src="images/bandeauCC.png" height="130" alt="header"  style="border-color:#F1F1E1;" border="2" /> </center>
+		</div>
+	</div>
+	<div class="clearfix">
+			<!--Replace the text below with your own copy-->
+			<h1>Chemcompute</h1>
+		
+			<p>L'ensemble des TP se fait sur <a href="https://chemcompute.org/">chemcompute</a>. Vous devez vous y logger avec votre identifiant UCAD. Faites le &agrave; l'avance.</p>
+			<h2>Chemcompute</h2> <p>Chemcompute est une initiative du <a href="https://chemistry.sonoma.edu/faculty-staff/mark-j-perri" target="new">Prof M. Perri</a> aux USA (vers San Francisco). Le site offre  un accès rapide à des programmes de qualité, accompagné de tutoriels.</p>
+			<h2>Gestion des jobs</h2> 
+			<p>Tout job lancé pourra être suivi dans votre "Dashboard", qui accessible par le lien en haut à droite (en blanc sur fond noir). Le tableau de vos jobs contient notamment un Statut (Submitting,Active, Complete), un résultat (Success,Error) et une date. La ligne du dessous contient un descriptif et les mots que vous avez écrit dans la rubrique "Name for input file". Un bouton "Cancel" permet d’arrêter un calcul en cours. La case recherche (Search) vous permet de selectionner vos job en filtrant les occurences que vous avez écrit en "Name for input file". Vous devez noter dans votre cahier de labo le numéro de job avec un commentaire suffisamment parlant. Si la case "public" est cochée, ce numéro de job permet de partager votre travail avec d’autres utilisateurs , les enseignants en particulier. </p>
+			<h1>GAMESS</h1>
+			<p>GAMESS est un programme  de calcul gratuit  mis a disposition par  <a href="https://www.msg.chem.iastate.edu/gamess/"target="new">Prof Mark Gordon</a>. Le manuel est en ligne : <a href="https://www.msg.chem.iastate.edu/gamess/GAMESS_Manual/input.pdf" target="new">input.pdf</a>, il fait quelques 500 pages. Les onglets de cette barre latérale ont pour but de vous éviter de tout lire, en vous expliquant le minimum.  Il existe une pléthore <a href="http://molecularmodelingbasics.blogspot.com/2009/07/some-gamess-input-basics_24.html"> d'autres ressources</a> 
+				<!-- Pour aller plus loin, <a href="https://en.wikipedia.org/wiki/RTFM">R.T.F.M.</a> --></p><p>GAMESS prend en lecture un fichier de commande appelé "fichier d'input", et ressort un fichier d'exécution nommé "fichier d'output". L'output contient le résultat de votre calcul.</p>
+					<h2>Input   (.inp)</h2>
+			Un fichier d'input est un fichier texte simple avec l'extension .inp et contient des groupes de commande décrivant votre demande dans des "$Namelist".<br> Le début d'un groupe est noté par un $GROUP. <b>ATTENTION, le "$" doit impérativement être situé en 
+				<font style="color=red">2°</font> colonne</b> et fini par un $END. (On peut utiliser des minuscules) Rien ne doit etre écrit dans la première colonne pour des raisons historiques.
+<ul>
+	<li style="color: #998877;"> &nbsp;! TITR  ce qui suit un ! n'est pas lu
+			<li style="color: #FF0000;"> &nbsp;$CONTRL ! controle general<br> &nbsp; &nbsp; RUNTYP=ENERGY  SCFTYP=RHF <br> &nbsp; &nbsp; MULT=1 iCHARG=0  &nbsp;&nbsp;&nbsp;&nbsp;! charge + spin multiplicity  1= singulet <br>
+    &nbsp;$END
+  <li style="color: #222277;font-weight: bold;"> &nbsp;$BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DIFFSP=.TRUE. &nbsp;$END</li>
+ 
+ <li style="color: #44DD44;font-weight: bold;""> &nbsp;$DATA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ! &nbsp; Description de la molécule<br>
+ &nbsp;Title<br>
+ &nbsp;C1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;!  &nbsp;Groupe de symetrie<br>
+ &nbsp;H 1.0 0.0 0.0  0.00&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ! &nbsp; Symbole(i) Z(i) x(i) y(i) z(i)<br>
+ &nbsp;H 1.0 0.0 0.0  0.74&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; !<br>
+  &nbsp;$END
+<li style="color: #111122;"> &nbsp;$SCF DIRSCF=.TRUE. $END</li>
+<li style="color: #111122;"> &nbsp;$SYSTEM TIMLIM=525600 MEMORY=1000000 &nbsp;$END</li>
+</li>
+</ul>
+		<h2>Output  (.out)</h2>
+	<p>Le fichier de sortie (Output) peut être trés long. Il contient de nombreux détails. La plupart de ces informations seront visualisées sous JsMol dans le site de chemcompute. On  visualise ainsi facilement les orbitales et les modes de vibrations. Cependant quand le programme ne fonctionne pas, on doit télécharger le fichier et chercher des indications permettant de corriger nos erreurs. (il est entendu que GAMESS ne fait pas d'erreur, mais ses utilisateurs oui) </p>	
+		<h2>Edit de l'input</h2>
+		<p>Le site ChemCompute permet de ré-écrire entièrement le fichier .inp. 
+		Dans bien des cas c'est la méthode à privilégier, en particulier lorsque des contraintes doivent être appliquées. On utilise alors le bouton <img src="./images/edit_inp.png" width="130"> </p><hr width=70%>
+		
+</div>
+</div>
+</body>
+</html>
