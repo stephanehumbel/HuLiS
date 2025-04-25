@@ -51,7 +51,7 @@
 
   <br><br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;
 </remarque></td> <td  bgcolor="#DDDDDD" colspan="1" rowspan=1 align="center">
-   <!--#include virtual="download.txt" -->   </td> </tr>    
+   <!--#include virtual="./download.txt" -->   </td> </tr>    
 <tr><td colspan="3" bgcolor="#DDDDDD" align="center">
 <h1><!--#include virtual="message.txt" --></h1>
 </td>

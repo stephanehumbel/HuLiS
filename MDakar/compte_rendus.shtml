@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>MChimie : ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+		<!--#include file="include/main.shtml"-->
+		<div id="sidebar">
+		     <!--#include file="include/sidebar.shtml"-->
+	    </div><p></p>
+	<div id="main-body">
+	 <div id="header">
+		<img src="images/CR.png" width="350" alt="header" style="border-color:#F1F1E1;" border="2"> 
+	 </div>
+	</div>
+<div class="clearfix"><p></p>
+	   <h1>Compte rendu</h1>
+<h2>Notation/Structure et qualités</h2>
+La note tiendra compte du fait que le compte rendu contient une introduction et une conclusion de qualité, et du fait que le raisonnement que vous y développez est cohérent avec les chiffres obtenus. Le barème indicatif est le suivant:
+    <ul> 
+   <li>3pts Structure du rapport (Intro Résultats Discussion Conclusion)</li>
+   <li>8pts Résultats (décimales, présentation et commentaires)</li>
+   <li>4pts Interprétation raisonnable des résultats</li>
+   <li>3pts Logique  et cohérence</li>
+   <li>2pts Propreté</li>
+    </ul> 
+A cette note sur 20, on ajoute la note de QCM.
+    <ul> 
+   <li>5pts QCM noté avant chaque TP, portant sur le TP du jour, ou plus ancien.</li>
+    </ul> 
+    	   <h2>Qualités générales</h2>
+	  <p> Votre compte rendu sera par binôme, et le plus court possible (2-5 pages). Vous pouvez vous inspirer de ce  
+<a href="http://www.hulis.free.fr/download/MasterX_Report1_NAME1_NAME2.docx">modèle</a> (anglophone).<br> On souhaite que les résultats soient donnés dans un/des tableau/x, chaque tableau ayant un numéro et une légende. De même pour les figures.</p>
+On précise que ...
+    <ul> 
+    <li>les énergies sont soit des énergies absolues, soit des énergies relatives, auquel cas, on en précisera la référence. Les unités sont différentes selon le cas</li>   
+    <ul>        
+    	<li>Energies absolues en g&eacute;n&eacute;ral en Hartree (atomic unit : a.u.), avec 5 décimales. Sous chemcompute vous avez diff&eacute;rents choix d'unité.</li>
+        <li> Energies relatives &agrave; une r&eacute;f&eacute;rence, en kJ/mol, 1 décimale. <br><span style="font-size: smaller;"> Conversion: 1 Hartree = 2625.5 kJ/mol </span></li>
+      <li>Energies d'orbitale  en eV,  2 d&eacute;cimales. <br><span style="font-size: smaller;"> Conversion: 1  Hartree= 27.21 eV  ; 1 kJ/mol  =1.0364 x 10<sup>-2</sup> eV </span></li>
+  </ul>  
+    <li>  les distances  en Å, avec 2 ou 3 décimales (exemple 1.12Å). Et 1 Å=10<sup>-10</sup>m</li>
+   <li> les angles sont donnés en degrés ° avec 1 décimale (exemple 59.9°)</li>
+   <li> Vous devez cocher vos jobs pour qu'ils soient "public", et indiquer leur numéro dans votre Compte rendu, par exemple dans un tableau de r&eacute;sultat.</li>
+  </ul> 
+<p>Vous rendrez votre  compte rendu  en fin de séance (papier ou pdf). Vous nommerez le fichier pdf MasterChimie_TP1_VOS_NOMS.pdf et vous le ferez parvenir à votre enseignant par la méthode de son choix (email, dépot sur l'ENT, ...). Vous pouvez joindre, si le sujet s'y prete, un fichier de tableur contenant les données brutes, permettant une vérification de votre travail.</p>
+	
+
+  <hr width=70%>
+</div>
+</body>
+</html>
+

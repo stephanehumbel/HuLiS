@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>MChimie : ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+        <!--#include file="include/home.shtml"--> <div id="sidebar"><!--#include file="include/sidebar.shtml"--></div><p>Le fichier de l'enoncé sera disponible le jour du TP.
+        	<br>Par exemple les 4 et 5 décembre 2023.</p>
+        <center>
+        <table border=2 spacing=44>	
+        	<th>	
+        		<td><a href="pdf/TP10A.pdf"><img src="images/pdf.png" width="50"><br> SujetA</a></td>
+        		<td><a href="pdf/TP10B.pdf"><img src="images/pdf.png" width="50"><br> SujetB</a></td>
+        		<td><a href="pdf/TP10C.pdf"><img src="images/pdf.png" width="50"><br> SujetC</a></td><td>..</td>
+        	</th>
+        </table>
+	</center>
+</div>
+
+<div class="clearfix"><p><hr width=60%></p>
+ 
+</div>
+<hr width=60%>
+</body>
+</html>

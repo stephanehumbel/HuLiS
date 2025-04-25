@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>MChimie : ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+        <!--#include file="include/home.shtml"--> <div id="sidebar"><!--#include file="include/sidebar.shtml"--></div><center><p></p><p></p><a href="pdf/TP8.pdf"><img src="images/pdf.png" width="50"><br>telecharger</a></center>
+        
+</div>
+
+<div class="clearfix"><p><hr width=60%></p>
+        <embed src="pdf/TP8.pdf" width="100%" height="800px">		
+</div>
+<hr width=60%>
+</body>
+</html>
