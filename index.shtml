@@ -65,7 +65,7 @@
 <td colspan="1" rowspan=1 align="center">
 <h8>
 <table border="0" cellspacing="1" cellpadding="10"  ><tr>
-<td align="center"> <a href="https://stephanehumbel.github.io/HuLiS/index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
+<td align="center"> <a href="https://ctom-ism2.github.io/HuLiS/index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
 <td align="center"><a href="https://www.java.com/" target="_blank"><img src="images/java-icon.png"  height="35" border="0" alt="Java"><br>1- Install<br>Java JRE</a></td>
 <td align="center" nowrap><a class="downloadLink" href="archives/hulis_v3_4_0.jar"><img src="images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
  </tr>     
@@ -181,7 +181,7 @@ Thanks for citing them:<br>
 <p><br><p>
 <ul><b>ACS format:</b><br>
 <li>  Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>J. Phys. Chem. A.</i> <strong>2008</strong>, <i>112 (50)</i>, 13256–13262. <br>
-<li>   Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. HuLiS Program: Lewis embedded in Hückel Theory https://stephanehumbel.github.io/HuLiS/index.shtml. <br>
+<li>   Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. HuLiS Program: Lewis embedded in Hückel Theory https://ctom-ism2.github.io/HuLiS/index.shtml. <br>
 <li>   <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>L’Actualité Chimique</i> <strong>2016</strong>, <i>406</i>, 36-40.</a> <br>
  </ul>
 <!-- SH FEB 2017   L’Actualité Chimique, Société chimique de France, 2016, L’actualité chimique, 406, pp.36-40.
@@ -257,7 +257,7 @@ by  prof <a href=http://orcid.org/0000-0002-6279-9722> K. Yoshizawa</a> et al In
 <center>    
 <table border="4">
 <tr><td bgcolor=#000000><!-- Google -->
-<H1><a Href=http://laurehumbel.fr>Livre<br></a></H1></td><TD><a href="http://www.softpedia.com/progClean/HuLiS-Clean-218955.html"><img border="0" width=50  alt="HuLiS is Clean" src="http://www.softpedia.com/base_img/softpedia_clean_award_f.gif"/></a></TD>
+</td><TD><a href="http://www.softpedia.com/progClean/HuLiS-Clean-218955.html"><img border="0" width=50  alt="HuLiS is Clean" src="http://www.softpedia.com/base_img/softpedia_clean_award_f.gif"/></a></TD>
 <td>
 <form method=GET action="http://www.google.com/search">
 <a href="http://www.google.com" target="new" ><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="absmiddle"></a> <input type=text name=q size=14 maxlength=255 value=""> <input type=hidden name=hl value=fr>
@@ -271,7 +271,8 @@ by  prof <a href=http://orcid.org/0000-0002-6279-9722> K. Yoshizawa</a> et al In
 2016&nbsp; 
 <h1>&#x514D;&#x8CBB;&#x8EDF;&#x9AD4;&#x0020;</h1>
 -->
-<a Href=http://laurehumbel.fr>Laure<br> Humbel</a></td></tr>
+ <a href="http://zh.wikipedia.org/wiki/&#x82B3;&#x9999;&#x6027;" target="wiki">&#x82B3;&#x9999;&#x6027;</a> 
+</td></tr>
 </table>
 </center> </body>
 </html>
