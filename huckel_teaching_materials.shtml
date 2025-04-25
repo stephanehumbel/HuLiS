@@ -50,9 +50,11 @@
 
 
   <br><br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;
-</remarque></td> <td  bgcolor="#DDDDDD" colspan="1" rowspan=1 align="center">
+</remarque></td>
+<td align="center" bgcolor="#DDDDDD"> <a href="index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td><TD>
    <!--#include virtual="./download.txt" -->   </td> </tr>    
 <tr><td colspan="3" bgcolor="#DDDDDD" align="center">
+ <td  bgcolor="#DDDDDD" colspan="1" rowspan=1 align="center">
 <h1><!--#include virtual="message.txt" --></h1>
 </td>
  </tr>          

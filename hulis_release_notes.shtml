@@ -55,9 +55,9 @@ if (document.images) {
                     </tr>  
                      <tr bgcolor="#EEEEEE" valign=Bottom> 
                       
-                        <td colspan="3" bgcolor="#DDDDDD" align="center" ><h1><a href="http://www.hulis.free.fr"><img src="images/HuLis-InterU.gif" height="45" align="middle" border="0" alt="HuLiS"></a>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="http://www.hulis.free.fr">HuLiS</a></h1> <h4>Release notes</h4>
+                        <td colspan="2" bgcolor="#DDDDDD" align="center" ><h1><a href="http://www.hulis.free.fr"><img src="images/HuLis-InterU.gif" height="45" align="middle" border="0" alt="HuLiS"></a>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="http://www.hulis.free.fr">HuLiS</a></h1> <h4>Release notes</h4>
 
-<small><a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="http://ism2.univ-amu.fr/permanents/HAGEBAUM-REIGNIER.php" target="new">Denis Hagebaum-Reignier</a> AND <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a> </td> 
+<small><a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="http://ism2.univ-amu.fr/permanents/HAGEBAUM-REIGNIER.php" target="new">Denis Hagebaum-Reignier</a> AND <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a> </td> <td align="center" bgcolor="#DDDDDD"> <a href="index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
                       </tr>                    
             
 <tr><td colspan="3" bgcolor="#CCCCCC" align="center">
