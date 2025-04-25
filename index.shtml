@@ -26,7 +26,7 @@
         font: 12px/20px Arial, sans-serif;
         }
       div {
-        padding: 5px
+        padding: 5px;
         opacity: 0.7;
         }
       </style>
@@ -89,14 +89,14 @@
 <div id="menu2">
 <ul style="display:inline-flex">
 <li><a href="https://www.java.com/" target="_blank"><b><u>Prerequisite</u>&nbsp;:</b>&nbsp;Install <b><i>Java JRE for Desktop applications</i></b></a></li>
-<li><a class="downloadLink" href="href="archives/hulis_v3_4_0.jar"">&nbsp;<b>Download  HuLiS <span class="version"></span></b>&nbsp; (Java)</a></li>
+<li><a href="href="archives/hulis_v3_4_0.jar"">&nbsp;<b>Download  HuLiS <span class="version"></span></b>&nbsp; (Java)</a></li>
 <li><a href="http://m.hulis.free.fr/" target="_new"><b>Use the Mobile Version 1.0 (javascript)</b></a> </li> 
 <li><a href="huckel_teaching_materials.shtml" target="_new"><b>Various Teaching Ressources</b></a></li> 
 </ul></div></td></tr>
 <tr align="center" valign="middle"><td align="center">
 <div id="menu2">
   <ul>
-    <li><a href="download/HuLiS_Manuel_3_3_en.pdf" target="_new"><b>Manual<br><img src="./images/en.png" height=20 alt="en"></b></a></li>
+    <li><a href="download/HuLiS.pdf" target="_new"><b>Manual<br><img src="./images/en.png" height=20 alt="en"></b></a></li>
     <li><a href="download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel<br><img src="./images/fr.png" height=20   alt="fr"></b></a></li>
     <li><a href="huckel_theory_delocalization/index.shtml" target="_new"><b>How HuLiS<br> Works</b>?</a></li>
     <li><a href="http://www.hulis.free.fr/3Dmol/index.shtml" target="_new"><b>Try 3Dmol from Pittsburg U?</a></li>
@@ -175,13 +175,13 @@ A browser with JavaScript enabled is required for this page to operate properly.
 Thanks for citing them:<br>
 <ul>
   <li><a href="http://pubs.acs.org/doi/abs/10.1021/jp803813e" target="new" >H&uuml;ckel-Lewis-Projection Method: A &ldquo;Weights Watcher&rdquo; for Mesomeric Structures</a>: <small>Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel <i>J. Phys. Chem. A.</i> <strong>2008</strong>, 112, 13256&ndash;13262</small></li>
-    <li> Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, “HuLiS Program: Lewis embedded in Hückel Theory,” can be found at <a href="https://ctom-ism2.github.io/HuLiS/">https://ctom-ism2.github.io/HuLiS/</a>, <strong>2008</strong>.
+    <li> Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, “HuLiS Program: Lewis embedded in Hückel Theory,” can be found at <a href="https://ctom-ism2.github.io/hulis/">https://ctom-ism2.github.io/hulis/</a>, <strong>2008</strong>.
     <li>  <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, "Weight Watchers électronique : calculez votre poids de formes résonantes” </a>(in french) the editor version can be found on HAL.<p>
  </ul>
 <p><br><p>
 <ul><b>ACS format:</b><br>
 <li>  Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>J. Phys. Chem. A.</i> <strong>2008</strong>, <i>112 (50)</i>, 13256–13262. <br>
-<li>   Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. HuLiS Program: Lewis embedded in Hückel Theory https://ctom-ism2.github.io/HuLiS/index.shtml. <br>
+<li>   Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. HuLiS Program: Lewis embedded in Hückel Theory https://ctom-ism2.github.io/hulis/index.shtml. <br>
 <li>   <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>L’Actualité Chimique</i> <strong>2016</strong>, <i>406</i>, 36-40.</a> <br>
  </ul>
 <!-- SH FEB 2017   L’Actualité Chimique, Société chimique de France, 2016, L’actualité chimique, 406, pp.36-40.
