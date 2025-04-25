@@ -78,6 +78,14 @@ To use HuLiS, <strong>the minimum version 1.7 of JAVA must be installed on your 
 <strong>Release Notes</strong> (HuLiS versions).</td><td align="center"><p>
 </td></tr>
 <tr><td>  
+<br>
+<p align="left">
+<span class="Style2">Version 3.4.0 (April 25th 2025)<br></span>
+Release of the "Block" algorithm in the Lewis part where bonds are computed as blocks of 2 electrons on 2 atoms and lone pair 2 electrons on 1 center. 
+This allow to define Clar structures for instance.
+
+The save format .com is modified to read back blocks inside NBO strings. Very much as Yirong MO's BLW file format.
+</p>
 
 <br>
 <p align="left">
