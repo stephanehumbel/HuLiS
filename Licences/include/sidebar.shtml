@@ -1,0 +1,13 @@
+<ul id="ssidebar">
+	<li class="title">Outils</li>
+	<li><a href="chemcompute.shtml">ChemCompute</a></li>
+	<li><a href="optimiser.shtml">GAMESS/Optimiser</a></li>
+	<li><a href="hessien.shtml">GAMESS/Hessien-vibration</a></li>
+	<li><a href="thermo.shtml">GAMESS/Thermo</a></li>
+	<li><a href="https://biomodel.uah.es/en/DIY/JSME/draw.en.htm" target=_new>JSME 2D - 3D </a></li>
+	<li><a href="https://molview.org" target=_new>molview</a></li>
+	<li><a href="https://webbook.nist.gov/chemistry/" target=_new>base de donnees NIST</a></li>
+</ul>
+<!---
+	<li><a href="compte_rendus.shtml"><b><span style="font-style: bold;color: orangered;"> Compte rendus</span></b></a></li>
+-->

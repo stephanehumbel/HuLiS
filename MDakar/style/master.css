@@ -1,0 +1,146 @@
+body {
+	background: color="#FF0FFF" url(../images/bodybg.gif) no-repeat center top;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+}
+#wrap {
+	width: 800px;
+	margin: 0 auto;
+}
+#header {
+	margin: 10px 0 10px 10px;
+}
+
+#main-body {
+	float: left;
+	width: 600px;
+}
+#sidebar {
+	float: right;
+	width: 198px;
+	margin: 0;
+	padding:0;
+}
+
+table,th,td {
+  border-spacing: 5px; 
+  border-padding: 2px; 
+  border-width: 0px;
+  padding: 10px;
+}
+
+
+#nav {
+	width:100%;
+	padding: 0;
+	margin: 0;
+	height: 65px;
+	background: url(../images/navbg.gif) repeat-x left top;
+
+}
+#nav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#nav li a {
+	padding: 17px 15px 16px 15px;
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-weight: bold;
+	background: none;
+	text-decoration: none;
+}
+#nav li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+#content {
+	width: 550px;
+	padding: 0 10px 10px 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+#ssidebar {
+	width: 198px;
+	margin: 0;
+	padding: 0;
+
+}
+#ssidebar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#ssidebar li a {
+	color: #555;
+	background: url(../images/libg.gif) repeat-x top;
+	font-size: 90%;
+	padding: 3px 0 3px 10px;
+	display: block;
+	height: 15px;
+	text-decoration: none;
+	margin: 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #b9b9b9;
+}
+#ssidebar li a:hover {
+	background: #fff;
+}
+.clearfix {
+	clear: both;
+}
+li.title {
+	color: #555;
+	text-transform: uppercase;
+	background: url(../images/subheader.gif) repeat-x top;
+	font-size: 110%;
+	padding: 3px;
+	margin: 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #b9b9b9;
+	font-weight:bold;
+
+}
+p {
+	line-height: 1.5em;
+}
+h1 {
+	color: #555;
+	font-size: 140%;
+	font-family: Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #555;
+	margin: 0;
+}
+
+h2 {
+	color: #555;
+	font-size: 110%;
+	font-weight:bold;
+	letter-spacing: -.8px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+h3.logo {
+	color: #fff;
+	font-size: 130%;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 60px;
+	left: 30px;
+}
+#footer {
+	background: url(../images/footer-bg.gif) no-repeat bottom;
+	text-align: center;
+	padding: 20px;
+}

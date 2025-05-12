@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>MChimie : Thermo@GAMESS</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+		<!--#include file="include/home.shtml"-->
+	<div id="main-body">
+		<div id="header"><center>
+			<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/qhar.gif" width="220" alt="header"  style="border-color:#F1F1E1;" border="2" /> <img src="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/qhar4.png"width="220" alt=""  style="border-color:#F1F1E1;" border="2" /></center>
+		</div>
+		<div id="content" style="background-color: #FFFFFF;">
+			<!--Replace the text below with your own copy-->
+			<h1>Résultats de thermodynamique</h1>
+			<p>Un calcul simple donne l'énergie "Electronic Energy" <b>E<sub>el</sub></b> (qui contient en fait aussi la répulsion nucléaire (V<sub>N/N</sub>)). Un calcul de hessien permet d'obtenir les élements permettant de calculer des corrections conduisant à l'enthalpie et à l'enthalpie libre; à une température T (en K). Les couleurs employées ci-dessous pour les variables doivent vous guider dans <a href="#section1"><span style="background-color:#DDF8F3;padding: 6px;" >l'extrait</span> montré en bas</a>. On obtient cet extrait en téléchargeant l'output, ou avec le bouton <span style="background-color: #2299DD;color:whitesmoke;padding: 4px;"><b>Thermo</b></span> (il arrive qu'il "bug").</p>
+			<h2>Corrections</h2>
+			<p> A partir de l'énergie "Electronic Energy" <b>E<sub>el</sub></b>.
+			
+			<p><b>La correction pour obtenir l'énergie interne à 0 K (U<sub>0</sub>) </b> est simplement  l'ajout de  l'énergie de point zéro (Zero Point Energy) : <b>U<sub>0</sub></b>=<b>E<sub>el</sub></b>+<span style="color:blue;">ZPE</span></b>.
+			<ul><li><small> <span style="color:blue;">ZPE</span> est la somme des contributions des vibrations à 0 K (obtenue dans l'approximation harmonique (	&sum;<sub>i</sub> 1/2 &#8463;&omega;<sub>i</sub>)).</small></li></ul></p>
+			<p><b>La correction pour obtenir l'énergie interne à 298.15 K  (<span style="color:#22AAAA"><i>U<sub>298</sub></i></span>)</b>, est (hélas) notée <span style="color:#22AAAA">E</span>, presque comme l'énergie interne <b>E<sub>el</sub></b>. On a <span style="color:#22AAAA"><b><i>U<sub>298</sub></b></i></span>=<b>E<sub>el</sub></b>+<span style="color:#22AAAA">E</span>
+			 <ul><li><small>La correction <span style="color:#22AAAA">E</span> contient, en plus de ZPE, d'autres corrections thermiques <span style="color:#22AAAA">électronique (0), de translation (3/2 x k<sub>B</sub>T), rotation (3/2 x k<sub>B</sub>T), et vibration</span> (gaz parfait). </small></li></ul></p>
+			
+			<p><b>La correction pour obtenir l'enthalpie à 298 K</b> (<span style="color:#22AA11"><b>H<sub>298</sub></b></span>) est notée <span style="color:#22AA11"><b>H</b></span>. On l'applique simplement sur l'énergie électronique : <span style="color:#22AA11"><b>H<sub>298</sub></b></span>=<b>E<sub>el</sub></b>+<span style="color:#22AA11"><b>H</b></span>. 
+				<ul><li><small>Cette correction diffère de la précédente par l'ajout de RT:  On a la relation <span style="color:#22AA11"><b>H<sub>298</sub></b></span>=<span style="color:#22AAAA"><i><b>U<sub>298</sub></b></i></span>+PV, ce qui pour n molécules revient à <span style="color:#22AA11"><b>H<sub>298</sub></b></span>=
+				<span style="color:#22AAAA"><i><b>U<sub>298</sub></b></i></span><span style="color:#FFAA11"><b>+nRT</b></span> (approximation du gaz parfait). A la température de 298.15 K et ramené à une mole, on a <span style="color:#FFAA11">nRT=k<sub>B</sub>T=2.479 kJ/mol</span>. Cette valeur ne dépend que de T, et à température constante ... est une constante. </small></li></ul></p>
+			
+<p><b>La correction pour obtenir l'enthalpie libre à 298 K </b> (<span style="color:red"><b>G<sub>298</sub></b></span>)  est notée <span style="color:red">G</span>. On l'applique simplement sur l'énergie électronique :<span style="color:red"><b>G<sub>298</sub></b></span>=<b>E<sub>el</sub></b>+<span style="color:red">G</span>. 
+	<ul><li><small>Elle contient en particulier le terme entropique à 298.15 K: <span style="color:red"><b>G<sub>298</sub></b></span>=<span style="color:#22AA11"><b>H<sub>298</sub></b></span>-T<span style="color:#AAAA11"><b>S</b></span>
+			<p><span style="color:#AAAA11"><b>S</b> est l'entropie</span> (donnée par GAMESS en J et non kJ comme les autres valeurs). </li></ul></p></small>
+			<!--<h2>Dans la pratique</h2>
+			<p>L'effet de la température est faible sur les <i>différences</i> d'enthalpie à une T°=T<sub>1</sub> donnée. Puisque <i>in fine</i> on utilise des variations d'énergie à T°constante, dans le calcul de ∆G<sub>T<sub>1</sub></sub>=G<sub>T<sub>1</sub></sub>(Final)-G<sub>T<sub>1</sub></sub>(Initial) on peut n'utiliser T<sub>1</sub> que pour la contribution entropique, et prendre le reste à 0 K. ∆G<sub>T<sub>1</sub></sub>&asymp;∆U<sub>0</sub>-T<sub>1</sub><span style="color:#AAAA11"><b>∆S</b></span> (ou <span style="background-color:#fff433 ;">∆G<sub>T<sub>1</sub></sub>&asymp;∆E+<span style="color:blue"><b>∆ZPE</b></span>-T<sub>1</sub><span style="color:#AAAA11"><b>∆S</b></span></span>.)
+				<p>Il est aussi fréquent de ne calculer que des différences d'enthalpies, auquel cas on retire le terme entropique: <span style="background-color:#fff433 ;">∆H<sub>T<sub>1</sub></sub>&asymp;∆U<sub>0</sub>=∆E+<span style="color:blue"><b>∆ZPE</b></span></span></p><a href="#haut">haut</a> -->
+		</div>
+	</div>
+	<div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	</div>
+
+
+<div class=clearfix style="background-color: #DDF8F3;"><hr width=60%><p id="section1"></p>
+<pre>
+THERMODYNAMICS OUTPUT:
+*** Note:  You must add the electronic energy to H to get the total enthalpy ***
+     THERMOCHEMISTRY AT T=  298.15 K
+     -------------------------------
+
+ USING IDEAL GAS, RIGID ROTOR, HARMONIC NORMAL MODE APPROXIMATIONS.
+ P=  1.01325E+05 PASCAL.
+ 
+ ...
+
+  THE HARMONIC ZERO POINT ENERGY IS (SCALED BY   1.000)
+        0.028372 HARTREE/MOLECULE     6227.027808 CM**-1/MOLECULE 
+       17.803984 KCAL/MOL               <span style="color:blue"><b>74.491868 KJ/MOL</b></span>
+
+               Q               LN Q
+ ELEC.     1.00000E+00       0.000000
+ TRANS.    7.79430E+06      15.868903
+ ROT.      1.76318E+03       7.474877
+ VIB.      1.00519E+00       0.005173
+ TOT.      1.38141E+10      23.348953
+
+              <span style="color:#22AAAA">E</span>         <span style="color:#22AA11"><b>H</b></span>         <span style="color:red">G</span>         CV        CP        <span style="color:#AAAA11"><b>S</b></span>
+           KJ/MOL    KJ/MOL    KJ/MOL   J/MOL-K   J/MOL-K   <span style="color:#AAAA11"><b>J/MOL-K</b></span>
+ ELEC.      <span style="color:#22AAAA">0.000</span>     0.000     0.000     0.000     0.000     0.000
+ TRANS.     <span style="color:#22AAAA">3.718</span>     6.197   -39.338    12.472    20.786   152.727
+ ROT.       <span style="color:#22AAAA">3.718</span>     3.718   -18.530    12.472    12.472    74.621
+ VIB.      <span style="color:#22AAAA">74.568</span>    74.568    74.479     1.537     1.537     0.298
+ TOTAL     <span style="color:#22AAAA"><b><i>82.005</i></b></span>    <span style="color:#22AA11"><b>84.484</b></span>    <span style="color:red">16.611</span>    26.480    34.795   <span style="color:#AAAA11"><b>227.645</b></span>
+ VIB. THERMAL CORRECTION E(T)-E(0) = H(T)-H(0) =        75.892 J/MOL
+</pre></div><hr width=60%>
+</body>
+</html>

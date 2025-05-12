@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>MChimie : ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+		<!--#include file="include/main.shtml"-->
+	<div id="main-body">
+		<div id="header"><center>
+			<img src="images/bandeau_opt.png" width="420" alt="header"  style="border-color:#F1F1E1;" border="2" /> </center>
+		</div>
+		<div id="content" style="background-color: #FFFFFF;">
+			<!--Replace the text below with your own copy-->
+			<h1>Optimiser une géométrie de molécule</h1>
+					<p>Pour une optimisation devez entrer  des commandes qui concernent le groupe de Controle général (CONTRL) et pour le groupe des Points Stationnaires (STATPT):</p>Pour optimiser vers un minimum met <b>RUNTYP=OPTIMIZE</b> au lieu de RUNTYP=ENERGY. Vers un état de transition on met <b>RUNTYP=SADPOINT</b>.
+		On défini aussi le seuil d'optimization (OPTTOL) qui par defaut est de 0.0001 et le nombre de pas maximum (NSTEP) qui par défaut vaut 20.
+		<p>Il est une bonne pratique d'ajouter un calcul de frequence en fin d'optimisation  <b>HSSEND=.TRUE.</b> et le groupe qui défini le calcul du hessien <b>$FORCE METHOD=analytic  $END</b></p>
+<ul>
+<li>$CONTRL RUNTYP=OPTIMIZE $END</li>
+<li>$STATPT OPTTOL=0.0005 NSTEP=999  HSSEND=.TRUE. $END</li>
+<li>$FORCE METHOD=analytic  $END</li>
+</ul>
+
+
+			<h2></h2>
+			<p></p>
+		</div>
+	</div>
+	<div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	</div>
+	<div class="clearfix"><hr width=60%>
+		<p color=#111133> 
+!   GAMESS input file for geometry optimization<br>
+&nbsp;$CONTRL 
+<br>&nbsp;&nbsp;SCFTYP=RHF MAXIT=200 
+<br>&nbsp;&nbsp;<b>RUNTYP=OPTIMIZE</b><br>
+&nbsp;
+         MULT=1 &nbsp;
+         iCHARG=0  <br>
+         &nbsp;$END<br>
+<br>&nbsp;<b>$STATPT OPTTOL=0.0005 NSTEP=999  HSSEND=.TRUE. $END</b><br>
+	
+<br>&nbsp;$BASIS  GBASIS=N31 NGAUSS=6<br>&nbsp;
+         NDFUNC=1   NPFUNC=0  $END<br>&nbsp;
+<br>&nbsp;$DATA<br>&nbsp;
+   <br>&nbsp;
+  C1<br>&nbsp;
+H     1.0    -0.00000     0.00000    -0.35419<br>&nbsp;
+H     1.0     0.00000    -0.00000     0.35419<br>&nbsp;
+$END
+<br>&nbsp;! Modalites de calcul (ne pas toucher a priori) 
+<br>&nbsp;$SYSTEM TIMLIM=2879 MWORDS=250  $END<br>
+<br>&nbsp;$SCF    DIRSCF=.T. $END<br>
+&nbsp;$GUESS  GUESS=HUCKEL  $END
+<hr width=60%>
+</p>
+</div>
+</body>
+</html>

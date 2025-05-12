@@ -43,16 +43,18 @@
                     </tr>  
                      <tr bgcolor="#EEEEEE" valign=Bottom> 
                       
-                        <td colspan="2" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="http://www.hulis.free.fr">HuLiS</a><br> Teaching materials for Simple H&uuml;ckel Theory</h1>
+                        <td colspan="2" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory: <a href="index.shtml">HuLiS</a><br> Teaching materials for Simple H&uuml;ckel Theory</h1>
 
 <small>
 <a href="http://ism2.univ-amu.fr/permanents/GOUDARD.php" target="new">Nicolas Goudard</a>, <a href="http://ism2.univ-amu.fr/permanents/CARISSAN.php" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">St&eacute;phane Humbel</a>
 
 
   <br><br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;
-</remarque></td> <td  bgcolor="#DDDDDD" colspan="1" rowspan=1 align="center">
-   <!--#include virtual="download.txt" -->   </td> </tr>    
+</remarque></td>
+<td align="center" bgcolor="#DDDDDD"> <a href="index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td><TD>
+   <!--#include virtual="./download.txt" -->   </td> </tr>    
 <tr><td colspan="3" bgcolor="#DDDDDD" align="center">
+ <td  bgcolor="#DDDDDD" colspan="1" rowspan=1 align="center">
 <h1><!--#include virtual="message.txt" --></h1>
 </td>
  </tr>          
@@ -62,10 +64,10 @@
 <table border=0> <tr><td width=300>
 <h2>Manual</h2> 
 
-<li> The  <a href="http://www.hulis.free.fr/huckel_theory_delocalization/index.shtml" target="_totop"><b>online tutorial in english <img src="./images/en.png"  height=20 alt="en"> </b></a></td><td></td></tr>
+<li> The  <a href="huckel_theory_delocalization/index.shtml" target="_totop"><b>online tutorial in english <img src="./images/en.png"  height=20 alt="en"> </b></a></td><td></td></tr>
 <tr><td><li> The manual is either in english or french.
-<ul><li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_2_en.pdf" target="_new"><b>Manual 3.2 (pdf) <img src="./images/en.png" height=20 alt="fr"></b></a></li> 
-<li><a href="http://www.hulis.free.fr/download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel 3.2 (pdf)  <img src="./images/fr.png" height=20 alt="fr"></b></a></li> 
+<ul><li><a href="./download/HuLiS_Manuel_3_2_en.pdf" target="_new"><b>Manual 3.2 (pdf) <img src="./images/en.png" height=20 alt="fr"></b></a></li> 
+<li><a href="download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel 3.2 (pdf)  <img src="./images/fr.png" height=20 alt="fr"></b></a></li> 
 </ul>
 <li> <a href="http://article.sapub.org/10.5923.j.jlce.20160402.01.html" target="_new"><b>Tutorial on fulvene by us<img src="./images/en.png" width="19" alt="fr"></b></a></li>
 
@@ -90,7 +92,7 @@
 <li><img src="images/pdf.png" width="15"alt="."> <a href="http://academictree.org/chemistry/tree.php?pid=72164">S. Humbel</a> from Aix-Marseille Univ. : <a href="download/Simple_Huckel_CH404.pdf">Simple Huckel and Huckel-Lewis : <b>CH404</b></a> (in french) - with some work on Coulson formulae. See Stephane in the <a href="http://academictree.org/chemistry/peopleinfo.php?pid=72164">Chemistry Tree</a>.
 
 <li><img src="images/pdf.png" width="15"alt="."> <a href="http://www.lcp.u-psud.fr/spip.php?page=fiche_identite&nom=lauvergnat">Dr David Lauvergnat</a>,
-Laboratoire de Chimie Physique (LCP) de l«Universit&eacute& Paris-Sud <a href="download/Orsay_master1.pdf"><b>Master 1</b></a>
+Laboratoire de Chimie Physique (LCP) de lï¿½Universit&eacute& Paris-Sud <a href="download/Orsay_master1.pdf"><b>Master 1</b></a>
 
 <p><br><p>
 </ul><ul><div align="center">Others ..</div>
@@ -118,10 +120,10 @@ Physical Chemistry Toolkit
 <li> <a href="./H2O_diagram_MO.shtml" target="_totop"><b>H2O Molecular diagram</b></a></li>
 <li><a href="wwwmarly99">Semi-Empirical methods explanation</a>,
 S. Humbel 1999 (URCA).</li>
-<li> <a href="./Licences/">Licence chimie AMU</a></li> 
-<li> <a href="./MChimie/">Master chimie AMU 1st semestre</a></li> 
+<li> <a href="./Licences/index.shtml">Licence chimie AMU</a></li> 
+<li> <a href="./MChimie/index.shtml">Master chimie AMU 1st semestre</a></li> 
 <li> <a href="./MChimie//M1S2.shtml">Master chimie AMU 2nd semestre</a> </li>
-<li> <a href="./MDakar/">Sessions avec Dakar UCAD</a> </li>
+<li> <a href="./MDakar/index.shtml">Sessions avec Dakar UCAD</a> </li>
 </ul>
 </td>
 

@@ -26,8 +26,8 @@
         font: 12px/20px Arial, sans-serif;
         }
       div {
-        padding: 5px
-        opacity: 0.7;
+        padding: 5px;
+        opacity: 1.;
         }
       </style>
 </head>  
@@ -59,15 +59,15 @@
 </td></tr>
 <tr bgcolor="#DDDDDD" valign="middle">
 <td colspan="3" bgcolor="#DDDDDD" align="center" ><h1>Simple H&Uuml;ckel and LewIS embedded in the H&uuml;ckel theory</h1><small><a href="https://ism2.univ-amu.fr/fr/annuaire/goudard-nicolas" target="new">Nicolas Goudard</a>, <a href="https://ism2.univ-amu.fr/en/directory/carissan-yannick" target="new">Yannick Carissan</a>, <a href="https://ism2.univ-amu.fr/en/directory/hagebaum-reignier-denis" target="new"> Denis Hagebaum-Reignier</a> et <a href="https://ism2.univ-amu.fr/en/directory/humbel-stephane" target="new">St&eacute;phane Humbel</a> </small><br> <br><remarque>Institut des Sciences Mol&eacute;culaires de Marseille UMR 7313 CNRS<br> Aix-Marseille Universit&eacute;<br></remarque>
-<!-- <center><div style="line-height:8px ;width=30%;border:3px dotted red;padding:20px;background-color:yellow;font-weight: bolder;font-size: small; ">A <a href="http://www.hulis.free.fr/phdoffer.html" target=new />PhD offer</a> is available in our group. See our <a href="https://ism2.univ-amu.fr/en-gb/offres-emploi/ctom"  target=new>CTOM group web page</a>.</div></center> 
+<!-- <center><div style="line-height:8px ;width=30%;border:3px dotted red;padding:20px;background-color:yellow;font-weight: bolder;font-size: small; ">A <a href="phdoffer.html" target=new />PhD offer</a> is available in our group. See our <a href="https://ism2.univ-amu.fr/en-gb/offres-emploi/ctom"  target=new>CTOM group web page</a>.</div></center> 
 -->
 </td>
 <td colspan="1" rowspan=1 align="center">
 <h8>
 <table border="0" cellspacing="1" cellpadding="10"  ><tr>
-<td align="center"> <a href="https://stephanehumbel.github.io/HuLiS/index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
+<td align="center"> <a href="index.shtml"><img src="images/HuLis-InterU.gif"  height="30" border="0" alt="HuLiS"><br><img src="images/home.png"  height="30" border="0" alt="Home"><br>Home</a></td>
 <td align="center"><a href="https://www.java.com/" target="_blank"><img src="images/java-icon.png"  height="35" border="0" alt="Java"><br>1- Install<br>Java JRE</a></td>
-<td align="center" nowrap><a class="downloadLink" href="archives/hulis_v3_4_0.jar"><img src="images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
+<td align="center" nowrap><a  href="archives/hulis_v3_4_0.jar"><img src="images/download.png"  height="35" border="0" alt="HuLiS"><br>2- Download<br>HuLiS</a></td>
  </tr>     
  </table>   
 </h8>
@@ -89,14 +89,14 @@
 <div id="menu2">
 <ul style="display:inline-flex">
 <li><a href="https://www.java.com/" target="_blank"><b><u>Prerequisite</u>&nbsp;:</b>&nbsp;Install <b><i>Java JRE for Desktop applications</i></b></a></li>
-<li><a class="downloadLink" href="href="archives/hulis_v3_4_0.jar"">&nbsp;<b>Download  HuLiS <span class="version"></span></b>&nbsp; (Java)</a></li>
+<li><a href="archives/hulis_v3_4_0.jar">&nbsp;<b>Download  HuLiS <br>3.4.0<br></b>&nbsp; (Java)</a></li>
 <li><a href="http://m.hulis.free.fr/" target="_new"><b>Use the Mobile Version 1.0 (javascript)</b></a> </li> 
-<li><a href="huckel_teaching_materials.shtml" target="_new"><b>Various Teaching Ressources</b></a></li> 
+<li><a href="huckel_teaching_materials.shtml" target="_new"><b>Various Teaching Ressources</b><br> -- </a></li> 
 </ul></div></td></tr>
 <tr align="center" valign="middle"><td align="center">
 <div id="menu2">
   <ul>
-    <li><a href="download/HuLiS_Manuel_3_3_en.pdf" target="_new"><b>Manual<br><img src="./images/en.png" height=20 alt="en"></b></a></li>
+    <li><a href="download/HuLiS.pdf" target="_new"><b>Manual<br><img src="./images/en.png" height=20 alt="en"></b></a></li>
     <li><a href="download/HuLiS_Manuel_3_2.pdf" target="_new"><b>Manuel<br><img src="./images/fr.png" height=20   alt="fr"></b></a></li>
     <li><a href="huckel_theory_delocalization/index.shtml" target="_new"><b>How HuLiS<br> Works</b>?</a></li>
     <li><a href="http://www.hulis.free.fr/3Dmol/index.shtml" target="_new"><b>Try 3Dmol from Pittsburg U?</a></li>
@@ -109,7 +109,7 @@
 <ul>
  <li> <a href="https://www.youtube.com/watch?v=gpuN4Cc3ffA">YTube on HuLiS<br>(english)</a></li> 
 <li><a href="https://www.youtube.com/watch?v=LtAJ9hlVQgw">YTube on HuLiS<br>(in french)</a></li>   <li><a href="HuLiS_library.zip"><b><i>Molec. Library</i><br> (for Java version)</b></a></li> 
-<li><a href="./download/PHD_CTOM.shtml" target="_new"><b>Job Offer</b></a></li> 
+<li><a href="./download/PHD_CTOM.shtml" target="_new"><b>Job Offer</b><br> -- </a></li> 
 </ul>
 </div>
 </td></tr>
@@ -118,7 +118,7 @@
 <noscript>
 A browser with JavaScript enabled is required for this page to operate properly.
 </noscript>
-<!-- SH FEB 2017 --> <a class="downloadLink" href="#">
+<!-- SH FEB 2017 --> <a class="downloadLink" href="archives/hulis_v3_4_0.jar">
 <!-- SH FEB 2017 --> <img src=images/screen.png width="350" alt="Donwload Java HuLiS" title="Download Java HuLiS" border="1" id="" alt=" ..">
 <!-- SH FEB 2017 --> </a>
 <!-- SH FEB 2017   <button type="button" style="cursor:pointer;" id="btLoadApplet"><img src=images/screen.png width="250" alt="HuLiS" title="Start HuLiS" border="1" id="scrrr" alt=" .."></button> -->
@@ -127,7 +127,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <p>
 </p></td>
 </tr>
-<tr><td align="center" background="images/bground_lite.gif"> <br><span style="color: #ab2211;"><b><i>Colleages are invited to <a href="http://ism2.univ-amu.fr/permanents/HUMBEL.php" target="new">contact us</a> and share expertises and practices.<br><p><br></i></b></span><p>
+<tr><td align="center" background="images/bground_lite.gif"> <br><span style="color: #ab2211;"><b><i>Colleages are invited to <a href="https://ism2.univ-amu.fr/en/directory/humbel-stephane" target="new">contact us</a> and share expertises and practices.<br><p><br></i></b></span><p>
   <table><tr><td><!-- SH FEB 2017 <img src="http://www.valbo.org/sites/default/files/ctools/ValCardV2.png" width="200"></td><td><span style="color: #155555;font-size: 1em;"><b> In june 2018, we organized the <a href="http://www.valbo.org" target="new"> VALBO Conference + School</a> as a satellite of the <a href="https://icqc16.sciencesconf.org/" target="new">ICQC</a>.  </span> <span style="color: #FF1133;font-size: 1em"></td><td><img src="http://www.valbo.org/sites/default/files/ctools/ValboCard_TUTO.png" width="200"</td>--->
 
  <!-- </span> -->
@@ -139,7 +139,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
 </center>
  </td></tr> 
 <tr><td>
-<div align="left" style="z-index:2; position:relative; top:-20px; left:-80px; width:390px; height:205px; border:solid 1px black; background-color:#66CCFF;color:#000000";margin-left:40px ;opacity: 0.7;> 
+<div align="left" style="z-index:2; position:relative; top:-20px; left:-80px; width:390px; height:205px; border:solid 1px black; background-color:#66CCFF;color:#000000";margin-left:40px ;opacity: 1.;> 
 <h5> <b>Build a molecule ("H&uuml;ckel" tools, blue left area)
  </b></h5> 
 <ul>
@@ -158,7 +158,7 @@ A browser with JavaScript enabled is required for this page to operate properly.
 </p>
 </div>
 
-<div align="left" style="z-index:1; position:relative; top:-222px; left:+320px; width:400px; height:205px; border:solid 1px black; background-color:#FFCC66;color:#000000";margin-left:40px ;opacity: 0.7;> 
+<div align="left" style="z-index:1; position:relative; top:-222px; left:+320px; width:400px; height:205px; border:solid 1px black; background-color:#FFCC66;color:#000000";margin-left:40px ;opacity: 1.;> 
 <h6><b>Build resonance structures  ("Lewis" tools, orange area).</b>
 </h6>
 <ul>
@@ -169,19 +169,19 @@ A browser with JavaScript enabled is required for this page to operate properly.
 <li>The standalone version, reads/writes gaussian.com files (including NBO-NRT strings).</li></ul>
 </div>
 
-<div align="left" style="z-index:5; position:relative; top:-240px; left:-150px; width:390px; height:390px; border:solid 4px grey; background-color:#FFFF66;color:#000000";opacity: 0.2;> 
+<div align="left" style="z-index:5; position:relative; top:-240px; left:-150px; width:390px; height:390px; border:solid 4px grey; background-color:#FFFF66;color:#000000";opacity: 1.;> 
 <p>&nbsp;</p>
 <h6>The program is based on these following references. </h6>
 Thanks for citing them:<br>
 <ul>
   <li><a href="http://pubs.acs.org/doi/abs/10.1021/jp803813e" target="new" >H&uuml;ckel-Lewis-Projection Method: A &ldquo;Weights Watcher&rdquo; for Mesomeric Structures</a>: <small>Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel <i>J. Phys. Chem. A.</i> <strong>2008</strong>, 112, 13256&ndash;13262</small></li>
-    <li> Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, “HuLiS Program: Lewis embedded in Hückel Theory,” can be found at <a href="https://stephanehumbel.github.io/HuLiS/index.shtml">https://stephanehumbel.github.io/HuLiS/index.shtml</a>, <strong>2008</strong>.
+    <li> Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, “HuLiS Program: Lewis embedded in Hückel Theory,” can be found at <a href="https://ctom-ism2.github.io/hulis/">https://ctom-ism2.github.io/hulis/</a>, <strong>2008</strong>.
     <li>  <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Y. Carissan, D. Hagebaum-Reignier, N. Goudard, S. Humbel, "Weight Watchers électronique : calculez votre poids de formes résonantes” </a>(in french) the editor version can be found on HAL.<p>
  </ul>
 <p><br><p>
 <ul><b>ACS format:</b><br>
 <li>  Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>J. Phys. Chem. A.</i> <strong>2008</strong>, <i>112 (50)</i>, 13256–13262. <br>
-<li>   Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. HuLiS Program: Lewis embedded in Hückel Theory https://stephanehumbel.github.io/HuLiS/index.shtml. <br>
+<li>   Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. HuLiS Program: Lewis embedded in Hückel Theory https://ctom-ism2.github.io/hulis/index.shtml. <br>
 <li>   <a href="https://hal-amu.archives-ouvertes.fr/hal-01347244/document">Carissan, Y.; Hagebaum-Reignier, D.; Goudard, N.; Humbel, S. <i>L’Actualité Chimique</i> <strong>2016</strong>, <i>406</i>, 36-40.</a> <br>
  </ul>
 <!-- SH FEB 2017   L’Actualité Chimique, Société chimique de France, 2016, L’actualité chimique, 406, pp.36-40.
@@ -192,7 +192,7 @@ Other publications
 </ul> 
 -->
 </div>
-<div align="left" style="z-index:4; position:relative; top:-590px; left:250px; width:504px; height:1250px; border:solid 3px grey; color:#EEEEEE;opacity: 0.9;background-color:#555555;background-image: url('http://www.hulis.free.fr/images/bground_lite2.gif');"> 
+<div align="left" style="z-index:4; position:relative; top:-590px; left:250px; width:504px; height:1250px; border:solid 3px grey; color:#EEEEEE;opacity: 0.76;background-color:#555555;background-image: url('bground_lite.gif');"> 
 <p>&nbsp;</p><h7><B>They cite HuLiS :  (let us know by sending to 
 <a href="mailto:&#115;&#116;%65&#112;ha%6e%65&#46;%68&#117;m&#98;el [[a u%6e%69&#118;&#45;a&#109;&#117;%2ef&#114;?Subject=HuLiS%20Citation%20update%20;%20Replace%20the%20[[a%20by%20@%20in%20the%20adresse"> Stephane</a> an email if your work does not appear correctly here) </B></h7>
 <ul>	
@@ -257,7 +257,7 @@ by  prof <a href=http://orcid.org/0000-0002-6279-9722> K. Yoshizawa</a> et al In
 <center>    
 <table border="4">
 <tr><td bgcolor=#000000><!-- Google -->
-<H1><a Href=http://laurehumbel.fr>Livre<br></a></H1></td><TD><a href="http://www.softpedia.com/progClean/HuLiS-Clean-218955.html"><img border="0" width=50  alt="HuLiS is Clean" src="http://www.softpedia.com/base_img/softpedia_clean_award_f.gif"/></a></TD>
+</td><TD><a href="http://www.softpedia.com/progClean/HuLiS-Clean-218955.html"><img border="0" width=50  alt="HuLiS is Clean" src="http://www.softpedia.com/base_img/softpedia_clean_award_f.gif"/></a></TD>
 <td>
 <form method=GET action="http://www.google.com/search">
 <a href="http://www.google.com" target="new" ><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="absmiddle"></a> <input type=text name=q size=14 maxlength=255 value=""> <input type=hidden name=hl value=fr>
@@ -271,7 +271,9 @@ by  prof <a href=http://orcid.org/0000-0002-6279-9722> K. Yoshizawa</a> et al In
 2016&nbsp; 
 <h1>&#x514D;&#x8CBB;&#x8EDF;&#x9AD4;&#x0020;</h1>
 -->
-<a Href=http://laurehumbel.fr>Laure<br> Humbel</a></td></tr>
+ <a href="http://zh.wikipedia.org/wiki/&#x82B3;&#x9999;&#x6027;" target="wiki">&#x82B3;&#x9999;&#x6027;</a> 
+ <a href="https://zh.wikipedia.org/wiki/%E4%BC%91%E5%85%8B%E7%88%BE%E6%96%B9%E6%B3%95"> 休克爾方法                  </a> 
+</td></tr>
 </table>
 </center> </body>
 </html>

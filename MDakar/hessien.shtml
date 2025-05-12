@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>MChimie : ChemCompute</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>	
+<div id="wrap">
+	<!--#include file="include/main.shtml"-->  
+	<div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	</div>
+	<div id="main-body">      
+		<div id="header">
+		<img src="https://miro.medium.com/max/1400/1*8wOggMG3Rnaw4rxAlNz-MQ.png" height="100" alt="towardsdatascience.com"  style="border-color:#F1F1E1;" border="2"><img src="https://miro.medium.com/max/1400/1*vpCRPR2o3tTl6R3JiRcvyQ.png" height="230"  style="border-color:#F1F1E1;" border="2">
+		</div>
+	</div>
+	    <!--div id="content">-->
+	    	<div class="clearfix"><p></p>
+			<h1>Calculer et Utiliser les dérivées secondes de l'énergie </h1>
+			<h2>A propos des dérivées de l'énergie</h2>
+		    <p>Le calcul des dérivées <b>premières</b> de la fonction "énergie" conduit au vecteur gradient</p>
+			<center><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/541623207b2144e15d10ee23ed882d8a3077c942"> </center>
+				<p>Quand ce vecteur est nul, on est sur un point <b>"stationnaire"</b> de l'espace des géométries, c'est la fin de l'optimisation. Il faut  <I>caractériser</I> ce point stationnaire pour savoir si la géométrie de la molécule correspond à un minimum (puits) ou un état de transition (col ou <i>saddle point</i>). Cette caractérisation a besoin de la matrice des dérivées secondes, la matrice HESSIENNE de la fonction "énergie":<center><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d2b255c49df2a6e084b9196ab71a68872a739ead">
+				</p></center>
+				<h3>Calcul du hessien dans GAMESS</h3>
+		        <p>Pour ce faire on précise dans $CONTRL <b>RUNTYP=HESSIAN</b> au lieu de RUNTYP=ENERGY ou autre. Et on précise dans le groupe $FORCE la méthode de calcul: <span style="color : #FF4444">METHOD=ANALYTIC</span>. <b>Attention le calcul n'est rapide (analytique) que par la méthode Hartree-Fock.</b> Pour les autres méthodes, comme la DFT par exemple, GAMESS procède par différentiation du gradient: il fait la differentiation numérique du gradient analytique <span style="color : #FF4444">METHOD=SEMINUM</span>. Il peut aussi procéder par différentiation de l'énergie <span style="color : #FF4444">FULLNUM</span> , selon les 3N coordonnées de la molécule ayant N atomes. Ce qui demande beaucoup de calculs si  N est grand.	</p>
+			
+			    <ul>
+                    <li>$CONTRL RUNTYP=HESSIAN    $END</li>
+                    <li>$FORCE <span style="color : #FF4444">METHOD=ANALYTIC</span>  $END</li>
+                </ul>
+                 <h3>Utilisation du hessien: caractérisation</h3>
+                 <p>Le calcul du hessien permet de caractériser la géométrie comme un minimum ou un état de transition: l'analyse des modes de vibration montre en effet une unique fréquence imaginaire quand on a un état de transition. Le job <A HREF="https://chemcompute.org/gamess/status/300235">300235</A> montre un minimum dans le propene.  Le job <A HREF="https://chemcompute.org/gamess/status/300867">300867</A> montre un état de transition dans le propene.  La visualisation de la fréquence imaginaire (affichée comme négative) permet de mieux comprendre la  différence entre ces 2 géométries. Le calcul indique une petite barrière de 9 kJ/mol.<br><span style="color: #112222;font-style: italic;"> Pour caractériser une géométrie lors d'une optimisation, on garde <b>$CONTRL RUNTYP=OPTIMIZE</b>. Le simple ajout du groupe <b>$FORCE</b> conduit au calcul du hessien et à son analyse vibrationnelle en fin d'optimisation. </span>
+                 </p>
+                 <h3>Utilisation du hessien: Spectre IR</h3>
+                <p>Le calcul du hessien conduit à une analyse de ses valeurs propres dans le cadre de l'approximation harmonique. On simule ainsi  le spectre IR des molécules. La précision est en général très bonne. A noter qu'au niveau Hartre-Fock on surestime un peu les valeurs des fréquences des modes normaux. Attention ChemCompute a tendance à reoptimiser la géométrie quand on la récupèred'un calcul précédent. Il faut décocher les cases correspondantes. 
+                 </p>
+        </div>
+<hr width="50%">
+	<h2>Exemples</h2>
+<span style="color: #883344;">	
+		<h3>Calcul du hessien analytiquement</h3>
+		Utilisation pour visualiser les 3N déplacements.<br><p></p>
+
+&nbsp;!! filename=Propene_RHF_HESSIEN_Cs_job_300220<br>
+&nbsp;!
+ <br>
+&nbsp;$CONTRL SCFTYP=RHF MAXIT=200 RUNTYP=HESSIAN
+<br>
+&nbsp;         MULT=1  ICHARG=0  <br>
+&nbsp;$END
+<br>
+&nbsp;$FORCE <span style="color : #FF4444">METHOD=ANALYTIC</span> $END 
+<br>
+&nbsp;$DATA
+<br>
+&nbsp;   
+<br>
+&nbsp;  C1<br>
+&nbsp;C     6.0    -0.33725    -0.30716     0.00029<br>
+&nbsp;C     6.0     0.78687    -0.99610    -0.00027<br>
+&nbsp;C     6.0    -0.43526     1.19225     0.00008<br>
+&nbsp;H     1.0    -1.27544    -0.84023     0.00031<br>
+&nbsp;H     1.0     1.74959    -0.51328    -0.00019<br>
+&nbsp;H     1.0     0.78948    -2.07169    -0.00015<br>
+&nbsp;H     1.0     0.54610     1.65343     0.00024<br>
+&nbsp;H     1.0    -0.97632     1.54533    -0.87398<br>
+&nbsp;H     1.0    -0.97692     1.54562     0.87367<br>
+&nbsp;$END
+<br>
+&nbsp;$BASIS  GBASIS=N31 NGAUSS=6
+        <br>
+&nbsp; NDFUNC=1   NPFUNC=0  $END
+
+ <br>
+&nbsp;$SYSTEM TIMLIM=2879 MWORDS=250  $END
+ <br>
+&nbsp;$SCF    DIRSCF=.T. $END
+ <br>
+&nbsp;$GUESS  GUESS=HUCKEL  $END
+
+</span>
+<hr width="50%">
+
+		<h3>Calcul du hessien seminumérique</h3>
+	<p>C'est à dire différentiation du gradient analytique. NVIB=2 indique de faire une double différenciation (un pas de chaque coté). NVIB=2 est obligatoire pour le calcul FULLNUM</p>
+	
+<hr width="50%">
+&nbsp;! Propene_RHF_HESSIEN_Cs job 300220<br>
+&nbsp;!
+ <br>
+&nbsp;$CONTRL SCFTYP=RHF MAXIT=200 RUNTYP=HESSIAN
+<br>
+&nbsp;         MULT=1  ICHARG=0  <br>
+&nbsp;$END
+<br>
+&nbsp;$FORCE <span style="color : #FF4444">METHOD=SEMINUM NVIB=2 </span> $END 
+<br>
+&nbsp;$DATA
+<br>
+&nbsp;   
+<br>
+&nbsp;  C1<br>
+&nbsp;C     6.0    -0.33725    -0.30716     0.00029<br>
+&nbsp;C     6.0     0.78687    -0.99610    -0.00027<br>
+&nbsp;C     6.0    -0.43526     1.19225     0.00008<br>
+&nbsp;H     1.0    -1.27544    -0.84023     0.00031<br>
+&nbsp;H     1.0     1.74959    -0.51328    -0.00019<br>
+&nbsp;H     1.0     0.78948    -2.07169    -0.00015<br>
+&nbsp;H     1.0     0.54610     1.65343     0.00024<br>
+&nbsp;H     1.0    -0.97632     1.54533    -0.87398<br>
+&nbsp;H     1.0    -0.97692     1.54562     0.87367<br>
+&nbsp;$END
+<br>
+&nbsp;$BASIS  GBASIS=N31 NGAUSS=6
+        <br>
+&nbsp; NDFUNC=1   NPFUNC=0  $END
+
+ <br>
+&nbsp;$SYSTEM TIMLIM=2879 MWORDS=250  $END
+ <br>
+&nbsp;$SCF    DIRSCF=.T. $END
+ <br>
+&nbsp;$GUESS  GUESS=HUCKEL  $END
+
+</div><hr width="50%">
+</body>
+</html>
+

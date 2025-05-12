@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Licence Chimie Marseille</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id="wrap">
+    <!--#include file="include/home.shtml"-->	<div id="sidebar">
+		<!--#include file="include/sidebar.shtml"-->
+	    </div>
+	<div id="main-body">	
+		<div id="header">
+			<img src="images/logo_01.png" width="420" alt="header" />
+		</div>
+		<div id="content">
+			<!--Replace the text below with your own copy-->
+			<h2>Introduction</h2>
+			<p>Ce site contient les sujets et l'aide de base pour l'UE de Chimie renforcée, partie modélisation.</p>
+            Transparents de <a href=./OUTILS_pour_Re_1.pdf>l'intervention SH du 03/10/2024</a>
+<p>
+						<h2>Les thématiques que l'on pourra retenir: </h2>
+						<p>
+			<li><div>Nombre imaginaires et approximation harmonique en chimie</div></li>
+				
+				<li><div>Matrices des Chimie</div></li>
+				<li><div>Surface de Potentiel</div></li>
+				<li><div>Comment et pourquoi utiliser des fonctions approchées (gaussiennes) pour mimer les orbitales atomiques</div></li>
+		</p>
+		
+			<h2>Navigation</h2>
+			<p>On navigue ici avec la barre lat&eacute;rale à droite) pour les rappels d'outils spécifiques. La barre de menu (en haut) sert pour le rendu des sujets de équipe.</p>
+
+		</div>
+
+	</div>
+	<div class="clearfix"></div><p><br></p>
+	 <span style="color:#999977; font-size: x-small;"> Cette page est hébergée par <a href="http://www.hulis.free.fr">HuLiS</a>.
+	 	</span></div>
+</body>
+</html>
